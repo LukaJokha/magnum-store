@@ -22,13 +22,31 @@ function filtered() {
   });
 }
 function availableFor(key) { return state.products.filter(product => matches(product, key)); }
-function setOptions(select, label, values, selected, suffix = '') {
-  const safeSelected = selected.filter(value => values.includes(value));
-  if (safeSelected.length !== selected.length) state[select.id] = safeSelected;
-  select.innerHTML = '';
-  values.forEach(value => select.append(new Option(`${value}${suffix}`, value)));
-  [...select.options].forEach(option => { option.selected = safeSelected.includes(option.value); });
-  select.disabled = values.length === 0;
+function renderFacet(id, key, suffix = '') {
+  const source = availableFor(id);
+  const counts = source.reduce((map, product) => (map[product[key]] = (map[product[key]] || 0) + 1, map), {});
+  const values = Object.keys(counts).filter(Boolean).sort((a, b) => String(a).localeCompare(String(b), 'en', { numeric: true }));
+  const validSelected = state[id].filter(value => values.includes(value));
+  if (validSelected.length !== state[id].length) state[id] = validSelected;
+  const container = $(`#${id}Options`); container.innerHTML = '';
+  values.forEach(value => {
+    const choice = document.createElement('label'); choice.className = 'facet-choice';
+    const input = document.createElement('input'); input.type = 'checkbox'; input.checked = state[id].includes(value);
+    input.onchange = () => { state[id] = input.checked ? [...state[id], value] : state[id].filter(item => item !== value); state.page = 1; update(); };
+    const name = document.createElement('span'); name.textContent = `${value}${suffix}`;
+    const count = document.createElement('em'); count.textContent = counts[value];
+    choice.append(input, name, count); container.append(choice);
+  });
+  $(`#${id}Count`).textContent = state[id].length ? `(${state[id].length})` : '';
+}
+function renderActiveFilters() {
+  const active = $('#activeFilters'); active.innerHTML = '';
+  const labels = { brand: 'ბრენდი', caliber: 'კალიბრი', barrel: 'ლულის სიგრძე' };
+  filterDefinitions.forEach(([id]) => state[id].forEach(value => {
+    const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'filter-chip'; chip.textContent = `${labels[id]}: ${value} ×`;
+    chip.onclick = () => { state[id] = state[id].filter(item => item !== value); state.page = 1; update(); }; active.append(chip);
+  }));
+  active.hidden = !active.children.length;
 }
 function renderFilters() {
   const categorySource = availableFor('category');
@@ -43,10 +61,8 @@ function renderFilters() {
     const total = document.createElement('span'); total.textContent = count;
     choice.append(input, name, total); wrap.append(choice);
   });
-  filterDefinitions.forEach(([id, key, label]) => {
-    const values = [...new Set(availableFor(id).map(product => product[key]).filter(Boolean))].sort((a,b) => String(a).localeCompare(String(b), 'en', { numeric: true }));
-    const select = $(`#${id}`); setOptions(select, label, values, state[id], key === 'barrelLength' ? ' სმ' : '');
-  });
+  filterDefinitions.forEach(([id, key]) => renderFacet(id, key, key === 'barrelLength' ? ' სმ' : ''));
+  renderActiveFilters();
 }
 function showProduct(product) {
   const dialog = $('#productDialog');
@@ -101,7 +117,6 @@ async function init() {
   $('#minPrice').oninput = event => { state.min = event.target.value; state.page = 1; update(); };
   $('#maxPrice').oninput = event => { state.max = event.target.value; state.page = 1; update(); };
   $('#sort').onchange = event => { state.sort = event.target.value; renderProducts(); };
-  filterDefinitions.forEach(([id]) => { $(`#${id}`).onchange = event => { state[id] = [...event.target.selectedOptions].map(option => option.value); state.page = 1; update(); }; });
   $('#clearFilters').onclick = () => {
     $('#search').value = $('#minPrice').value = $('#maxPrice').value = '';
     Object.assign(state, { category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '', page: 1 }); update();
