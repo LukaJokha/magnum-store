@@ -77,8 +77,8 @@ function renderProducts() {
 }
 function update() { renderFilters(); renderProducts(); }
 async function init() {
-  try { const catalog = await fetch('/api/products').then(response => { if (!response.ok) throw Error(); return response.json(); }).catch(() => fetch('data/products.json').then(response => response.json())); state.products = catalog.products; update(); }
-  catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; }
+  try { const database = await window.magnumDbReady; const { data, error } = await database.from('products').select('*').order('createdAt', { ascending: false }); if (error || !data?.length) throw error || Error(); state.products = data; update(); }
+  catch { try { const catalog = await fetch('/api/products').then(response => { if (!response.ok) throw Error(); return response.json(); }).catch(() => fetch('data/products.json').then(response => response.json())); state.products = catalog.products; update(); } catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; } }
   $('#search').oninput = event => { state.query = event.target.value; state.page = 1; update(); };
   $('#minPrice').oninput = event => { state.min = event.target.value; state.page = 1; update(); };
   $('#maxPrice').oninput = event => { state.max = event.target.value; state.page = 1; update(); };
