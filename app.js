@@ -78,8 +78,25 @@ function renderProducts() {
 }
 function update() { renderFilters(); renderProducts(); }
 async function init() {
-  try { const database = await window.magnumDbReady; const { data, error } = await database.from('products').select('*').order('createdAt', { ascending: false }); if (error || !data?.length) throw error || Error(); state.products = data; update(); }
-  catch { try { const catalog = await fetch('/api/products').then(response => { if (!response.ok) throw Error(); return response.json(); }).catch(() => fetch('data/products.json').then(response => response.json())); state.products = catalog.products; update(); } catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; } }
+  try {
+    // The bundled catalog remains the safe baseline until its one-time Supabase import is complete.
+    const catalog = await fetch('data/products.json').then(response => { if (!response.ok) throw Error(); return response.json(); });
+    const baseline = catalog.products;
+    try {
+      const database = await window.magnumDbReady;
+      const { data, error } = await database.from('products').select('*').order('createdAt', { ascending: false });
+      if (error) throw error;
+      const online = data || [];
+      const importedCatalogExists = online.some(product => product.source === 'magnum.ge');
+      if (importedCatalogExists) state.products = online;
+      else {
+        const merged = new Map(baseline.map(product => [product.id, product]));
+        online.forEach(product => merged.set(product.id, product));
+        state.products = [...merged.values()];
+      }
+    } catch { state.products = baseline; }
+    update();
+  } catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; }
   $('#search').oninput = event => { state.query = event.target.value; state.page = 1; update(); };
   $('#minPrice').oninput = event => { state.min = event.target.value; state.page = 1; update(); };
   $('#maxPrice').oninput = event => { state.max = event.target.value; state.page = 1; update(); };
