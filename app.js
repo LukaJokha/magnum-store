@@ -4,10 +4,12 @@ const $ = selector => document.querySelector(selector);
 const normalize = value => String(value || '').toLocaleLowerCase('ka-GE');
 const filterDefinitions = [['brand', 'brand', 'ბრენდი'], ['caliber', 'caliber', 'კალიბრი'], ['barrel', 'barrelLength', 'ლულის სიგრძე']];
 const cleanProduct = product => ({ ...product, brand: String(product.brand || '').trim(), caliber: String(product.caliber || '').trim(), barrelLength: String(product.barrelLength || '').trim(), description: String(product.description || '').trim() });
+const emptyBrand = '__brand_not_specified__';
+const facetValue = (product, key) => product[key] || (key === 'brand' ? emptyBrand : '');
 
 function matches(product, ignored = '') {
   return (ignored === 'category' || state.category === 'all' || product.category === state.category)
-    && (ignored === 'brand' || !state.brand.length || state.brand.includes(product.brand))
+    && (ignored === 'brand' || !state.brand.length || state.brand.includes(facetValue(product, 'brand')))
     && (ignored === 'caliber' || !state.caliber.length || state.caliber.includes(product.caliber))
     && (ignored === 'barrel' || !state.barrel.length || state.barrel.includes(product.barrelLength))
     && (!state.query || normalize(product.name).includes(normalize(state.query)))
@@ -26,7 +28,7 @@ function availableFor(key) { return state.products.filter(product => matches(pro
 function renderFacet(id, key, suffix = '') {
   const source = availableFor(id);
   const counts = source.reduce((map, product) => {
-    const value = String(product[key] || '').trim();
+    const value = String(facetValue(product, key)).trim();
     if (value) map[value] = (map[value] || 0) + 1;
     return map;
   }, {});
@@ -38,7 +40,7 @@ function renderFacet(id, key, suffix = '') {
     const choice = document.createElement('label'); choice.className = 'facet-choice';
     const input = document.createElement('input'); input.type = 'checkbox'; input.checked = state[id].includes(value);
     input.onchange = () => { state[id] = input.checked ? [...state[id], value] : state[id].filter(item => item !== value); state.page = 1; update(); };
-    const name = document.createElement('span'); name.textContent = `${value}${suffix}`;
+    const name = document.createElement('span'); name.textContent = value === emptyBrand ? 'ბრენდი არ არის მითითებული' : `${value}${suffix}`;
     const count = document.createElement('em'); count.textContent = counts[value];
     choice.append(input, name, count); container.append(choice);
   });
@@ -48,7 +50,8 @@ function renderActiveFilters() {
   const active = $('#activeFilters'); active.innerHTML = '';
   const labels = { brand: 'ბრენდი', caliber: 'კალიბრი', barrel: 'ლულის სიგრძე' };
   filterDefinitions.forEach(([id]) => state[id].forEach(value => {
-    const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'filter-chip'; chip.textContent = `${labels[id]}: ${value} ×`;
+    const displayValue = value === emptyBrand ? 'არ არის მითითებული' : value;
+    const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'filter-chip'; chip.textContent = `${labels[id]}: ${displayValue} ×`;
     chip.onclick = () => { state[id] = state[id].filter(item => item !== value); state.page = 1; update(); }; active.append(chip);
   }));
   active.hidden = !active.children.length;
@@ -109,7 +112,13 @@ async function init() {
       if (error) throw error;
       const online = (data || []).map(cleanProduct);
       const importedCatalogExists = online.some(product => product.source === 'magnum.ge');
-      if (importedCatalogExists) state.products = online;
+      if (importedCatalogExists) {
+        const baselineById = new Map(baseline.map(product => [product.id, product]));
+        state.products = online.map(product => {
+          const original = baselineById.get(product.id);
+          return original && product.source === 'magnum.ge' ? { ...original, ...product, brand: product.brand || original.brand, caliber: product.caliber || original.caliber, barrelLength: product.barrelLength || original.barrelLength } : product;
+        });
+      }
       else {
         const merged = new Map(baseline.map(product => [product.id, product]));
         online.forEach(product => merged.set(product.id, product));
