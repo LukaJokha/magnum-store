@@ -1,14 +1,14 @@
 document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="filter-ui.css">');
-const state = { products: [], page: 1, perPage: 18, category: 'all', brand: 'all', caliber: 'all', barrel: 'all', query: '', min: '', max: '', sort: 'new' };
+const state = { products: [], page: 1, perPage: 18, category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '', sort: 'new' };
 const $ = selector => document.querySelector(selector);
 const normalize = value => String(value || '').toLocaleLowerCase('ka-GE');
 const filterDefinitions = [['brand', 'brand', 'ბრენდი'], ['caliber', 'caliber', 'კალიბრი'], ['barrel', 'barrelLength', 'ლულის სიგრძე']];
 
 function matches(product, ignored = '') {
   return (ignored === 'category' || state.category === 'all' || product.category === state.category)
-    && (ignored === 'brand' || state.brand === 'all' || product.brand === state.brand)
-    && (ignored === 'caliber' || state.caliber === 'all' || product.caliber === state.caliber)
-    && (ignored === 'barrel' || state.barrel === 'all' || product.barrelLength === state.barrel)
+    && (ignored === 'brand' || !state.brand.length || state.brand.includes(product.brand))
+    && (ignored === 'caliber' || !state.caliber.length || state.caliber.includes(product.caliber))
+    && (ignored === 'barrel' || !state.barrel.length || state.barrel.includes(product.barrelLength))
     && (!state.query || normalize(product.name).includes(normalize(state.query)))
     && (!state.min || product.amount >= Number(state.min))
     && (!state.max || product.amount <= Number(state.max));
@@ -23,12 +23,12 @@ function filtered() {
 }
 function availableFor(key) { return state.products.filter(product => matches(product, key)); }
 function setOptions(select, label, values, selected, suffix = '') {
-  const safeSelected = values.includes(selected) ? selected : 'all';
-  if (safeSelected !== selected) state[select.id] = 'all';
+  const safeSelected = selected.filter(value => values.includes(value));
+  if (safeSelected.length !== selected.length) state[select.id] = safeSelected;
   select.innerHTML = '';
-  const all = new Option(`${label}: ყველა`, 'all'); select.append(all);
   values.forEach(value => select.append(new Option(`${value}${suffix}`, value)));
-  select.value = safeSelected; select.disabled = values.length === 0;
+  [...select.options].forEach(option => { option.selected = safeSelected.includes(option.value); });
+  select.disabled = values.length === 0;
 }
 function renderFilters() {
   const categorySource = availableFor('category');
@@ -101,10 +101,10 @@ async function init() {
   $('#minPrice').oninput = event => { state.min = event.target.value; state.page = 1; update(); };
   $('#maxPrice').oninput = event => { state.max = event.target.value; state.page = 1; update(); };
   $('#sort').onchange = event => { state.sort = event.target.value; renderProducts(); };
-  filterDefinitions.forEach(([id]) => { $(`#${id}`).onchange = event => { state[id] = event.target.value; state.page = 1; update(); }; });
+  filterDefinitions.forEach(([id]) => { $(`#${id}`).onchange = event => { state[id] = [...event.target.selectedOptions].map(option => option.value); state.page = 1; update(); }; });
   $('#clearFilters').onclick = () => {
     $('#search').value = $('#minPrice').value = $('#maxPrice').value = '';
-    Object.assign(state, { category: 'all', brand: 'all', caliber: 'all', barrel: 'all', query: '', min: '', max: '', page: 1 }); update();
+    Object.assign(state, { category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '', page: 1 }); update();
   };
   $('#productDialog .close').onclick = () => $('#productDialog').close();
   $('#year').textContent = new Date().getFullYear();

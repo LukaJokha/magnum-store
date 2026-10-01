@@ -2,6 +2,24 @@ const $ = selector => document.querySelector(selector);
 const message = (element, text, ok = false) => { element.textContent = text; element.className = `form-message ${ok ? 'success' : 'error'}`; };
 let db;
 
+function populateSelect(name, values, suffix = '') {
+  const select = document.querySelector(`[name="${name}"]`);
+  const current = select.value;
+  select.innerHTML = '<option value="">არ არის მითითებული</option>';
+  [...new Set(values.filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), 'en', { numeric: true }))
+    .forEach(value => select.add(new Option(`${value}${suffix}`, value)));
+  if ([...select.options].some(option => option.value === current)) select.value = current;
+}
+
+async function loadStandardProductValues() {
+  const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] });
+  const { data } = await db.from('products').select('brand,caliber,barrelLength');
+  const products = [...catalog.products, ...(data || [])];
+  populateSelect('brand', products.map(product => product.brand));
+  populateSelect('caliber', products.map(product => product.caliber));
+  populateSelect('barrelLength', products.map(product => product.barrelLength), ' სმ');
+}
+
 async function refreshSession() {
   const { data: { user } } = await db.auth.getUser();
   $('#loginPanel').hidden = Boolean(user);
@@ -9,7 +27,7 @@ async function refreshSession() {
 }
 
 async function init() {
-  try { db = await window.magnumDbReady; await refreshSession(); }
+  try { db = await window.magnumDbReady; await refreshSession(); await loadStandardProductValues(); }
   catch (error) { message($('#loginMessage'), 'ბაზასთან კავშირი ვერ დამყარდა. შეამოწმეთ Supabase პარამეტრები.'); }
 }
 
