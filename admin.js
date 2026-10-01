@@ -61,7 +61,7 @@ $('#productForm').onsubmit = async event => {
     if (uploadError) throw uploadError;
     const { data: imageUrl } = db.storage.from('product-images').getPublicUrl(fileName);
     const amount = Number(form.get('amount'));
-    const row = { id: crypto.randomUUID(), name: form.get('name').trim(), amount, price: `${amount} ₾`, category: form.get('category'), brand: form.get('brand').trim() || null, caliber: form.get('caliber').trim() || null, barrelLength: form.get('barrelLength').trim() || null, image: imageUrl.publicUrl, description: form.get('description').trim() || null, source: 'admin' };
+    const row = { id: crypto.randomUUID(), name: form.get('name').trim(), amount, price: `${amount} ₾`, category: form.get('category'), brand: form.get('brand') || '', caliber: form.get('caliber') || '', barrelLength: form.get('barrelLength') || '', image: imageUrl.publicUrl, description: form.get('description').trim() || '', source: 'admin' };
     const { error } = await db.from('products').insert(row);
     if (error) { await db.storage.from('product-images').remove([fileName]); throw error; }
     formElement.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
@@ -76,9 +76,9 @@ $('#importButton').onclick = async () => {
     const { products } = await response.json();
     const rows = products.map(product => ({
       id: product.id, name: product.name, price: product.price, amount: product.amount,
-      category: product.category, brand: product.brand || null, caliber: product.caliber || null,
-      barrelLength: product.barrelLength || null, image: product.image,
-      description: product.description || null, source: 'magnum.ge'
+      category: product.category, brand: product.brand || '', caliber: product.caliber || '',
+      barrelLength: product.barrelLength || '', image: product.image,
+      description: product.description || '', source: 'magnum.ge'
     }));
     for (let index = 0; index < rows.length; index += 50) {
       const { error } = await db.from('products').upsert(rows.slice(index, index + 50), { onConflict: 'id' });

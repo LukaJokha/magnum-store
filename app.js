@@ -3,6 +3,7 @@ const state = { products: [], page: 1, perPage: 18, category: 'all', brand: [], 
 const $ = selector => document.querySelector(selector);
 const normalize = value => String(value || '').toLocaleLowerCase('ka-GE');
 const filterDefinitions = [['brand', 'brand', 'ბრენდი'], ['caliber', 'caliber', 'კალიბრი'], ['barrel', 'barrelLength', 'ლულის სიგრძე']];
+const cleanProduct = product => ({ ...product, brand: String(product.brand || '').trim(), caliber: String(product.caliber || '').trim(), barrelLength: String(product.barrelLength || '').trim(), description: String(product.description || '').trim() });
 
 function matches(product, ignored = '') {
   return (ignored === 'category' || state.category === 'all' || product.category === state.category)
@@ -24,7 +25,11 @@ function filtered() {
 function availableFor(key) { return state.products.filter(product => matches(product, key)); }
 function renderFacet(id, key, suffix = '') {
   const source = availableFor(id);
-  const counts = source.reduce((map, product) => (map[product[key]] = (map[product[key]] || 0) + 1, map), {});
+  const counts = source.reduce((map, product) => {
+    const value = String(product[key] || '').trim();
+    if (value) map[value] = (map[value] || 0) + 1;
+    return map;
+  }, {});
   const values = Object.keys(counts).filter(Boolean).sort((a, b) => String(a).localeCompare(String(b), 'en', { numeric: true }));
   const validSelected = state[id].filter(value => values.includes(value));
   if (validSelected.length !== state[id].length) state[id] = validSelected;
@@ -97,12 +102,12 @@ async function init() {
   try {
     // The bundled catalog remains the safe baseline until its one-time Supabase import is complete.
     const catalog = await fetch('data/products.json').then(response => { if (!response.ok) throw Error(); return response.json(); });
-    const baseline = catalog.products;
+    const baseline = catalog.products.map(cleanProduct);
     try {
       const database = await window.magnumDbReady;
       const { data, error } = await database.from('products').select('*').order('createdAt', { ascending: false });
       if (error) throw error;
-      const online = data || [];
+      const online = (data || []).map(cleanProduct);
       const importedCatalogExists = online.some(product => product.source === 'magnum.ge');
       if (importedCatalogExists) state.products = online;
       else {

@@ -14,6 +14,13 @@ create table if not exists public.products (
   source text
 );
 
+-- Optional product attributes are stored as empty strings, never the literal value "null".
+update public.products set brand = coalesce(brand, ''), caliber = coalesce(caliber, ''), "barrelLength" = coalesce("barrelLength", ''), description = coalesce(description, '');
+alter table public.products alter column brand set default '';
+alter table public.products alter column caliber set default '';
+alter table public.products alter column "barrelLength" set default '';
+alter table public.products alter column description set default '';
+
 alter table public.products enable row level security;
 drop policy if exists "Public catalog read" on public.products;
 drop policy if exists "Authenticated catalog management" on public.products;
