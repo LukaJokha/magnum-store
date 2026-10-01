@@ -15,7 +15,7 @@ async function loadStandardProductValues() {
   const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] });
   const { data } = await db.from('products').select('brand,caliber,barrelLength');
   const products = [...catalog.products, ...(data || [])];
-  populateSelect('brand', products.map(product => product.brand));
+  populateSelect('brand', products.flatMap(product => Array.isArray(product.brandTags) ? product.brandTags : [product.brand]));
   populateSelect('caliber', products.map(product => product.caliber));
   populateSelect('barrelLength', products.map(product => product.barrelLength), ' სმ');
 }

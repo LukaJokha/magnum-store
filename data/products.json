@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T17:04:18.029Z",
+  "updatedAt": "2026-10-01T17:14:27.481Z",
   "source": "http://magnum.ge",
   "products": [
     {
@@ -11,7 +11,10 @@
       "brand": "HUGLU",
       "caliber": "12",
       "barrelLength": "76",
-      "image": "assets/products/001-veyron-synthetic.jpg"
+      "image": "assets/products/001-veyron-synthetic.jpg",
+      "brandTags": [
+        "HUGLU"
+      ]
     },
     {
       "id": "magnum-2",
@@ -22,7 +25,10 @@
       "brand": "ROSSI",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/002-7022--wood.jpg"
+      "image": "assets/products/002-7022--wood.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-3",
@@ -33,7 +39,10 @@
       "brand": "ROSSI",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/003-8122-Black.jpg"
+      "image": "assets/products/003-8122-Black.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-4",
@@ -44,7 +53,10 @@
       "brand": "HUGLU",
       "caliber": "9×19",
       "barrelLength": "30.5",
-      "image": "assets/products/004-mohac-12-graphite-black.jpg"
+      "image": "assets/products/004-mohac-12-graphite-black.jpg",
+      "brandTags": [
+        "HUGLU"
+      ]
     },
     {
       "id": "magnum-5",
@@ -55,7 +67,10 @@
       "brand": "ROSSI",
       "caliber": "44 MAG",
       "barrelLength": "",
-      "image": "assets/products/005-PUMA-Classic-blued-16-right.jpg"
+      "image": "assets/products/005-PUMA-Classic-blued-16-right.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-6",
@@ -66,7 +81,10 @@
       "brand": "ROSSI",
       "caliber": "44 MAG",
       "barrelLength": "",
-      "image": "assets/products/006-R95_direita-20.jpg"
+      "image": "assets/products/006-R95_direita-20.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-7",
@@ -77,7 +95,10 @@
       "brand": "ROSSI",
       "caliber": "22WMR",
       "barrelLength": "",
-      "image": "assets/products/007---Rio-Bravo-17HMR-Wood.jpg"
+      "image": "assets/products/007---Rio-Bravo-17HMR-Wood.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-8",
@@ -88,7 +109,10 @@
       "brand": "ROSSI",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/008-Rio-Bravo-17HMR-Wood.jpg"
+      "image": "assets/products/008-Rio-Bravo-17HMR-Wood.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-9",
@@ -99,7 +123,10 @@
       "brand": "ROSSI",
       "caliber": "22WMR",
       "barrelLength": "",
-      "image": "assets/products/009-8122-Magnum_direita.jpg"
+      "image": "assets/products/009-8122-Magnum_direita.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-10",
@@ -110,7 +137,10 @@
       "brand": "ROSSI",
       "caliber": "22WMR",
       "barrelLength": "",
-      "image": "assets/products/010-8122-Magnum-Black_direita.jpg"
+      "image": "assets/products/010-8122-Magnum-Black_direita.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-11",
@@ -121,7 +151,10 @@
       "brand": "ROSSI",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/011-8122-LR_direita.jpg"
+      "image": "assets/products/011-8122-LR_direita.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-12",
@@ -132,7 +165,10 @@
       "brand": "ROSSI",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/012-7022-Black-21_direita.jpg"
+      "image": "assets/products/012-7022-Black-21_direita.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-13",
@@ -143,7 +179,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/013-Taurus-G3-Tactical-Black.jpg"
+      "image": "assets/products/013-Taurus-G3-Tactical-Black.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-14",
@@ -154,7 +193,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/014-TAURUS-MOD-TS-9.jpg"
+      "image": "assets/products/014-TAURUS-MOD-TS-9.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-15",
@@ -165,7 +207,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/015-TAURUS-MOD-TH-9.jpg"
+      "image": "assets/products/015-TAURUS-MOD-TH-9.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-16",
@@ -176,7 +221,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/016-TAURUS-MOD-G3.jpg"
+      "image": "assets/products/016-TAURUS-MOD-G3.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-17",
@@ -187,7 +235,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/017-TAURUS-MOD-GX4.jpg"
+      "image": "assets/products/017-TAURUS-MOD-GX4.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-18",
@@ -198,7 +249,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/018-TAURUS-MOD-G2S.jpg"
+      "image": "assets/products/018-TAURUS-MOD-G2S.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-19",
@@ -209,7 +263,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/019-TAURUS-MOD-G2C.jpg"
+      "image": "assets/products/019-TAURUS-MOD-G2C.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-20",
@@ -220,7 +277,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/020-TAURUS-MOD-G3XL.jpg"
+      "image": "assets/products/020-TAURUS-MOD-G3XL.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-21",
@@ -231,7 +291,10 @@
       "brand": "TAURUS",
       "caliber": "9×19 MM",
       "barrelLength": "",
-      "image": "assets/products/021-TAURUS-MOD-G3X.jpg"
+      "image": "assets/products/021-TAURUS-MOD-G3X.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-22",
@@ -242,7 +305,10 @@
       "brand": "TAURUS",
       "caliber": "357 MAG",
       "barrelLength": "",
-      "image": "assets/products/022-TAURUS-REV-MOD-689.jpg"
+      "image": "assets/products/022-TAURUS-REV-MOD-689.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-23",
@@ -253,7 +319,10 @@
       "brand": "TAURUS",
       "caliber": "357 MAG",
       "barrelLength": "",
-      "image": "assets/products/023-TAURUS-REV-MOD-669.jpg"
+      "image": "assets/products/023-TAURUS-REV-MOD-669.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-24",
@@ -264,7 +333,10 @@
       "brand": "TAURUS",
       "caliber": "357 MAG",
       "barrelLength": "",
-      "image": "assets/products/024-TAURUS-REV-MOD-627-TRACKER.jpg"
+      "image": "assets/products/024-TAURUS-REV-MOD-627-TRACKER.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-25",
@@ -275,7 +347,10 @@
       "brand": "TAURUS",
       "caliber": "357 MAG",
       "barrelLength": "",
-      "image": "assets/products/025-TAURUS-REV-MOD-605.jpg"
+      "image": "assets/products/025-TAURUS-REV-MOD-605.jpg",
+      "brandTags": [
+        "TAURUS"
+      ]
     },
     {
       "id": "magnum-26",
@@ -286,7 +361,10 @@
       "brand": "HUGLU",
       "caliber": "9×19",
       "barrelLength": "30.5",
-      "image": "assets/products/026-mohac-8-desertsand-foldable-left.jpg"
+      "image": "assets/products/026-mohac-8-desertsand-foldable-left.jpg",
+      "brandTags": [
+        "HUGLU"
+      ]
     },
     {
       "id": "magnum-27",
@@ -297,7 +375,10 @@
       "brand": "ARKEN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/027-EP-5-GENII-5-25x56-FFP.jpg"
+      "image": "assets/products/027-EP-5-GENII-5-25x56-FFP.jpg",
+      "brandTags": [
+        "ARKEN"
+      ]
     },
     {
       "id": "magnum-28",
@@ -308,7 +389,10 @@
       "brand": "ARKEN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/028-SH-4J-GENII-6-24X50-FFP.jpg"
+      "image": "assets/products/028-SH-4J-GENII-6-24X50-FFP.jpg",
+      "brandTags": [
+        "ARKEN"
+      ]
     },
     {
       "id": "magnum-29",
@@ -319,7 +403,10 @@
       "brand": "ARKEN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/029-SH-4-GENII-4-16X50-FFP.jpg"
+      "image": "assets/products/029-SH-4-GENII-4-16X50-FFP.jpg",
+      "brandTags": [
+        "ARKEN"
+      ]
     },
     {
       "id": "magnum-30",
@@ -330,7 +417,10 @@
       "brand": "ARKEN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/030-EPL-4-6-24X50-FFP-VPR-MIL.jpg"
+      "image": "assets/products/030-EPL-4-6-24X50-FFP-VPR-MIL.jpg",
+      "brandTags": [
+        "ARKEN"
+      ]
     },
     {
       "id": "magnum-31",
@@ -341,7 +431,10 @@
       "brand": "ARKEN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/031-LH-6-1-6X24-SFP-KL.jpg"
+      "image": "assets/products/031-LH-6-1-6X24-SFP-KL.jpg",
+      "brandTags": [
+        "ARKEN"
+      ]
     },
     {
       "id": "magnum-32",
@@ -352,7 +445,10 @@
       "brand": "ROCK ISLAND ARMORY",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/032-Rock-Island-Armory--M206--51289.jpg"
+      "image": "assets/products/032-Rock-Island-Armory--M206--51289.jpg",
+      "brandTags": [
+        "ROCK ISLAND ARMORY"
+      ]
     },
     {
       "id": "magnum-33",
@@ -363,7 +459,10 @@
       "brand": "GLOCK",
       "caliber": "9MM",
       "barrelLength": "",
-      "image": "assets/products/033-Glock-PA175S203.jpg"
+      "image": "assets/products/033-Glock-PA175S203.jpg",
+      "brandTags": [
+        "GLOCK"
+      ]
     },
     {
       "id": "magnum-34",
@@ -374,7 +473,10 @@
       "brand": "GLOCK",
       "caliber": "9MM",
       "barrelLength": "",
-      "image": "assets/products/034-Glock-PA195S203.jpg"
+      "image": "assets/products/034-Glock-PA195S203.jpg",
+      "brandTags": [
+        "GLOCK"
+      ]
     },
     {
       "id": "magnum-35",
@@ -385,7 +487,10 @@
       "brand": "RUGER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/035-Ruger-AR-556--8500--Caliber-5.56x45-mm.jpg"
+      "image": "assets/products/035-Ruger-AR-556--8500--Caliber-5.56x45-mm.jpg",
+      "brandTags": [
+        "RUGER"
+      ]
     },
     {
       "id": "magnum-36",
@@ -396,7 +501,10 @@
       "brand": "RUGER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/036-Ruger-American-Rimfire-Standard--8321--Caliber-.22WMR-Bolt-Action-Rifle.jpg"
+      "image": "assets/products/036-Ruger-American-Rimfire-Standard--8321--Caliber-.22WMR-Bolt-Action-Rifle.jpg",
+      "brandTags": [
+        "RUGER"
+      ]
     },
     {
       "id": "magnum-37",
@@ -407,7 +515,10 @@
       "brand": "GUERINI",
       "caliber": "",
       "barrelLength": "55",
-      "image": "assets/products/037-carabine-express-caesar-guerini-reflexo-acier-z-2503-250379.jpg"
+      "image": "assets/products/037-carabine-express-caesar-guerini-reflexo-acier-z-2503-250379.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-38",
@@ -418,7 +529,10 @@
       "brand": "GUERINI",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/038-8-MAXUS.jpg"
+      "image": "assets/products/038-8-MAXUS.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-39",
@@ -429,7 +543,10 @@
       "brand": "GUERINI",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/039---Magnus-Limited-1.jpg"
+      "image": "assets/products/039---Magnus-Limited-1.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-40",
@@ -440,7 +557,10 @@
       "brand": "GUERINI",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/040-ROMAN-MMI.jpg"
+      "image": "assets/products/040-ROMAN-MMI.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-41",
@@ -451,7 +571,10 @@
       "brand": "GUERINI",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/041-ROMAN-MMX-DX1.jpg"
+      "image": "assets/products/041-ROMAN-MMX-DX1.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-42",
@@ -462,7 +585,10 @@
       "brand": "GUERINI",
       "caliber": "12GA",
       "barrelLength": "71",
-      "image": "assets/products/042-TEMPIO.jpg"
+      "image": "assets/products/042-TEMPIO.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-43",
@@ -473,7 +599,10 @@
       "brand": "GUERINI",
       "caliber": "12GA",
       "barrelLength": "71",
-      "image": "assets/products/043-Figura.jpg"
+      "image": "assets/products/043-Figura.jpg",
+      "brandTags": [
+        "GUERINI"
+      ]
     },
     {
       "id": "magnum-44",
@@ -484,7 +613,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/044-baracuda-match_45_web.jpg"
+      "image": "assets/products/044-baracuda-match_45_web.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-45",
@@ -495,7 +627,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/045---slug-hp.jpg"
+      "image": "assets/products/045---slug-hp.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-46",
@@ -506,7 +641,10 @@
       "brand": "HUNT GROUP",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/046-Varlik-179.jpg"
+      "image": "assets/products/046-Varlik-179.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-47",
@@ -517,7 +655,10 @@
       "brand": "HUNT GROUP",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/047-Varlik-178.jpg"
+      "image": "assets/products/047-Varlik-178.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-48",
@@ -528,7 +669,10 @@
       "brand": "HUNT GROUP",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/048-Varlik-181.jpg"
+      "image": "assets/products/048-Varlik-181.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-49",
@@ -539,7 +683,10 @@
       "brand": "HUNT GROUP",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/049-DS12-001.jpg"
+      "image": "assets/products/049-DS12-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-50",
@@ -550,7 +697,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "61",
-      "image": "assets/products/050-8-on-007.jpg"
+      "image": "assets/products/050-8-on-007.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-51",
@@ -561,7 +711,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/051-on-006.jpg"
+      "image": "assets/products/051-on-006.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-52",
@@ -572,7 +725,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/052-on-005.jpg"
+      "image": "assets/products/052-on-005.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-53",
@@ -583,7 +739,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/053---on-004.jpg"
+      "image": "assets/products/053---on-004.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-54",
@@ -594,7 +753,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/054-on-002.jpg"
+      "image": "assets/products/054-on-002.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-55",
@@ -605,7 +767,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/055-on-001.jpg"
+      "image": "assets/products/055-on-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-56",
@@ -616,7 +781,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/056-xrp-006.jpg"
+      "image": "assets/products/056-xrp-006.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-57",
@@ -627,7 +795,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "51",
-      "image": "assets/products/057-XRP-010.jpg"
+      "image": "assets/products/057-XRP-010.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-58",
@@ -638,7 +809,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/058-veslo.jpg"
+      "image": "assets/products/058-veslo.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-59",
@@ -649,7 +821,10 @@
       "brand": "MAUSER",
       "caliber": "308 WIN",
       "barrelLength": "",
-      "image": "assets/products/059-MAUSER-M25-EXTREME.jpg"
+      "image": "assets/products/059-MAUSER-M25-EXTREME.jpg",
+      "brandTags": [
+        "MAUSER"
+      ]
     },
     {
       "id": "magnum-60",
@@ -660,7 +835,10 @@
       "brand": "ROCK RIVER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/060-1-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg"
+      "image": "assets/products/060-1-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg",
+      "brandTags": [
+        "ROCK RIVER"
+      ]
     },
     {
       "id": "magnum-61",
@@ -671,7 +849,10 @@
       "brand": "ROCK RIVER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/061-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg"
+      "image": "assets/products/061-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg",
+      "brandTags": [
+        "ROCK RIVER"
+      ]
     },
     {
       "id": "magnum-62",
@@ -679,10 +860,13 @@
       "price": "4250 ლარი",
       "amount": 4250,
       "category": "ოპტიკა",
-      "brand": "DB15",
+      "brand": "DIAMONDBACK FIREARMS",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/062-DB171AK192-1.jpg"
+      "image": "assets/products/062-DB171AK192-1.jpg",
+      "brandTags": [
+        "DIAMONDBACK FIREARMS"
+      ]
     },
     {
       "id": "magnum-63",
@@ -693,7 +877,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "51",
-      "image": "assets/products/063---ML2318-ML2320.jpg"
+      "image": "assets/products/063---ML2318-ML2320.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-64",
@@ -704,7 +891,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "46",
-      "image": "assets/products/064-ML2318-ML2320.jpg"
+      "image": "assets/products/064-ML2318-ML2320.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-65",
@@ -715,7 +905,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "51",
-      "image": "assets/products/065-b-ML1318-ML1320.jpg"
+      "image": "assets/products/065-b-ML1318-ML1320.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-66",
@@ -726,7 +919,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "46",
-      "image": "assets/products/066-ML1318-ML1320.jpg"
+      "image": "assets/products/066-ML1318-ML1320.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-67",
@@ -737,7 +933,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "51",
-      "image": "assets/products/067-4-ML1118-ML1120.jpg"
+      "image": "assets/products/067-4-ML1118-ML1120.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-68",
@@ -748,7 +947,10 @@
       "brand": "MORISSON",
       "caliber": "357 MAG",
       "barrelLength": "46",
-      "image": "assets/products/068-ML1118-ML1120.jpg"
+      "image": "assets/products/068-ML1118-ML1120.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-69",
@@ -759,7 +961,10 @@
       "brand": "HUGLU",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/069---g12.jpg"
+      "image": "assets/products/069---g12.jpg",
+      "brandTags": [
+        "HUGLU"
+      ]
     },
     {
       "id": "magnum-70",
@@ -770,7 +975,10 @@
       "brand": "HUGLU",
       "caliber": "12",
       "barrelLength": "51",
-      "image": "assets/products/070-atrox-standard-black.jpg"
+      "image": "assets/products/070-atrox-standard-black.jpg",
+      "brandTags": [
+        "HUGLU"
+      ]
     },
     {
       "id": "magnum-71",
@@ -781,7 +989,10 @@
       "brand": "SARSILMAZ",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/071-SARSILMAZ-SAR15T----.7.62X39.jpg"
+      "image": "assets/products/071-SARSILMAZ-SAR15T----.7.62X39.jpg",
+      "brandTags": [
+        "SARSILMAZ"
+      ]
     },
     {
       "id": "magnum-72",
@@ -792,7 +1003,10 @@
       "brand": "S&W",
       "caliber": "9 MM",
       "barrelLength": "16.5",
-      "image": "assets/products/072-SW-RESPONSE-----9X19.jpg"
+      "image": "assets/products/072-SW-RESPONSE-----9X19.jpg",
+      "brandTags": [
+        "S&W"
+      ]
     },
     {
       "id": "magnum-73",
@@ -803,7 +1017,10 @@
       "brand": "KRAL",
       "caliber": "308 WIN",
       "barrelLength": "56",
-      "image": "assets/products/073-KRAL-K308.jpg"
+      "image": "assets/products/073-KRAL-K308.jpg",
+      "brandTags": [
+        "KRAL"
+      ]
     },
     {
       "id": "magnum-74",
@@ -814,7 +1031,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/074-REDWIN-Whiteeagle-1-10x28-FFP-MOA-Black--RW27.jpg"
+      "image": "assets/products/074-REDWIN-Whiteeagle-1-10x28-FFP-MOA-Black--RW27.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-75",
@@ -825,7 +1045,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/075-Corsac-3x30-Prism-Scope--RMP2.jpg"
+      "image": "assets/products/075-Corsac-3x30-Prism-Scope--RMP2.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-76",
@@ -836,7 +1059,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/076-a-Cobra-Max-Pro-3MOA--RWD44--RWD42.jpg"
+      "image": "assets/products/076-a-Cobra-Max-Pro-3MOA--RWD44--RWD42.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-77",
@@ -847,7 +1073,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/077-Cobra-Max-Pro-3MOA--RWD44--RWD42.jpg"
+      "image": "assets/products/077-Cobra-Max-Pro-3MOA--RWD44--RWD42.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-78",
@@ -858,7 +1087,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/078-REDWIN-Cobra-TRA-21x17-MTR-Enclosed-Sight--RWD25.jpg"
+      "image": "assets/products/078-REDWIN-Cobra-TRA-21x17-MTR-Enclosed-Sight--RWD25.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-79",
@@ -869,7 +1101,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/079-a-Mantis-1x22-Gen-II-RWD20.jpg"
+      "image": "assets/products/079-a-Mantis-1x22-Gen-II-RWD20.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-80",
@@ -880,7 +1115,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/080-Mantis-1x25-MTR--RWD32.jpg"
+      "image": "assets/products/080-Mantis-1x25-MTR--RWD32.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-81",
@@ -891,7 +1129,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/081-Mantis-1x25-3MOA--RWD34.jpg"
+      "image": "assets/products/081-Mantis-1x25-3MOA--RWD34.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-82",
@@ -902,7 +1143,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/082-Cherno-Mini-3MOA-SP--RWD50.jpg"
+      "image": "assets/products/082-Cherno-Mini-3MOA-SP--RWD50.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-83",
@@ -913,7 +1157,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/083-Mantis-3x-Magnifier--RWM4.jpg"
+      "image": "assets/products/083-Mantis-3x-Magnifier--RWM4.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-84",
@@ -924,7 +1171,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/084-Canyon-3x-Magnifier--RWM6.jpg"
+      "image": "assets/products/084-Canyon-3x-Magnifier--RWM6.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-85",
@@ -935,7 +1185,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/085-YAF-12-Cal.-33g-Turbo-Action.jpg"
+      "image": "assets/products/085-YAF-12-Cal.-33g-Turbo-Action.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-86",
@@ -946,7 +1199,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/086-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet-gold.jpg"
+      "image": "assets/products/086-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet-gold.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-87",
@@ -957,7 +1213,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/087-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet-gold.jpg"
+      "image": "assets/products/087-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet-gold.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-88",
@@ -968,7 +1227,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/088-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet.jpg"
+      "image": "assets/products/088-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-89",
@@ -979,7 +1241,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/089-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet.jpg"
+      "image": "assets/products/089-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-90",
@@ -990,7 +1255,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/090-YAF-12-CAL.-50-GR..jpg"
+      "image": "assets/products/090-YAF-12-CAL.-50-GR..jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-91",
@@ -1001,7 +1269,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/091-akgun-patlayici-av-fisekleri-yaf-12-cal-36g.jpg"
+      "image": "assets/products/091-akgun-patlayici-av-fisekleri-yaf-12-cal-36g.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-92",
@@ -1012,7 +1283,10 @@
       "brand": "YAF",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/092-yaf-30-gr-bior.jpg"
+      "image": "assets/products/092-yaf-30-gr-bior.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-93",
@@ -1023,7 +1297,10 @@
       "brand": "YAF",
       "caliber": "16",
       "barrelLength": "",
-      "image": "assets/products/093-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-16-cal-28g.jpg"
+      "image": "assets/products/093-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-16-cal-28g.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-94",
@@ -1034,7 +1311,10 @@
       "brand": "YAF",
       "caliber": "20",
       "barrelLength": "",
-      "image": "assets/products/094-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-25g.jpg"
+      "image": "assets/products/094-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-25g.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-95",
@@ -1045,7 +1325,10 @@
       "brand": "YAF",
       "caliber": "20",
       "barrelLength": "",
-      "image": "assets/products/095-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-28g.jpg"
+      "image": "assets/products/095-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-28g.jpg",
+      "brandTags": [
+        "YAF"
+      ]
     },
     {
       "id": "magnum-96",
@@ -1056,7 +1339,10 @@
       "brand": "HK",
       "caliber": "9MM",
       "barrelLength": "",
-      "image": "assets/products/096-Heckler---Koch-81001108.jpg"
+      "image": "assets/products/096-Heckler---Koch-81001108.jpg",
+      "brandTags": [
+        "HK"
+      ]
     },
     {
       "id": "magnum-97",
@@ -1067,7 +1353,10 @@
       "brand": "RUGER",
       "caliber": "",
       "barrelLength": "41",
-      "image": "assets/products/097-Ruger-5854.jpg"
+      "image": "assets/products/097-Ruger-5854.jpg",
+      "brandTags": [
+        "RUGER"
+      ]
     },
     {
       "id": "magnum-98",
@@ -1078,7 +1367,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/098-KNT12-002.jpg"
+      "image": "assets/products/098-KNT12-002.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-99",
@@ -1089,7 +1381,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "33.5",
-      "image": "assets/products/099-7-XRP-010.jpg"
+      "image": "assets/products/099-7-XRP-010.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-100",
@@ -1100,7 +1395,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/100-silver-slug-magnum-39gr-cal-12--pr--34576.jpg"
+      "image": "assets/products/100-silver-slug-magnum-39gr-cal-12--pr--34576.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-101",
@@ -1111,7 +1409,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/101-potenza-knockout-8x91mm-magnum-cal-12--pr--33577.jpg"
+      "image": "assets/products/101-potenza-knockout-8x91mm-magnum-cal-12--pr--33577.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-102",
@@ -1122,7 +1423,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/102-potenza-varmint-28x62mm-cal-12--pr--33890.jpg"
+      "image": "assets/products/102-potenza-varmint-28x62mm-cal-12--pr--33890.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-103",
@@ -1133,7 +1437,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/103-potenza-heavyspeed-magnum-10x86mm-cal-12--pr--33573.jpg"
+      "image": "assets/products/103-potenza-heavyspeed-magnum-10x86mm-cal-12--pr--33573.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-104",
@@ -1144,7 +1451,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/104-potenza-knockout-6x91mm-cal-12--pr--33562.jpg"
+      "image": "assets/products/104-potenza-knockout-6x91mm-cal-12--pr--33562.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-105",
@@ -1155,7 +1465,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/105-big-game-12x865mm-44gr-cal-12--pr--3683.jpg"
+      "image": "assets/products/105-big-game-12x865mm-44gr-cal-12--pr--3683.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-106",
@@ -1166,7 +1479,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/106-biturbo-high-performance-36gr-cal-12--pr--34434.jpg"
+      "image": "assets/products/106-biturbo-high-performance-36gr-cal-12--pr--34434.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-107",
@@ -1177,7 +1493,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/107-brown-high-performance-33gr-cal-12--pr--34431.jpg"
+      "image": "assets/products/107-brown-high-performance-33gr-cal-12--pr--34431.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-108",
@@ -1188,7 +1507,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/108-dispersante-34gr-cal-12--pr--34514.jpg"
+      "image": "assets/products/108-dispersante-34gr-cal-12--pr--34514.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-109",
@@ -1199,7 +1521,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/109-veloce-36gr-cal-12--pr--34435.jpg"
+      "image": "assets/products/109-veloce-36gr-cal-12--pr--34435.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-110",
@@ -1210,7 +1535,10 @@
       "brand": "LAMBRO",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/110-a1-speciale-34gr-cal-12--pr--34513.jpg"
+      "image": "assets/products/110-a1-speciale-34gr-cal-12--pr--34513.jpg",
+      "brandTags": [
+        "LAMBRO"
+      ]
     },
     {
       "id": "magnum-111",
@@ -1221,7 +1549,10 @@
       "brand": "ELEY",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/111-ELEY-semi-auto-benchrest-precision-1.jpg"
+      "image": "assets/products/111-ELEY-semi-auto-benchrest-precision-1.jpg",
+      "brandTags": [
+        "ELEY"
+      ]
     },
     {
       "id": "magnum-112",
@@ -1232,7 +1563,10 @@
       "brand": "ELEY",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/112-ELEY-team-22lr-ammunition-1.jpg"
+      "image": "assets/products/112-ELEY-team-22lr-ammunition-1.jpg",
+      "brandTags": [
+        "ELEY"
+      ]
     },
     {
       "id": "magnum-113",
@@ -1243,7 +1577,10 @@
       "brand": "ELEY",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/113-ELEY-biathlon-club-22lr-ammunition-1-600x416.jpg"
+      "image": "assets/products/113-ELEY-biathlon-club-22lr-ammunition-1-600x416.jpg",
+      "brandTags": [
+        "ELEY"
+      ]
     },
     {
       "id": "magnum-114",
@@ -1254,7 +1591,10 @@
       "brand": "ELEY",
       "caliber": "22LR",
       "barrelLength": "",
-      "image": "assets/products/114-ELEY-sport-22lr-ammunition-1-600x416.jpg"
+      "image": "assets/products/114-ELEY-sport-22lr-ammunition-1-600x416.jpg",
+      "brandTags": [
+        "ELEY"
+      ]
     },
     {
       "id": "magnum-115",
@@ -1265,7 +1605,10 @@
       "brand": "MORISSON",
       "caliber": "44 MAG",
       "barrelLength": "51",
-      "image": "assets/products/115-b-ML1218-ML1220.jpg"
+      "image": "assets/products/115-b-ML1218-ML1220.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-116",
@@ -1276,7 +1619,10 @@
       "brand": "MORISSON",
       "caliber": "22LR",
       "barrelLength": "51",
-      "image": "assets/products/116-ML1218-ML1220.jpg"
+      "image": "assets/products/116-ML1218-ML1220.jpg",
+      "brandTags": [
+        "MORISSON"
+      ]
     },
     {
       "id": "magnum-117",
@@ -1287,7 +1633,10 @@
       "brand": "SCHMIDT & BENDER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/117---3-21x50-Exos-LP-SFP-D7.jpg"
+      "image": "assets/products/117---3-21x50-Exos-LP-SFP-D7.jpg",
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ]
     },
     {
       "id": "magnum-118",
@@ -1298,7 +1647,10 @@
       "brand": "SCHMIDT & BENDER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/118---3-18x42-META-LP7-2.BE.jpg"
+      "image": "assets/products/118---3-18x42-META-LP7-2.BE.jpg",
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ]
     },
     {
       "id": "magnum-119",
@@ -1309,7 +1661,10 @@
       "brand": "SCHMIDT & BENDER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/119-c-2_5-10x50_polar_t96_sr.jpg"
+      "image": "assets/products/119-c-2_5-10x50_polar_t96_sr.jpg",
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ]
     },
     {
       "id": "magnum-120",
@@ -1320,7 +1675,10 @@
       "brand": "SCHMIDT & BENDER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/120-4-16x56_polar_t96_sr.jpg"
+      "image": "assets/products/120-4-16x56_polar_t96_sr.jpg",
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ]
     },
     {
       "id": "magnum-121",
@@ -1331,7 +1689,10 @@
       "brand": "SCHMIDT & BENDER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/121-3-12x54_polar_t96_sr.jpg"
+      "image": "assets/products/121-3-12x54_polar_t96_sr.jpg",
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ]
     },
     {
       "id": "magnum-122",
@@ -1342,7 +1703,10 @@
       "brand": "FABARM",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/122-det_zoom_STL-COMPETITION-C6-rgb1.jpg"
+      "image": "assets/products/122-det_zoom_STL-COMPETITION-C6-rgb1.jpg",
+      "brandTags": [
+        "FABARM"
+      ]
     },
     {
       "id": "magnum-123",
@@ -1353,7 +1717,10 @@
       "brand": "FABARM",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/123-det_axis_s-h_as_zoom.jpg"
+      "image": "assets/products/123-det_axis_s-h_as_zoom.jpg",
+      "brandTags": [
+        "FABARM"
+      ]
     },
     {
       "id": "magnum-124",
@@ -1364,7 +1731,10 @@
       "brand": "FABARM",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/124-FABARM-Barrel.jpg"
+      "image": "assets/products/124-FABARM-Barrel.jpg",
+      "brandTags": [
+        "FABARM"
+      ]
     },
     {
       "id": "magnum-125",
@@ -1375,7 +1745,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/125-308-WIN--SPCE--180.jpg"
+      "image": "assets/products/125-308-WIN--SPCE--180.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-126",
@@ -1386,7 +1759,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/126-223-REM--69.jpg"
+      "image": "assets/products/126-223-REM--69.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-127",
@@ -1397,7 +1773,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/127-223-REM--55.jpg"
+      "image": "assets/products/127-223-REM--55.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-128",
@@ -1408,7 +1787,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/128-7-mm-REM.-MAG.--Edge.jpg"
+      "image": "assets/products/128-7-mm-REM.-MAG.--Edge.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-129",
@@ -1419,7 +1801,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/129-357-Magnum.jpg"
+      "image": "assets/products/129-357-Magnum.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-130",
@@ -1430,7 +1815,10 @@
       "brand": "POF USA",
       "caliber": "",
       "barrelLength": "41.9",
-      "image": "assets/products/130-POF-USA-P-415-EDGE.jpg"
+      "image": "assets/products/130-POF-USA-P-415-EDGE.jpg",
+      "brandTags": [
+        "POF USA"
+      ]
     },
     {
       "id": "magnum-131",
@@ -1441,7 +1829,10 @@
       "brand": "POF USA",
       "caliber": "",
       "barrelLength": "26.67",
-      "image": "assets/products/131-POF-USA-P-415-EDGE-SBR.jpg"
+      "image": "assets/products/131-POF-USA-P-415-EDGE-SBR.jpg",
+      "brandTags": [
+        "POF USA"
+      ]
     },
     {
       "id": "magnum-132",
@@ -1452,7 +1843,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/132-Torero-1-6x24-IR.jpg"
+      "image": "assets/products/132-Torero-1-6x24-IR.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-133",
@@ -1460,10 +1854,13 @@
       "price": "900 ლარი",
       "amount": 900,
       "category": "ოპტიკა",
-      "brand": "REDWIN",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/133-Blackbeast-1-10x24-IR.jpg"
+      "image": "assets/products/133-Blackbeast-1-10x24-IR.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-134",
@@ -1474,7 +1871,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/134-Kuiper-1.2-6x24-IR---RW8.jpg"
+      "image": "assets/products/134-Kuiper-1.2-6x24-IR---RW8.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-135",
@@ -1485,7 +1885,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/135-Towa-1.2-6x24-IR-SFP--RW13.jpg"
+      "image": "assets/products/135-Towa-1.2-6x24-IR-SFP--RW13.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-136",
@@ -1496,7 +1899,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/136-4-Rynox-1.2-6x24-SF--RW9.jpg"
+      "image": "assets/products/136-4-Rynox-1.2-6x24-SF--RW9.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-137",
@@ -1507,7 +1913,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/137-REDWIN-Seasons-4-16x44-FFP--RW4.jpg"
+      "image": "assets/products/137-REDWIN-Seasons-4-16x44-FFP--RW4.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-138",
@@ -1515,10 +1924,13 @@
       "price": "500 ლარი FMC BAK4 Prism, Crystle Clear Image, Premium Optical System Super Compact, 1MOA Adjustment, Wild F.O.V, 97.9mm Expansive Eye Relief,Etched Reticle, Highlight LED illumination 8 Levels Daylight & 2 Levels Night Vision w/ Illumination level Reminder, 7hrs Auto Shut Off, IPX67, 1.4 inch (Fully Co-witness) & 1.6 inch( 1/3 Co-witness) Mounting System",
       "amount": 500,
       "category": "ოპტიკა",
-      "brand": "REDWIN",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/138-Corsac-1x18-Micro-Prism-RWMP1.jpg"
+      "image": "assets/products/138-Corsac-1x18-Micro-Prism-RWMP1.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-139",
@@ -1529,7 +1941,10 @@
       "brand": "REDWIN",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/139-REDWIN-Cobra-MOS-1x26x22-RMR--RWD17.jpg"
+      "image": "assets/products/139-REDWIN-Cobra-MOS-1x26x22-RMR--RWD17.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-140",
@@ -1540,7 +1955,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/140-REDWIN-Cobra-CRO-28x20-MTR-RMR--RWD22.jpg"
+      "image": "assets/products/140-REDWIN-Cobra-CRO-28x20-MTR-RMR--RWD22.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-141",
@@ -1551,7 +1969,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/141-Mantis-1x22-Gen-II-RWD20.jpg"
+      "image": "assets/products/141-Mantis-1x22-Gen-II-RWD20.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-142",
@@ -1562,7 +1983,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/142-Cherno-1x22-MRT-Solar--RWD15.jpg"
+      "image": "assets/products/142-Cherno-1x22-MRT-Solar--RWD15.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-143",
@@ -1573,7 +1997,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/143---Rome-8x42--Rome-10x42.jpg"
+      "image": "assets/products/143---Rome-8x42--Rome-10x42.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-144",
@@ -1584,7 +2011,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/144-Rome-8x42--Rome-10x42.jpg"
+      "image": "assets/products/144-Rome-8x42--Rome-10x42.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-145",
@@ -1595,7 +2025,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/145-5-MKA556-140S--Green.jpg"
+      "image": "assets/products/145-5-MKA556-140S--Green.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-146",
@@ -1606,7 +2039,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/146-MKA556-140S--Green.jpg"
+      "image": "assets/products/146-MKA556-140S--Green.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-147",
@@ -1617,7 +2053,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/147-MKA556-160S.jpg"
+      "image": "assets/products/147-MKA556-160S.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-148",
@@ -1628,7 +2067,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/148---MKA556-180S.jpg"
+      "image": "assets/products/148---MKA556-180S.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-149",
@@ -1639,7 +2081,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/149-MKA556-180S.jpg"
+      "image": "assets/products/149-MKA556-180S.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-150",
@@ -1650,7 +2095,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/150-MKA556-220S--Black.jpg"
+      "image": "assets/products/150-MKA556-220S--Black.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-151",
@@ -1661,7 +2109,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/151-MKA556-220S.jpg"
+      "image": "assets/products/151-MKA556-220S.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-152",
@@ -1672,7 +2123,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/152-4-MKA919-TR2--Green.jpg"
+      "image": "assets/products/152-4-MKA919-TR2--Green.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-153",
@@ -1683,7 +2137,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/153-MKA919-TR2--Green.jpg"
+      "image": "assets/products/153-MKA919-TR2--Green.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-154",
@@ -1694,7 +2151,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/154---MKA919-TR2.jpg"
+      "image": "assets/products/154---MKA919-TR2.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-155",
@@ -1705,7 +2165,10 @@
       "brand": "MKA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/155-MKA919-TR2.jpg"
+      "image": "assets/products/155-MKA919-TR2.jpg",
+      "brandTags": [
+        "MKA"
+      ]
     },
     {
       "id": "magnum-156",
@@ -1716,7 +2179,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "47",
-      "image": "assets/products/156-XRS-002.jpg"
+      "image": "assets/products/156-XRS-002.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-157",
@@ -1727,7 +2193,10 @@
       "brand": "GGG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/157-GGG--308--165.jpg"
+      "image": "assets/products/157-GGG--308--165.jpg",
+      "brandTags": [
+        "GGG"
+      ]
     },
     {
       "id": "magnum-158",
@@ -1738,7 +2207,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/158-6-5-CREEDMOOR--TXRG-EDGE--120.jpg"
+      "image": "assets/products/158-6-5-CREEDMOOR--TXRG-EDGE--120.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-159",
@@ -1749,7 +2221,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/159-6-5-CREEDMOOR--TXRG--120.jpg"
+      "image": "assets/products/159-6-5-CREEDMOOR--TXRG--120.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-160",
@@ -1760,7 +2235,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/160-6-5-CREEDMOOR--SP--156.jpg"
+      "image": "assets/products/160-6-5-CREEDMOOR--SP--156.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-161",
@@ -1771,7 +2249,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/161-300_win_mag_hpbt_smk_168grs.jpg"
+      "image": "assets/products/161-300_win_mag_hpbt_smk_168grs.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-162",
@@ -1782,7 +2263,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/162-300-AAC--FMJ.jpg"
+      "image": "assets/products/162-300-AAC--FMJ.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-163",
@@ -1793,7 +2277,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/163-7-8x57-JRS.jpg"
+      "image": "assets/products/163-7-8x57-JRS.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-164",
@@ -1804,7 +2291,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/164-8x57_JS_SB_SPCE.jpg"
+      "image": "assets/products/164-8x57_JS_SB_SPCE.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-165",
@@ -1815,7 +2305,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/165-30-30-Win.jpg"
+      "image": "assets/products/165-30-30-Win.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-166",
@@ -1826,7 +2319,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/166-7x57R--FMJ.jpg"
+      "image": "assets/products/166-7x57R--FMJ.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-167",
@@ -1837,7 +2333,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/167-7x57--spce.jpg"
+      "image": "assets/products/167-7x57--spce.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-168",
@@ -1848,7 +2347,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/168-22-250-REM.jpg"
+      "image": "assets/products/168-22-250-REM.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-169",
@@ -1859,7 +2361,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/169-45-COLT.jpg"
+      "image": "assets/products/169-45-COLT.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-170",
@@ -1870,7 +2375,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/170-44-Rem.-Mag..jpg"
+      "image": "assets/products/170-44-Rem.-Mag..jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-171",
@@ -1881,7 +2389,10 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/171-4-mm-Randz-Court.jpg"
+      "image": "assets/products/171-4-mm-Randz-Court.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-172",
@@ -1892,7 +2403,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/172-Fenix-GL06-365-LED-Flashlight.jpg"
+      "image": "assets/products/172-Fenix-GL06-365-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-173",
@@ -1903,7 +2417,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/173-Fenix-GL06-LED-Flashlight.jpg"
+      "image": "assets/products/173-Fenix-GL06-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-174",
@@ -1914,7 +2431,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/174-Fenix-TK30-LED-Flashlight.jpg"
+      "image": "assets/products/174-Fenix-TK30-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-175",
@@ -1925,7 +2445,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/175-Fenix-TK26R-LED-Flashlight-3400-.jpg"
+      "image": "assets/products/175-Fenix-TK26R-LED-Flashlight-3400-.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-176",
@@ -1936,7 +2459,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/176-Fenix-TK22TAC-LED-Flashlight.jpg"
+      "image": "assets/products/176-Fenix-TK22TAC-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-177",
@@ -1947,7 +2473,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/177-Fenix-TK11TAC-LED-Flashlight.jpg"
+      "image": "assets/products/177-Fenix-TK11TAC-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-178",
@@ -1958,7 +2487,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/178-Fenix-PD40R-V2.0.jpg"
+      "image": "assets/products/178-Fenix-PD40R-V2.0.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-179",
@@ -1969,7 +2501,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/179-a-slug-hp.jpg"
+      "image": "assets/products/179-a-slug-hp.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-180",
@@ -1980,7 +2515,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/180----slug-hp.jpg"
+      "image": "assets/products/180----slug-hp.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-181",
@@ -1991,7 +2529,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/181-slug-hp.jpg"
+      "image": "assets/products/181-slug-hp.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-182",
@@ -2002,7 +2543,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/182-hornet.jpg"
+      "image": "assets/products/182-hornet.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-183",
@@ -2013,7 +2557,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/183-baracuda_8.jpg"
+      "image": "assets/products/183-baracuda_8.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-184",
@@ -2024,7 +2571,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "47",
-      "image": "assets/products/184-scx-001.jpg"
+      "image": "assets/products/184-scx-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-185",
@@ -2032,10 +2582,13 @@
       "price": "775 ლარი",
       "amount": 775,
       "category": "ოპტიკა",
-      "brand": "REDWIN",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/185-Torero-3-18x50-FFP-IR---RW19.jpg"
+      "image": "assets/products/185-Torero-3-18x50-FFP-IR---RW19.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-186",
@@ -2046,7 +2599,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/186-Kuiper-4-20x50-FFP-IR-RW16.jpg"
+      "image": "assets/products/186-Kuiper-4-20x50-FFP-IR-RW16.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-187",
@@ -2057,7 +2613,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/187-Cobra-TRA-21x17-3MOA-RWD23.jpg"
+      "image": "assets/products/187-Cobra-TRA-21x17-3MOA-RWD23.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-188",
@@ -2068,7 +2627,10 @@
       "brand": "CITADEL",
       "caliber": "9 MM",
       "barrelLength": "",
-      "image": "assets/products/188-Citadel-Arms-Centurion-CP9--cal.-9-mm.-CITCP9ODG.jpg"
+      "image": "assets/products/188-Citadel-Arms-Centurion-CP9--cal.-9-mm.-CITCP9ODG.jpg",
+      "brandTags": [
+        "CITADEL"
+      ]
     },
     {
       "id": "magnum-189",
@@ -2079,7 +2641,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/189-ss12-002.jpg"
+      "image": "assets/products/189-ss12-002.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-190",
@@ -2090,7 +2655,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/190-ss12-001.jpg"
+      "image": "assets/products/190-ss12-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-191",
@@ -2101,7 +2669,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/191-MH-X-01.jpg"
+      "image": "assets/products/191-MH-X-01.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-192",
@@ -2112,7 +2683,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/192-MH-X-02.jpg"
+      "image": "assets/products/192-MH-X-02.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-193",
@@ -2123,7 +2697,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/193-MH-X-03.jpg"
+      "image": "assets/products/193-MH-X-03.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-194",
@@ -2134,7 +2711,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/194----M13-S-11-min.jpg"
+      "image": "assets/products/194----M13-S-11-min.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-195",
@@ -2145,7 +2725,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/195-S12-S-03.jpg"
+      "image": "assets/products/195-S12-S-03.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-196",
@@ -2156,7 +2739,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "47",
-      "image": "assets/products/196-c-XRS-001.jpg"
+      "image": "assets/products/196-c-XRS-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-197",
@@ -2167,7 +2753,10 @@
       "brand": "HUNT GROUP",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/197-a-HS12-001.jpg"
+      "image": "assets/products/197-a-HS12-001.jpg",
+      "brandTags": [
+        "HUNT GROUP"
+      ]
     },
     {
       "id": "magnum-198",
@@ -2178,7 +2767,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/198-Seasons-6-24x50FFP--RW5.jpg"
+      "image": "assets/products/198-Seasons-6-24x50FFP--RW5.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-199",
@@ -2189,7 +2781,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/199-Rome-6-24x50SF-RW3--Fit-For--firearms--Max..223--Mid-Range.jpg"
+      "image": "assets/products/199-Rome-6-24x50SF-RW3--Fit-For--firearms--Max..223--Mid-Range.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-200",
@@ -2200,7 +2795,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/200-Rome-4-16x44SF.jpg"
+      "image": "assets/products/200-Rome-4-16x44SF.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-201",
@@ -2211,7 +2809,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/201-8-SBW--SBS.jpg"
+      "image": "assets/products/201-8-SBW--SBS.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-202",
@@ -2222,7 +2823,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/202-2-SP--SPE.jpg"
+      "image": "assets/products/202-2-SP--SPE.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-203",
@@ -2233,7 +2837,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/203-_-2-SP--SPE.jpg"
+      "image": "assets/products/203-_-2-SP--SPE.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-204",
@@ -2244,7 +2851,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/204---SP--SPE.jpg"
+      "image": "assets/products/204---SP--SPE.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-205",
@@ -2255,7 +2865,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "50",
-      "image": "assets/products/205-8-STRYKER-FM-12.jpg"
+      "image": "assets/products/205-8-STRYKER-FM-12.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-206",
@@ -2266,7 +2879,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/206----IMPACTOR-SMW12.jpg"
+      "image": "assets/products/206----IMPACTOR-SMW12.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-207",
@@ -2277,7 +2893,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "71",
-      "image": "assets/products/207-b-IMPACTOR-S-12.jpg"
+      "image": "assets/products/207-b-IMPACTOR-S-12.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-208",
@@ -2288,7 +2907,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "50",
-      "image": "assets/products/208----GLADIATOR-FSM-12.jpg"
+      "image": "assets/products/208----GLADIATOR-FSM-12.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-209",
@@ -2299,7 +2921,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "50",
-      "image": "assets/products/209-3-GLADIATOR-W-121.jpg"
+      "image": "assets/products/209-3-GLADIATOR-W-121.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-210",
@@ -2310,7 +2935,10 @@
       "brand": "ARMED",
       "caliber": "",
       "barrelLength": "50",
-      "image": "assets/products/210----GLADIATOR-D-122.jpg"
+      "image": "assets/products/210----GLADIATOR-D-122.jpg",
+      "brandTags": [
+        "ARMED"
+      ]
     },
     {
       "id": "magnum-211",
@@ -2321,7 +2949,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/211----Redstone-Elegant-Silver-Black.jpg"
+      "image": "assets/products/211----Redstone-Elegant-Silver-Black.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-212",
@@ -2332,7 +2963,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/212-Redstone-Gamo-Max5.jpg"
+      "image": "assets/products/212-Redstone-Gamo-Max5.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-213",
@@ -2343,7 +2977,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/213---InterArms-Elegant-Silver-Black.jpg"
+      "image": "assets/products/213---InterArms-Elegant-Silver-Black.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-214",
@@ -2354,7 +2991,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/214-InterArms-Elegant-Black.jpg"
+      "image": "assets/products/214-InterArms-Elegant-Black.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-215",
@@ -2365,7 +3005,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/215-_InterArms-Gamo-Max5.jpg"
+      "image": "assets/products/215-_InterArms-Gamo-Max5.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-216",
@@ -2376,7 +3019,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/216---InterArms-Extra-Black.jpg"
+      "image": "assets/products/216---InterArms-Extra-Black.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-217",
@@ -2387,7 +3033,10 @@
       "brand": "ARMSAN",
       "caliber": "12",
       "barrelLength": "76",
-      "image": "assets/products/217---P612Grande_RealtreeMax5.jpg"
+      "image": "assets/products/217---P612Grande_RealtreeMax5.jpg",
+      "brandTags": [
+        "ARMSAN"
+      ]
     },
     {
       "id": "magnum-218",
@@ -2398,7 +3047,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "47",
-      "image": "assets/products/218-9-Aselkon-ASK-S4.jpg"
+      "image": "assets/products/218-9-Aselkon-ASK-S4.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-219",
@@ -2409,7 +3061,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "47",
-      "image": "assets/products/219---Aselkon-Tactical-RS1.jpg"
+      "image": "assets/products/219---Aselkon-Tactical-RS1.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-220",
@@ -2420,7 +3075,10 @@
       "brand": "ASELKON",
       "caliber": "12",
       "barrelLength": "71",
-      "image": "assets/products/220--Otomatik_Ahsap_Dark_Black-1.jpg"
+      "image": "assets/products/220--Otomatik_Ahsap_Dark_Black-1.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-221",
@@ -2431,7 +3089,10 @@
       "brand": "PARDUS",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/221----PARDUS-AS.jpg"
+      "image": "assets/products/221----PARDUS-AS.jpg",
+      "brandTags": [
+        "PARDUS"
+      ]
     },
     {
       "id": "magnum-222",
@@ -2442,51 +3103,66 @@
       "brand": "PARDUS",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/222-7-PARDUS-SS.jpg"
+      "image": "assets/products/222-7-PARDUS-SS.jpg",
+      "brandTags": [
+        "PARDUS"
+      ]
     },
     {
       "id": "magnum-223",
       "name": "9,3 x 72 R, SP, 193 grs.",
       "price": "13,70 ლარი",
       "amount": 13,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ვაზნები",
+      "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/223-9-3-x-72-R.jpg"
+      "image": "assets/products/223-9-3-x-72-R.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-224",
       "name": "10 mm AUTO, FMJ, 180 grs.",
       "price": "2,30 ლარი",
       "amount": 2,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ვაზნები",
+      "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/224-10-mm-AUTO.jpg"
+      "image": "assets/products/224-10-mm-AUTO.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-225",
       "name": "9 mm LUGER, FMJ, 124 grs.",
       "price": "1,40 ლარი",
       "amount": 1,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ვაზნები",
+      "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/225-9-mm-LUGER.jpg"
+      "image": "assets/products/225-9-mm-LUGER.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-226",
       "name": "9 mm BROW. COURT, FMJ, 92 grs.",
       "price": "2,00 ლარი",
       "amount": 2,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ვაზნები",
+      "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/226-9-mm-BROW.-COURT.jpg"
+      "image": "assets/products/226-9-mm-BROW.-COURT.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-227",
@@ -2497,7 +3173,10 @@
       "brand": "WINCHESTER",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/227-Winchester-S17W20-Caliber-17WSM.jpg"
+      "image": "assets/products/227-Winchester-S17W20-Caliber-17WSM.jpg",
+      "brandTags": [
+        "WINCHESTER"
+      ]
     },
     {
       "id": "magnum-228",
@@ -2508,7 +3187,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/228-Scarlet-1-6x24SF.jpg"
+      "image": "assets/products/228-Scarlet-1-6x24SF.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-229",
@@ -2519,7 +3201,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/229-TOWA-2.5-15x56-IR--RW12.jpg"
+      "image": "assets/products/229-TOWA-2.5-15x56-IR--RW12.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-230",
@@ -2530,7 +3215,10 @@
       "brand": "FN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/230----5-7x28.jpg"
+      "image": "assets/products/230----5-7x28.jpg",
+      "brandTags": [
+        "FN"
+      ]
     },
     {
       "id": "magnum-231",
@@ -2538,10 +3226,13 @@
       "price": "830 ლარი",
       "amount": 830,
       "category": "ოპტიკა",
-      "brand": "REDWIN",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/231-Torero-5-30x56-FFP-IR--RW20.jpg"
+      "image": "assets/products/231-Torero-5-30x56-FFP-IR--RW20.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-232",
@@ -2552,7 +3243,10 @@
       "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/232-9-Rome-4-16x44SF.jpg"
+      "image": "assets/products/232-9-Rome-4-16x44SF.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-233",
@@ -2563,18 +3257,24 @@
       "brand": "SELLIER & BELLOT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/233-SB-V340532.jpg"
+      "image": "assets/products/233-SB-V340532.jpg",
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ]
     },
     {
       "id": "magnum-234",
       "name": "30mm, 34 mm One Piece Mount Ring M9, M10",
       "price": "M9- 210 ლარი, M10- 225 lari",
       "amount": 9,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ოპტიკა",
+      "brand": "REDWIN",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/234-30mm-One-Piece-Mount-Ring-M9.jpg"
+      "image": "assets/products/234-30mm-One-Piece-Mount-Ring-M9.jpg",
+      "brandTags": [
+        "REDWIN"
+      ]
     },
     {
       "id": "magnum-235",
@@ -2582,10 +3282,13 @@
       "price": "1070-250=820 ლარი",
       "amount": 1070,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/235-OP3_GM4164UMOA_PRO_1.jpg"
+      "image": "assets/products/235-OP3_GM4164UMOA_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-236",
@@ -2593,10 +3296,13 @@
       "price": "1020-240=780 ლარი",
       "amount": 1020,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/236-OP3_GM3124UMOA_PRO_1.jpg"
+      "image": "assets/products/236-OP3_GM3124UMOA_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-237",
@@ -2604,10 +3310,13 @@
       "price": "910-215=695 ლარი",
       "amount": 910,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/237----SCP3_274LAOIEW_PRO_1.jpg"
+      "image": "assets/products/237----SCP3_274LAOIEW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-238",
@@ -2615,10 +3324,13 @@
       "price": "760-175=585 ლარი",
       "amount": 760,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/238-SCP3_UM416AOIEW_PRO_01.jpg"
+      "image": "assets/products/238-SCP3_UM416AOIEW_PRO_01.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-239",
@@ -2626,10 +3338,13 @@
       "price": "745-170=575 ლარი",
       "amount": 745,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/239-SCP3_U416AOIEW_PRO_1.jpg"
+      "image": "assets/products/239-SCP3_U416AOIEW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-240",
@@ -2637,10 +3352,13 @@
       "price": "690-155=535 ლარი",
       "amount": 690,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/240-SCP_U4164AOIEW_PRO_01.jpg"
+      "image": "assets/products/240-SCP_U4164AOIEW_PRO_01.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-241",
@@ -2648,10 +3366,13 @@
       "price": "740-170=570 ლარი",
       "amount": 740,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/241-SCP_U6245AOIEW_PRO_1.jpg"
+      "image": "assets/products/241-SCP_U6245AOIEW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-242",
@@ -2659,10 +3380,13 @@
       "price": "730-170=560 ლარი",
       "amount": 730,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/242---SCP_T4IE_PRO_1.jpg"
+      "image": "assets/products/242---SCP_T4IE_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-243",
@@ -2670,10 +3394,13 @@
       "price": "705-160=545 ლარი",
       "amount": 705,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/243-SCP3_U312AOIEW_PRO_1.jpg"
+      "image": "assets/products/243-SCP3_U312AOIEW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-244",
@@ -2681,10 +3408,13 @@
       "price": "660-145=515 ლარი",
       "amount": 660,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/244-SCP_M312AOWQ_PRO_1.jpg"
+      "image": "assets/products/244-SCP_M312AOWQ_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-245",
@@ -2692,10 +3422,13 @@
       "price": "660-145=515 ლარი",
       "amount": 660,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/245-SCP_M312AOD_PRO_1.jpg"
+      "image": "assets/products/245-SCP_M312AOD_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-246",
@@ -2703,10 +3436,13 @@
       "price": "660-145=515 ლარი",
       "amount": 660,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/246-SCP_U394AOIEW_PRO.jpg"
+      "image": "assets/products/246-SCP_U394AOIEW_PRO.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-247",
@@ -2714,10 +3450,13 @@
       "price": "605-130=475 ლარი",
       "amount": 605,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/247-9-SCP_M392AOIEWQ_PRO_01.jpg"
+      "image": "assets/products/247-9-SCP_M392AOIEWQ_PRO_01.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-248",
@@ -2725,10 +3464,13 @@
       "price": "550-115=435 ლარი",
       "amount": 550,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/248-3-SCP_M392AOLWQ_PRO_1.jpg"
+      "image": "assets/products/248-3-SCP_M392AOLWQ_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-249",
@@ -2736,10 +3478,13 @@
       "price": "340-60=280 ლარი",
       "amount": 340,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/249-7-SCP_U432FD_FW_PRO_1.jpg"
+      "image": "assets/products/249-7-SCP_U432FD_FW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-250",
@@ -2747,10 +3492,13 @@
       "price": "305-45=260 ლარი",
       "amount": 305,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/250-SCP_3940EW_PRO_1.jpg"
+      "image": "assets/products/250-SCP_3940EW_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-251",
@@ -2758,21 +3506,27 @@
       "price": "50 ლარი",
       "amount": 50,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/251-SCP_ES403_PRO_1.jpg"
+      "image": "assets/products/251-SCP_ES403_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-252",
       "name": "ამორტიზატორი UTG Butt Pad for Model 47 Stock,RB-K7BTP01",
       "price": "50 ლარი",
       "amount": 50,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/252-RB_K7BTP01_PRO_1.jpg"
+      "image": "assets/products/252-RB_K7BTP01_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-253",
@@ -2780,10 +3534,13 @@
       "price": "715-180=535 ლარი",
       "amount": 715,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/253-OT_RDM16R.jpg"
+      "image": "assets/products/253-OT_RDM16R.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-254",
@@ -2791,10 +3548,13 @@
       "price": "OP-RDM20CT - 520-120=400 ლარი, OP-RDM20CTS - 550-120=430 ლარი",
       "amount": 20,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/254-OP_RDM20CT.jpg"
+      "image": "assets/products/254-OP_RDM20CT.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-255",
@@ -2802,10 +3562,13 @@
       "price": "495-120=375 ლარი",
       "amount": 495,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/255-OP_RDM20G.jpg"
+      "image": "assets/products/255-OP_RDM20G.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-256",
@@ -2813,43 +3576,55 @@
       "price": "360-80=280 ლარი",
       "amount": 360,
       "category": "ოპტიკა",
-      "brand": "",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/256-SCP_TDTDQ_PRO_01.jpg"
+      "image": "assets/products/256-SCP_TDTDQ_PRO_01.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-257",
       "name": "კოლიმატორული სამიზნე UTG Sporting Type 4.2\\\\",
       "price": "330-70=260 ლარი",
       "amount": 330,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/257-SCP_DS3840TDQ_PRO_1.jpg"
+      "image": "assets/products/257-SCP_DS3840TDQ_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-258",
       "name": "კოლიმატორული სამიზნე UTG Sporting Type 3.9\\\\",
       "price": "330-70=260 ლარი",
       "amount": 330,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/258-SCP_DS3039W_PRO_01.jpg"
+      "image": "assets/products/258-SCP_DS3039W_PRO_01.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-259",
       "name": "კოლიმატორული სამიზნის ადაპტორი UTG Super Slim 45 Degree Angle Mount for the UTG RDM20 Reflex Micro Dot, China,RDM-20XSD",
       "price": "70 ლარი",
       "amount": 70,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ოპტიკა",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/259-RDM_20XSD.jpg"
+      "image": "assets/products/259-RDM_20XSD.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-260",
@@ -2857,10 +3632,13 @@
       "price": "1380 ლარი",
       "amount": 1380,
       "category": "პნევმატიკა",
-      "brand": "",
+      "brand": "ASELKON",
       "caliber": "4.5 MM",
       "barrelLength": "550",
-      "image": "assets/products/260-RX6-01.jpg"
+      "image": "assets/products/260-RX6-01.jpg",
+      "brandTags": [
+        "ASELKON"
+      ]
     },
     {
       "id": "magnum-261",
@@ -2868,10 +3646,13 @@
       "price": "95 ლარი",
       "amount": 95,
       "category": "დანები",
-      "brand": "KNIFE",
+      "brand": "GANZO",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/261-G7453P-BK-WS.jpg"
+      "image": "assets/products/261-G7453P-BK-WS.jpg",
+      "brandTags": [
+        "GANZO"
+      ]
     },
     {
       "id": "magnum-262",
@@ -2879,10 +3660,13 @@
       "price": "7 ლარი",
       "amount": 7,
       "category": "დანები",
-      "brand": "",
+      "brand": "GANZO",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/262-Knife-bag2.jpg"
+      "image": "assets/products/262-Knife-bag2.jpg",
+      "brandTags": [
+        "GANZO"
+      ]
     },
     {
       "id": "magnum-263",
@@ -2890,10 +3674,13 @@
       "price": "6 ლარი",
       "amount": 6,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "brand": "GANZO",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/263-Whistle.jpg"
+      "image": "assets/products/263-Whistle.jpg",
+      "brandTags": [
+        "GANZO"
+      ]
     },
     {
       "id": "magnum-264",
@@ -2901,10 +3688,13 @@
       "price": "775 ლარი",
       "amount": 775,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "brand": "HILL",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/264-HILL-PUMP.jpg"
+      "image": "assets/products/264-HILL-PUMP.jpg",
+      "brandTags": [
+        "HILL"
+      ]
     },
     {
       "id": "magnum-265",
@@ -2915,7 +3705,10 @@
       "brand": "STEYR",
       "caliber": "4.5 MM",
       "barrelLength": "",
-      "image": "assets/products/265-c-h5a1.jpg"
+      "image": "assets/products/265-c-h5a1.jpg",
+      "brandTags": [
+        "STEYR"
+      ]
     },
     {
       "id": "magnum-266",
@@ -2926,7 +3719,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/266-Fenix-AER-02-V2.0.jpg"
+      "image": "assets/products/266-Fenix-AER-02-V2.0.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-267",
@@ -2937,7 +3733,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/267-Fenix-ARE-A4.jpg"
+      "image": "assets/products/267-Fenix-ARE-A4.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-268",
@@ -2948,7 +3747,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/268-Fenix-ARE-A2.jpg"
+      "image": "assets/products/268-Fenix-ARE-A2.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-269",
@@ -2959,7 +3761,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/269-fenix-arb-l37-12000-1-1024-001.jpg"
+      "image": "assets/products/269-fenix-arb-l37-12000-1-1024-001.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-270",
@@ -2967,10 +3772,13 @@
       "price": "66,00 ლარი, საბითუმო (მინიმალური პარტია) 5 ყუთი - 300,00 ლარი",
       "amount": 66,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "brand": "MIDI",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/270-----.jpg"
+      "image": "assets/products/270-----.jpg",
+      "brandTags": [
+        "MIDI"
+      ]
     },
     {
       "id": "magnum-271",
@@ -2981,7 +3789,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/271---silver_point_45.jpg"
+      "image": "assets/products/271---silver_point_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-272",
@@ -2992,7 +3803,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/272-baracuda-hunter-extreme_45_web.jpg"
+      "image": "assets/products/272-baracuda-hunter-extreme_45_web.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-273",
@@ -3003,7 +3817,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/273-terminator_45_web.jpg"
+      "image": "assets/products/273-terminator_45_web.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-274",
@@ -3014,7 +3831,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/274----baracuda_hunter_45.jpg"
+      "image": "assets/products/274----baracuda_hunter_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-275",
@@ -3025,7 +3845,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/275-baracuda_ft_45_web.jpg"
+      "image": "assets/products/275-baracuda_ft_45_web.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-276",
@@ -3036,7 +3859,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/276-d-field_target_trophy_45.jpg"
+      "image": "assets/products/276-d-field_target_trophy_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-277",
@@ -3047,7 +3873,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/277-2-baracuda_45.jpg"
+      "image": "assets/products/277-2-baracuda_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-278",
@@ -3058,7 +3887,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/278-a-baracuda_power_45.jpg"
+      "image": "assets/products/278-a-baracuda_power_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-279",
@@ -3069,7 +3901,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/279---excite-spike-45-dose.jpg"
+      "image": "assets/products/279---excite-spike-45-dose.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-280",
@@ -3080,7 +3915,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/280----excite-hammer-45-dose.jpg"
+      "image": "assets/products/280----excite-hammer-45-dose.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-281",
@@ -3091,7 +3929,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/281----econ_ii_45_web.jpg"
+      "image": "assets/products/281----econ_ii_45_web.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-282",
@@ -3102,7 +3943,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/282----excite-plinking-45-dose.jpg"
+      "image": "assets/products/282----excite-plinking-45-dose.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-283",
@@ -3110,10 +3954,13 @@
       "price": "350 ლარი",
       "amount": 350,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "brand": "OFF GRID",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/283-Inverter.jpg"
+      "image": "assets/products/283-Inverter.jpg",
+      "brandTags": [
+        "OFF GRID"
+      ]
     },
     {
       "id": "magnum-284",
@@ -3124,7 +3971,10 @@
       "brand": "MPPT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/284-MPPT-60A.jpg"
+      "image": "assets/products/284-MPPT-60A.jpg",
+      "brandTags": [
+        "MPPT"
+      ]
     },
     {
       "id": "magnum-285",
@@ -3135,7 +3985,10 @@
       "brand": "MPPT",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/285-MPPT-40A.jpg"
+      "image": "assets/products/285-MPPT-40A.jpg",
+      "brandTags": [
+        "MPPT"
+      ]
     },
     {
       "id": "magnum-286",
@@ -3146,7 +3999,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/286-PWM-30A.jpg"
+      "image": "assets/products/286-PWM-30A.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-287",
@@ -3154,10 +4008,13 @@
       "price": "425 ლარი",
       "amount": 425,
       "category": "ოპტიკა",
-      "brand": "SCP-M392AOD",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/287-SCP_M392AOD_PRO_1.jpg"
+      "image": "assets/products/287-SCP_M392AOD_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-288",
@@ -3165,10 +4022,13 @@
       "price": "240 ლარი",
       "amount": 240,
       "category": "ოპტიკა",
-      "brand": "SCP-U392RGD",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/288-SCP_U392RGD_PRO.jpg"
+      "image": "assets/products/288-SCP_U392RGD_PRO.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-289",
@@ -3179,7 +4039,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/289-sniper_medium_45.jpg"
+      "image": "assets/products/289-sniper_medium_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-290",
@@ -3190,7 +4053,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/290-crow_magnum_45.jpg"
+      "image": "assets/products/290-crow_magnum_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-291",
@@ -3201,7 +4067,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/291-spitzkugel_45.jpg"
+      "image": "assets/products/291-spitzkugel_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-292",
@@ -3212,7 +4081,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/292-rabbit_magnum_ii_45.jpg"
+      "image": "assets/products/292-rabbit_magnum_ii_45.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-293",
@@ -3223,7 +4095,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/293-Fenix-UC02SS-LED-Flashlight.jpg"
+      "image": "assets/products/293-Fenix-UC02SS-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-294",
@@ -3234,7 +4109,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/294-Fenix-UC01-LED-Flashlight.jpg"
+      "image": "assets/products/294-Fenix-UC01-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-295",
@@ -3245,7 +4123,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/295-Fenix-TK25IR-Version-LED-Flashlight.jpg"
+      "image": "assets/products/295-Fenix-TK25IR-Version-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-296",
@@ -3256,7 +4137,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/296-Fenix-TK25R-B-Version-LED-Flashlight.jpg"
+      "image": "assets/products/296-Fenix-TK25R-B-Version-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-297",
@@ -3267,7 +4151,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/297-TK25-Red-Version-XP-G2-S3-LED-Flashlight.jpg"
+      "image": "assets/products/297-TK25-Red-Version-XP-G2-S3-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-298",
@@ -3278,7 +4165,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/298-Fenix-PD35-V2-LED-Flashlight.jpg"
+      "image": "assets/products/298-Fenix-PD35-V2-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-299",
@@ -3289,7 +4179,10 @@
       "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/299-Fenix-E05-XP-E2-R3-LED-Flashlight.jpg"
+      "image": "assets/products/299-Fenix-E05-XP-E2-R3-LED-Flashlight.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-300",
@@ -3300,7 +4193,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/300-Innovation-2018-New-Updated-Black-6-8L-60minutes-air-bottle-valve-fill-station-PCP-airsoft-tank.jpg_640x640.jpg"
+      "image": "assets/products/300-Innovation-2018-New-Updated-Black-6-8L-60minutes-air-bottle-valve-fill-station-PCP-airsoft-tank.jpg_640x640.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-301",
@@ -3311,7 +4205,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/301-PCP-Compressor-Accessories-Mini-Water-Pump-For-Airgun-Compressor1.jpg"
+      "image": "assets/products/301-PCP-Compressor-Accessories-Mini-Water-Pump-For-Airgun-Compressor1.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-302",
@@ -3322,7 +4217,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/302-1.6feet-63mpa-high-pressure-flexible-hose3.jpg"
+      "image": "assets/products/302-1.6feet-63mpa-high-pressure-flexible-hose3.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-303",
@@ -3333,7 +4229,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/303-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2.jpg"
+      "image": "assets/products/303-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-304",
@@ -3344,7 +4241,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/304-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2-1.jpg"
+      "image": "assets/products/304-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2-1.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-305",
@@ -3352,10 +4250,13 @@
       "price": "30 ლარი",
       "amount": 30,
       "category": "პნევმატიკა",
-      "brand": "",
+      "brand": "JSB",
       "caliber": "4.50 MM",
       "barrelLength": "",
-      "image": "assets/products/305-straton.jpg"
+      "image": "assets/products/305-straton.jpg",
+      "brandTags": [
+        "JSB"
+      ]
     },
     {
       "id": "magnum-306",
@@ -3366,7 +4267,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/306-Baracuda-Green-DOSE.JPG"
+      "image": "assets/products/306-Baracuda-Green-DOSE.JPG",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-307",
@@ -3377,7 +4281,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/307-Field-Target-Trophy-Green-DOSE.JPG"
+      "image": "assets/products/307-Field-Target-Trophy-Green-DOSE.JPG",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-308",
@@ -3388,7 +4295,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/308-Piledriver-4-5-DOSE.JPG"
+      "image": "assets/products/308-Piledriver-4-5-DOSE.JPG",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-309",
@@ -3399,7 +4309,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/309-exctite_smartshotbbs1.JPG"
+      "image": "assets/products/309-exctite_smartshotbbs1.JPG",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-310",
@@ -3410,51 +4323,66 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/310-Apollo-4-5-DOSE.JPG"
+      "image": "assets/products/310-Apollo-4-5-DOSE.JPG",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-311",
       "name": "ARE-C2",
       "price": "90 ლარი",
       "amount": 90,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ფანრები",
+      "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/311-ARE-C2.jpg"
+      "image": "assets/products/311-ARE-C2.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-312",
       "name": "ARE-C1",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ფანრები",
+      "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/312-ARE-C1.jpg"
+      "image": "assets/products/312-ARE-C1.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-313",
       "name": "ARE-X1",
       "price": "22 ლარი",
       "amount": 22,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ფანრები",
+      "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/313-ARE-X1.jpg"
+      "image": "assets/products/313-ARE-X1.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-314",
       "name": "ARW-10",
       "price": "10 ლარი",
       "amount": 10,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ფანრები",
+      "brand": "FENIX",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/314-ARW-10.jpg"
+      "image": "assets/products/314-ARW-10.jpg",
+      "brandTags": [
+        "FENIX"
+      ]
     },
     {
       "id": "magnum-315",
@@ -3465,7 +4393,10 @@
       "brand": "S&B",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/315-20151229_111750.jpg"
+      "image": "assets/products/315-20151229_111750.jpg",
+      "brandTags": [
+        "S&B"
+      ]
     },
     {
       "id": "magnum-316",
@@ -3476,7 +4407,10 @@
       "brand": "S&B",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/316-20151228_104653.jpg"
+      "image": "assets/products/316-20151228_104653.jpg",
+      "brandTags": [
+        "S&B"
+      ]
     },
     {
       "id": "magnum-317",
@@ -3487,7 +4421,10 @@
       "brand": "S&B",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/317-20151228_105336.jpg"
+      "image": "assets/products/317-20151228_105336.jpg",
+      "brandTags": [
+        "S&B"
+      ]
     },
     {
       "id": "magnum-318",
@@ -3495,10 +4432,13 @@
       "price": "6,40 ლარი",
       "amount": 6,
       "category": "ვაზნები",
-      "brand": "",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/318-LAPUA-7-62x53R--MEGA-SP.jpg"
+      "image": "assets/products/318-LAPUA-7-62x53R--MEGA-SP.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-319",
@@ -3506,10 +4446,13 @@
       "price": "6,00 ლარი",
       "amount": 6,
       "category": "ვაზნები",
-      "brand": "",
+      "brand": "LAPUA",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/319-Lapua-.243Win-5-8g-B503-FMJ-4594.jpg"
+      "image": "assets/products/319-Lapua-.243Win-5-8g-B503-FMJ-4594.jpg",
+      "brandTags": [
+        "LAPUA"
+      ]
     },
     {
       "id": "magnum-320",
@@ -3520,7 +4463,10 @@
       "brand": "ROSSI",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/320---WR308B_22.jpg"
+      "image": "assets/products/320---WR308B_22.jpg",
+      "brandTags": [
+        "ROSSI"
+      ]
     },
     {
       "id": "magnum-321",
@@ -3531,18 +4477,22 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/321-917.jpg"
+      "image": "assets/products/321-917.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-322",
       "name": "ოპტიკური სამიზნე კოლიმატორისთვის UTG 3X Magnifier w/ Max Strength QD Picatinny Mount and Med Profile Riser Adaptor, SCP-MF3WQ",
       "price": "145 ლარი",
       "amount": 145,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "ოპტიკა",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/322-SCP_MF3WQ_PRO_2.jpg"
+      "image": "assets/products/322-SCP_MF3WQ_PRO_2.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-323",
@@ -3550,10 +4500,13 @@
       "price": "135 ლარი",
       "amount": 135,
       "category": "ოპტიკა",
-      "brand": "SCP-420MRG-A",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/323-SCP_420MRG_A_PRO.JPG"
+      "image": "assets/products/323-SCP_420MRG_A_PRO.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-324",
@@ -3561,10 +4514,13 @@
       "price": "120 ლარი",
       "amount": 120,
       "category": "ოპტიკა",
-      "brand": "SCP-420M-B",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/324-SCP_420M_B_PRO_1.jpg"
+      "image": "assets/products/324-SCP_420M_B_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-325",
@@ -3572,230 +4528,293 @@
       "price": "145 ლარი",
       "amount": 145,
       "category": "ოპტიკა",
-      "brand": "SCP-T38",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/325-SCP_T38_PRO_1.jpg"
+      "image": "assets/products/325-SCP_T38_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-326",
       "name": "RGPM-30M4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/326-RGPM_30M4_PRO_1.jpg"
+      "image": "assets/products/326-RGPM_30M4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-327",
       "name": "RGPM-30H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/327-RGPM_30H4_PRO_1.jpg"
+      "image": "assets/products/327-RGPM_30H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-328",
       "name": "RGPM2PA-30M4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/328-RGPM2PA_30M4_PRO_1.jpg"
+      "image": "assets/products/328-RGPM2PA_30M4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-329",
       "name": "RGPM2PA-30H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/329-RGPM2PA_30H4_PRO_1.jpg"
+      "image": "assets/products/329-RGPM2PA_30H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-330",
       "name": "RGWM-30M4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/330-RGWM_30M4_PRO_1.jpg"
+      "image": "assets/products/330-RGWM_30M4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-331",
       "name": "RGWM-30H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/331-RGWM_30H4_PRO_1.jpg"
+      "image": "assets/products/331-RGWM_30H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-332",
       "name": "RGWM2PA-30H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/332-RGWM2PA_30H4_PRO_1.jpg"
+      "image": "assets/products/332-RGWM2PA_30H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-333",
       "name": "RG2W3224",
       "price": "60 ლარი",
       "amount": 60,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/333-RG2W3224_PRO_1.JPG"
+      "image": "assets/products/333-RG2W3224_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-334",
       "name": "RG2W3154",
       "price": "60 ლარი",
       "amount": 60,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/334-RG2W3154_PRO_1.JPG"
+      "image": "assets/products/334-RG2W3154_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-335",
       "name": "RQ2W3154",
       "price": "110 ლარი",
       "amount": 110,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/335-RQ2W3154_PRO_1.JPG"
+      "image": "assets/products/335-RQ2W3154_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-336",
       "name": "RQ2W3104",
       "price": "110 ლარი",
       "amount": 110,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/336-RQ2W3104_PRO_1.JPG"
+      "image": "assets/products/336-RQ2W3104_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-337",
       "name": "RGPMOFS38-25H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/337---RGPMOFS38_25H4_PRO_1.jpg"
+      "image": "assets/products/337---RGPMOFS38_25H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-338",
       "name": "RGPM2PA-25M4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/338-RGPM2PA_25M4_PRO_1.jpg"
+      "image": "assets/products/338-RGPM2PA_25M4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-339",
       "name": "RGPM2PA-25H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/339-RGPM2PA_25H4_PRO_1.jpg"
+      "image": "assets/products/339-RGPM2PA_25H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-340",
       "name": "RGWMOFS38-25H4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/340-RGPMOFS38_25H4_PRO_1.jpg"
+      "image": "assets/products/340-RGPMOFS38_25H4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-341",
       "name": "RGWM2PA-25M4",
       "price": "45 ლარი",
       "amount": 45,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/341-RGWM2PA_25M4_PRO_1.jpg"
+      "image": "assets/products/341-RGWM2PA_25M4_PRO_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-342",
       "name": "RG2W1204",
       "price": "85 ლარი",
       "amount": 85,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/342-RG2W1204_PRO_1.JPG"
+      "image": "assets/products/342-RG2W1204_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-343",
       "name": "RG2W1154",
       "price": "85 ლარი",
       "amount": 85,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/343-RG2W1154_PRO_1.JPG"
+      "image": "assets/products/343-RG2W1154_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-344",
       "name": "RQ2W1206",
       "price": "110 ლარი",
       "amount": 110,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/344-RQ2W1206_PRO_1.JPG"
+      "image": "assets/products/344-RQ2W1206_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-345",
       "name": "RQ2W1204",
       "price": "110 ლარი",
       "amount": 110,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/345-RQ2W1204_PRO_1.JPG"
+      "image": "assets/products/345-RQ2W1204_PRO_1.JPG",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-346",
@@ -3806,7 +4825,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/346-30R-BLASER-GAME.jpg"
+      "image": "assets/products/346-30R-BLASER-GAME.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-347",
@@ -3817,7 +4839,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/347-300-W.S.M..jpg"
+      "image": "assets/products/347-300-W.S.M..jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-348",
@@ -3828,7 +4853,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/348-7x64.jpg"
+      "image": "assets/products/348-7x64.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-349",
@@ -3839,7 +4867,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/349-280-REM..jpg"
+      "image": "assets/products/349-280-REM..jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-350",
@@ -3850,7 +4881,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/350-270-W.S.M..jpg"
+      "image": "assets/products/350-270-W.S.M..jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-351",
@@ -3861,7 +4895,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/351-458-WIN.-MAG..jpg"
+      "image": "assets/products/351-458-WIN.-MAG..jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-352",
@@ -3872,7 +4909,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/352-404-RIMLESS-N.E..jpg"
+      "image": "assets/products/352-404-RIMLESS-N.E..jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-353",
@@ -3883,7 +4923,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/353-35-WHELEN.jpg"
+      "image": "assets/products/353-35-WHELEN.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-354",
@@ -3894,7 +4937,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/354-8x68-S.jpg"
+      "image": "assets/products/354-8x68-S.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-355",
@@ -3905,7 +4951,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/355-308-WIN.jpg"
+      "image": "assets/products/355-308-WIN.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-356",
@@ -3916,7 +4965,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/356-30R-BLASER.jpg"
+      "image": "assets/products/356-30R-BLASER.jpg",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-357",
@@ -3927,7 +4979,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/357-300-WEATH.-MAG..JPG"
+      "image": "assets/products/357-300-WEATH.-MAG..JPG",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-358",
@@ -3938,7 +4993,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/358-300-W.S.M..JPG"
+      "image": "assets/products/358-300-W.S.M..JPG",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-359",
@@ -3949,7 +5007,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/359-7x64.JPG"
+      "image": "assets/products/359-7x64.JPG",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-360",
@@ -3960,7 +5021,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/360-280-REM..JPG"
+      "image": "assets/products/360-280-REM..JPG",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-361",
@@ -3971,7 +5035,10 @@
       "brand": "SAUVESTRE",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/361-270-W.S.M..JPG"
+      "image": "assets/products/361-270-W.S.M..JPG",
+      "brandTags": [
+        "SAUVESTRE"
+      ]
     },
     {
       "id": "magnum-362",
@@ -3982,7 +5049,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/362-tin-clip.jpg"
+      "image": "assets/products/362-tin-clip.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-363",
@@ -3993,7 +5063,10 @@
       "brand": "H&N",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/363-sampler.jpg"
+      "image": "assets/products/363-sampler.jpg",
+      "brandTags": [
+        "H&N"
+      ]
     },
     {
       "id": "magnum-364",
@@ -4004,7 +5077,10 @@
       "brand": "JSB",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/364-Polymag.jpg"
+      "image": "assets/products/364-Polymag.jpg",
+      "brandTags": [
+        "JSB"
+      ]
     },
     {
       "id": "magnum-365",
@@ -4012,10 +5088,13 @@
       "price": "90 ლარი",
       "amount": 90,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": ".177",
+      "brand": "AIR ARMS",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/365-air-arms-s410-ARS410_177Mag-airgun-mag_sm.jpg"
+      "image": "assets/products/365-air-arms-s410-ARS410_177Mag-airgun-mag_sm.jpg",
+      "brandTags": [
+        "AIR ARMS"
+      ]
     },
     {
       "id": "magnum-366",
@@ -4023,21 +5102,25 @@
       "price": "70 ლარი",
       "amount": 70,
       "category": "პნევმატიკა",
-      "brand": "ᲞᲜᲔᲕᲛᲐᲢᲣᲠᲘ",
+      "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/366-MNT_DN034_PRO_1.jpg"
+      "image": "assets/products/366-MNT_DN034_PRO_1.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-367",
       "name": "კრონშტეინი პიკატინი თოფის ლულაზე UTG Universal #003XLS",
       "price": "40 ლარი",
       "amount": 40,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/367-MNT_BR003XLS_APP_1.jpg"
+      "image": "assets/products/367-MNT_BR003XLS_APP_1.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-368",
@@ -4045,10 +5128,14 @@
       "price": "420-625 ლარი",
       "amount": 420,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "BARRELS",
+      "brand": "ATA ARMS",
       "caliber": "12",
       "barrelLength": "",
-      "image": "assets/products/368-P4150112.JPG"
+      "image": "assets/products/368-P4150112.JPG",
+      "brandTags": [
+        "ATA ARMS",
+        "ARMSAN"
+      ]
     },
     {
       "id": "magnum-369",
@@ -4056,10 +5143,11 @@
       "price": "20 ლარი",
       "amount": 20,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "ᲛᲭᲘᲓᲘ",
+      "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/369-magazine.jpg"
+      "image": "assets/products/369-magazine.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-370",
@@ -4070,7 +5158,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/370-atis-kagidi.jpg"
+      "image": "assets/products/370-atis-kagidi.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-371",
@@ -4081,29 +5170,36 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/371-AirRifle-Pellet-Catcher.jpg"
+      "image": "assets/products/371-AirRifle-Pellet-Catcher.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-372",
       "name": "კრონშტეინები გაყოფილები სხვა და სხვა 26 მმ. ვივერით",
       "price": "70 ლარი",
       "amount": 70,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/372-rg178-25wm-m.jpg"
+      "image": "assets/products/372-rg178-25wm-m.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-373",
       "name": "კრონშტეინი უნივერსალური თოფის",
       "price": "50 ლარი",
       "amount": 50,
-      "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "category": "აქსესუარები",
+      "brand": "UTG",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/373-mnt-br003xl-m.jpg"
+      "image": "assets/products/373-mnt-br003xl-m.jpg",
+      "brandTags": [
+        "UTG"
+      ]
     },
     {
       "id": "magnum-374",
@@ -4114,7 +5210,8 @@
       "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/374-22_img.jpg"
+      "image": "assets/products/374-22_img.jpg",
+      "brandTags": []
     },
     {
       "id": "magnum-375",
@@ -4122,10 +5219,13 @@
       "price": "190 ლარი",
       "amount": 190,
       "category": "ცეცხლსასროლი იარაღი",
-      "brand": "",
+      "brand": "FABARM",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/375-5-sa-scope-mount-small.jpg"
+      "image": "assets/products/375-5-sa-scope-mount-small.jpg",
+      "brandTags": [
+        "FABARM"
+      ]
     },
     {
       "id": "magnum-376",
@@ -4133,10 +5233,11 @@
       "price": "10 ლარი",
       "amount": 10,
       "category": "პნევმატიკა",
-      "brand": "ᲞᲜᲔᲕᲛᲐᲢᲘᲙᲘᲡ",
+      "brand": "",
       "caliber": "",
       "barrelLength": "",
-      "image": "assets/products/376-8789002076b.jpg"
+      "image": "assets/products/376-8789002076b.jpg",
+      "brandTags": []
     }
   ]
 }
