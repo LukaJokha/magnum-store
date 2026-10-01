@@ -9,13 +9,14 @@ const cleanProduct = product => {
   return { ...product, brand, brandTags, caliber: String(product.caliber || '').trim(), barrelLength: String(product.barrelLength || '').trim(), description: String(product.description || '').trim() };
 };
 const facetValues = (product, key) => key === 'brand' ? product.brandTags : (product[key] ? [product[key]] : []);
+const searchableText = product => [product.name, product.category, ...product.brandTags, product.caliber, product.barrelLength].filter(Boolean).join(' ');
 
 function matches(product, ignored = '') {
   return (ignored === 'category' || state.category === 'all' || product.category === state.category)
     && (ignored === 'brand' || !state.brand.length || product.brandTags.some(brand => state.brand.includes(brand)))
     && (ignored === 'caliber' || !state.caliber.length || state.caliber.includes(product.caliber))
     && (ignored === 'barrel' || !state.barrel.length || state.barrel.includes(product.barrelLength))
-    && (!state.query || normalize(product.name).includes(normalize(state.query)))
+    && (!state.query || normalize(searchableText(product)).includes(normalize(state.query)))
     && (!state.min || product.amount >= Number(state.min))
     && (!state.max || product.amount <= Number(state.max));
 }
@@ -78,6 +79,7 @@ function renderFilters() {
     const total = document.createElement('span'); total.textContent = count;
     choice.append(input, name, total); wrap.append(choice);
   });
+  $('#categoryCount').textContent = state.category === 'all' ? '' : '(1)';
   filterDefinitions.forEach(([id, key]) => renderFacet(id, key, key === 'barrelLength' ? ' სმ' : ''));
   $('.specs').hidden = [...document.querySelectorAll('.specs .facet')].every(facet => facet.hidden);
   renderActiveFilters();

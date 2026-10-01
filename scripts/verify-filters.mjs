@@ -10,12 +10,13 @@ const clean = product => ({
 });
 const catalog = products.map(clean);
 const empty = () => ({ category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '' });
+const searchableText = product => [product.name, product.category, ...product.brandTags, product.caliber, product.barrelLength].filter(Boolean).join(' ');
 const matches = (product, state, ignored = '') =>
   (ignored === 'category' || state.category === 'all' || product.category === state.category)
   && (ignored === 'brand' || !state.brand.length || product.brandTags.some(brand => state.brand.includes(brand)))
   && (ignored === 'caliber' || !state.caliber.length || state.caliber.includes(product.caliber))
   && (ignored === 'barrel' || !state.barrel.length || state.barrel.includes(product.barrelLength))
-  && (!state.query || product.name.toLowerCase().includes(state.query.toLowerCase()))
+  && (!state.query || searchableText(product).toLowerCase().includes(state.query.toLowerCase()))
   && (!state.min || product.amount >= Number(state.min))
   && (!state.max || product.amount <= Number(state.max));
 const filter = state => catalog.filter(product => matches(product, state));
@@ -50,6 +51,8 @@ const price = filter({ ...empty(), min: '1000', max: '2000' });
 check('price range has no out-of-range product', price.length > 0 && price.every(product => product.amount >= 1000 && product.amount <= 2000));
 const search = filter({ ...empty(), query: 'ROCK ISLAND' });
 check('search finds the normalized brand product by name', search.length === 1 && search[0].brandTags.includes('ROCK ISLAND ARMORY'));
+const tagSearch = filter({ ...empty(), query: 'DIAMONDBACK FIREARMS' });
+check('search also finds a product through its normalized brand tag', tagSearch.length === 1 && tagSearch[0].brandTags.includes('DIAMONDBACK FIREARMS'));
 
 const facetSource = available({ ...empty(), category: 'ცეცხლსასროლი იარაღი' }, 'brand');
 check('all brand facet values are valid strings', facetSource.every(product => product.brandTags.every(tag => typeof tag === 'string' && tag.trim())));
