@@ -30,11 +30,27 @@ const normalizeBrands = product => {
   const first = name.trim().split(/[\s,]+/)[0].replace(/[^\p{L}\p{N}&.-]/gu, '');
   return !first || nonBrands.test(first) ? [] : [first.toUpperCase()];
 };
+const canonicalCaliber = raw => {
+  const value = raw.toUpperCase().replace(',', '.').replace(/\s+/g, '');
+  const gauge = value.match(/^(12|16|20|28)(?:GA|G|CAL)?$/);
+  if (gauge) return `${gauge[1]} GA`;
+  const rimfire = value.match(/^(22)(LR|WMR)$/);
+  if (rimfire) return `${rimfire[1]} ${rimfire[2]}`;
+  const xCaliber = value.match(/^(\d+(?:\.\d+)?)[X×](\d+(?:\.\d+)?)(?:MM)?$/);
+  if (xCaliber) return `${xCaliber[1]}×${xCaliber[2]} MM`;
+  const magnum = value.match(/^(\d+)(MAG|WIN|REM)$/);
+  if (magnum) return `${magnum[1]} ${magnum[2]}`;
+  const millimeter = value.match(/^(\d+(?:\.\d+)?)MM$/);
+  if (millimeter) return `${millimeter[1]} MM`;
+  return '';
+};
 const caliber = name => {
-  const match = name.match(/(?:cal(?:iber)?\.?|კალ\.?|CAL)\s*[:.]?\s*((?:\d+(?:[.,]\d+)?\s*(?:GA|CAL|MM|LR|WMR|MAG|WIN|REM)|\d+(?:[x×]\d+)(?:\s*MM)?))/i)
-    || name.match(/\b(12|16|20|28)\s*(?:GA|CAL|\/\d{2})\b/i);
-  if (!match) return '';
-  return match[1].toUpperCase().replace(',', '.').replace(/\s+/g, ' ').replace('X', '×');
+  const gauge = name.match(/\b(12|16|20|28)\s*(?:GA|G|CAL|\/\s*(?:65|70|76|89))\b/i);
+  if (gauge) return `${gauge[1]} GA`;
+  const marked = name.match(/(?:cal(?:iber)?\.?|კალ\.?|CAL)\s*[:.]?\s*(\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?(?:\s*MM)?|\d+(?:[.,]\d+)?\s*(?:GA|G|CAL|MM|LR|WMR|MAG|WIN|REM)?)/i);
+  if (marked) return canonicalCaliber(marked[1]);
+  const knownX = name.match(/\b(5[.,]56|7[.,]62|9|5[.,]7)\s*[x×]\s*(45|39|51|19|28)\b/i);
+  return knownX ? canonicalCaliber(`${knownX[1]}×${knownX[2]} MM`) : '';
 };
 const barrelLength = name => {
   const match = name.match(/(?:barrel(?:\s+length)?|ლულ[ა-ის]*)\s*[:.-]?\s*(\d+(?:[.,]\d+)?)\s*(?:cm|სმ)?/i);

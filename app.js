@@ -24,7 +24,9 @@ function filtered() {
     if (state.sort === 'low') return a.amount - b.amount;
     if (state.sort === 'high') return b.amount - a.amount;
     if (state.sort === 'az') return a.name.localeCompare(b.name, 'ka');
-    return Number(a.id.split('-').pop()) - Number(b.id.split('-').pop());
+    const newerFirst = new Date(b.createdAt || 0) - new Date(a.createdAt || 0);
+    if (Number.isFinite(newerFirst) && newerFirst !== 0) return newerFirst;
+    return String(a.id).localeCompare(String(b.id), 'en', { numeric: true });
   });
 }
 function availableFor(key) { return state.products.filter(product => matches(product, key)); }
@@ -38,6 +40,8 @@ function renderFacet(id, key, suffix = '') {
   const validSelected = state[id].filter(value => values.includes(value));
   if (validSelected.length !== state[id].length) state[id] = validSelected;
   const container = $(`#${id}Options`); container.innerHTML = '';
+  const facet = container.closest('.facet');
+  facet.hidden = values.length === 0;
   values.forEach(value => {
     const choice = document.createElement('label'); choice.className = 'facet-choice';
     const input = document.createElement('input'); input.type = 'checkbox'; input.checked = state[id].includes(value);
@@ -51,6 +55,10 @@ function renderFacet(id, key, suffix = '') {
 function renderActiveFilters() {
   const active = $('#activeFilters'); active.innerHTML = '';
   const labels = { brand: 'ბრენდი', caliber: 'კალიბრი', barrel: 'ლულის სიგრძე' };
+  if (state.category !== 'all') {
+    const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'filter-chip'; chip.textContent = `კატეგორია: ${state.category} ×`;
+    chip.onclick = () => { state.category = 'all'; state.page = 1; update(); }; active.append(chip);
+  }
   filterDefinitions.forEach(([id]) => state[id].forEach(value => {
     const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'filter-chip'; chip.textContent = `${labels[id]}: ${value} ×`;
     chip.onclick = () => { state[id] = state[id].filter(item => item !== value); state.page = 1; update(); }; active.append(chip);
@@ -71,6 +79,7 @@ function renderFilters() {
     choice.append(input, name, total); wrap.append(choice);
   });
   filterDefinitions.forEach(([id, key]) => renderFacet(id, key, key === 'barrelLength' ? ' სმ' : ''));
+  $('.specs').hidden = [...document.querySelectorAll('.specs .facet')].every(facet => facet.hidden);
   renderActiveFilters();
 }
 function showProduct(product) {

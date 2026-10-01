@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T17:14:27.481Z",
+  "updatedAt": "2026-10-01T17:32:12.818Z",
   "source": "http://magnum.ge",
   "products": [
     {
@@ -9,7 +9,7 @@
       "amount": 1700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUGLU",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "76",
       "image": "assets/products/001-veyron-synthetic.jpg",
       "brandTags": [
@@ -23,7 +23,7 @@
       "amount": 970,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/002-7022--wood.jpg",
       "brandTags": [
@@ -37,7 +37,7 @@
       "amount": 850,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/003-8122-Black.jpg",
       "brandTags": [
@@ -51,7 +51,7 @@
       "amount": 2500,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUGLU",
-      "caliber": "9×19",
+      "caliber": "9×19 MM",
       "barrelLength": "30.5",
       "image": "assets/products/004-mohac-12-graphite-black.jpg",
       "brandTags": [
@@ -93,7 +93,7 @@
       "amount": 1700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22WMR",
+      "caliber": "22 WMR",
       "barrelLength": "",
       "image": "assets/products/007---Rio-Bravo-17HMR-Wood.jpg",
       "brandTags": [
@@ -107,7 +107,7 @@
       "amount": 1500,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/008-Rio-Bravo-17HMR-Wood.jpg",
       "brandTags": [
@@ -121,7 +121,7 @@
       "amount": 1150,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22WMR",
+      "caliber": "22 WMR",
       "barrelLength": "",
       "image": "assets/products/009-8122-Magnum_direita.jpg",
       "brandTags": [
@@ -135,7 +135,7 @@
       "amount": 950,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22WMR",
+      "caliber": "22 WMR",
       "barrelLength": "",
       "image": "assets/products/010-8122-Magnum-Black_direita.jpg",
       "brandTags": [
@@ -149,7 +149,7 @@
       "amount": 1020,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/011-8122-LR_direita.jpg",
       "brandTags": [
@@ -163,7 +163,7 @@
       "amount": 800,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/012-7022-Black-21_direita.jpg",
       "brandTags": [
@@ -359,7 +359,7 @@
       "amount": 2500,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUGLU",
-      "caliber": "9×19",
+      "caliber": "9×19 MM",
       "barrelLength": "30.5",
       "image": "assets/products/026-mohac-8-desertsand-foldable-left.jpg",
       "brandTags": [
@@ -457,7 +457,7 @@
       "amount": 2750,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GLOCK",
-      "caliber": "9MM",
+      "caliber": "9 MM",
       "barrelLength": "",
       "image": "assets/products/033-Glock-PA175S203.jpg",
       "brandTags": [
@@ -471,7 +471,7 @@
       "amount": 2750,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GLOCK",
-      "caliber": "9MM",
+      "caliber": "9 MM",
       "barrelLength": "",
       "image": "assets/products/034-Glock-PA195S203.jpg",
       "brandTags": [
@@ -485,7 +485,7 @@
       "amount": 4200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "RUGER",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/035-Ruger-AR-556--8500--Caliber-5.56x45-mm.jpg",
       "brandTags": [
@@ -527,7 +527,7 @@
       "amount": 13250,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/038-8-MAXUS.jpg",
       "brandTags": [
@@ -541,7 +541,7 @@
       "amount": 10300,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/039---Magnus-Limited-1.jpg",
       "brandTags": [
@@ -555,7 +555,7 @@
       "amount": 4000,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/040-ROMAN-MMI.jpg",
       "brandTags": [
@@ -569,7 +569,7 @@
       "amount": 4500,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/041-ROMAN-MMX-DX1.jpg",
       "brandTags": [
@@ -583,7 +583,7 @@
       "amount": 8700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12GA",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/042-TEMPIO.jpg",
       "brandTags": [
@@ -597,7 +597,7 @@
       "amount": 7100,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "12GA",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/043-Figura.jpg",
       "brandTags": [
@@ -639,7 +639,7 @@
       "amount": 1480,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/046-Varlik-179.jpg",
       "brandTags": [
@@ -653,7 +653,7 @@
       "amount": 1320,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/047-Varlik-178.jpg",
       "brandTags": [
@@ -667,7 +667,7 @@
       "amount": 1220,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/048-Varlik-181.jpg",
       "brandTags": [
@@ -681,7 +681,7 @@
       "amount": 1100,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/049-DS12-001.jpg",
       "brandTags": [
@@ -959,7 +959,7 @@
       "amount": 1550,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUGLU",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/069---g12.jpg",
       "brandTags": [
@@ -973,7 +973,7 @@
       "amount": 950,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUGLU",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "51",
       "image": "assets/products/070-atrox-standard-black.jpg",
       "brandTags": [
@@ -987,7 +987,7 @@
       "amount": 3600,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "SARSILMAZ",
-      "caliber": "",
+      "caliber": "7.62×39 MM",
       "barrelLength": "",
       "image": "assets/products/071-SARSILMAZ-SAR15T----.7.62X39.jpg",
       "brandTags": [
@@ -1183,7 +1183,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/085-YAF-12-Cal.-33g-Turbo-Action.jpg",
       "brandTags": [
@@ -1197,7 +1197,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/086-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet-gold.jpg",
       "brandTags": [
@@ -1211,7 +1211,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/087-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet-gold.jpg",
       "brandTags": [
@@ -1225,7 +1225,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/088-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-27-pellet.jpg",
       "brandTags": [
@@ -1239,7 +1239,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/089-akgun-patlayici-av-fisekleri-savrotin-fisek-serisi-yaf-12-cal-12-pellet.jpg",
       "brandTags": [
@@ -1253,7 +1253,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/090-YAF-12-CAL.-50-GR..jpg",
       "brandTags": [
@@ -1267,7 +1267,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/091-akgun-patlayici-av-fisekleri-yaf-12-cal-36g.jpg",
       "brandTags": [
@@ -1281,7 +1281,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/092-yaf-30-gr-bior.jpg",
       "brandTags": [
@@ -1295,7 +1295,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "16",
+      "caliber": "16 GA",
       "barrelLength": "",
       "image": "assets/products/093-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-16-cal-28g.jpg",
       "brandTags": [
@@ -1309,7 +1309,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "20",
+      "caliber": "20 GA",
       "barrelLength": "",
       "image": "assets/products/094-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-25g.jpg",
       "brandTags": [
@@ -1323,7 +1323,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "YAF",
-      "caliber": "20",
+      "caliber": "20 GA",
       "barrelLength": "",
       "image": "assets/products/095-akgun-patlayici-av-fisekleri-yaf-16-20-28-36-cal-fisek-serisi-yaf-20-cal-28g.jpg",
       "brandTags": [
@@ -1337,7 +1337,7 @@
       "amount": 3600,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HK",
-      "caliber": "9MM",
+      "caliber": "9 MM",
       "barrelLength": "",
       "image": "assets/products/096-Heckler---Koch-81001108.jpg",
       "brandTags": [
@@ -1351,7 +1351,7 @@
       "amount": 5750,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "RUGER",
-      "caliber": "",
+      "caliber": "7.62×39 MM",
       "barrelLength": "41",
       "image": "assets/products/097-Ruger-5854.jpg",
       "brandTags": [
@@ -1393,7 +1393,7 @@
       "amount": 7,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/100-silver-slug-magnum-39gr-cal-12--pr--34576.jpg",
       "brandTags": [
@@ -1407,7 +1407,7 @@
       "amount": 7,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/101-potenza-knockout-8x91mm-magnum-cal-12--pr--33577.jpg",
       "brandTags": [
@@ -1421,7 +1421,7 @@
       "amount": 7,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/102-potenza-varmint-28x62mm-cal-12--pr--33890.jpg",
       "brandTags": [
@@ -1435,7 +1435,7 @@
       "amount": 7,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/103-potenza-heavyspeed-magnum-10x86mm-cal-12--pr--33573.jpg",
       "brandTags": [
@@ -1449,7 +1449,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/104-potenza-knockout-6x91mm-cal-12--pr--33562.jpg",
       "brandTags": [
@@ -1463,7 +1463,7 @@
       "amount": 4,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/105-big-game-12x865mm-44gr-cal-12--pr--3683.jpg",
       "brandTags": [
@@ -1477,7 +1477,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/106-biturbo-high-performance-36gr-cal-12--pr--34434.jpg",
       "brandTags": [
@@ -1491,7 +1491,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/107-brown-high-performance-33gr-cal-12--pr--34431.jpg",
       "brandTags": [
@@ -1505,7 +1505,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/108-dispersante-34gr-cal-12--pr--34514.jpg",
       "brandTags": [
@@ -1519,7 +1519,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/109-veloce-36gr-cal-12--pr--34435.jpg",
       "brandTags": [
@@ -1533,7 +1533,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "LAMBRO",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/110-a1-speciale-34gr-cal-12--pr--34513.jpg",
       "brandTags": [
@@ -1547,7 +1547,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "ELEY",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/111-ELEY-semi-auto-benchrest-precision-1.jpg",
       "brandTags": [
@@ -1561,7 +1561,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "ELEY",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/112-ELEY-team-22lr-ammunition-1.jpg",
       "brandTags": [
@@ -1575,7 +1575,7 @@
       "amount": 0,
       "category": "ვაზნები",
       "brand": "ELEY",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/113-ELEY-biathlon-club-22lr-ammunition-1-600x416.jpg",
       "brandTags": [
@@ -1589,7 +1589,7 @@
       "amount": 0,
       "category": "ვაზნები",
       "brand": "ELEY",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "",
       "image": "assets/products/114-ELEY-sport-22lr-ammunition-1-600x416.jpg",
       "brandTags": [
@@ -1617,7 +1617,7 @@
       "amount": 1125,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MORISSON",
-      "caliber": "22LR",
+      "caliber": "22 LR",
       "barrelLength": "51",
       "image": "assets/products/116-ML1218-ML1220.jpg",
       "brandTags": [
@@ -1939,7 +1939,7 @@
       "amount": 355,
       "category": "ოპტიკა",
       "brand": "REDWIN",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/139-REDWIN-Cobra-MOS-1x26x22-RMR--RWD17.jpg",
       "brandTags": [
@@ -2023,7 +2023,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/145-5-MKA556-140S--Green.jpg",
       "brandTags": [
@@ -2037,7 +2037,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/146-MKA556-140S--Green.jpg",
       "brandTags": [
@@ -2051,7 +2051,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/147-MKA556-160S.jpg",
       "brandTags": [
@@ -2065,7 +2065,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/148---MKA556-180S.jpg",
       "brandTags": [
@@ -2079,7 +2079,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/149-MKA556-180S.jpg",
       "brandTags": [
@@ -2093,7 +2093,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/150-MKA556-220S--Black.jpg",
       "brandTags": [
@@ -2107,7 +2107,7 @@
       "amount": 2900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/151-MKA556-220S.jpg",
       "brandTags": [
@@ -2121,7 +2121,7 @@
       "amount": 1100,
       "category": "ოპტიკა",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "9×19 MM",
       "barrelLength": "",
       "image": "assets/products/152-4-MKA919-TR2--Green.jpg",
       "brandTags": [
@@ -2135,7 +2135,7 @@
       "amount": 1000,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "9×19 MM",
       "barrelLength": "",
       "image": "assets/products/153-MKA919-TR2--Green.jpg",
       "brandTags": [
@@ -2149,7 +2149,7 @@
       "amount": 1100,
       "category": "ოპტიკა",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "9×19 MM",
       "barrelLength": "",
       "image": "assets/products/154---MKA919-TR2.jpg",
       "brandTags": [
@@ -2163,7 +2163,7 @@
       "amount": 1000,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
-      "caliber": "",
+      "caliber": "9×19 MM",
       "barrelLength": "",
       "image": "assets/products/155-MKA919-TR2.jpg",
       "brandTags": [
@@ -2667,7 +2667,7 @@
       "amount": 1050,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/191-MH-X-01.jpg",
       "brandTags": [
@@ -2681,7 +2681,7 @@
       "amount": 700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/192-MH-X-02.jpg",
       "brandTags": [
@@ -2709,7 +2709,7 @@
       "amount": 850,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/194----M13-S-11-min.jpg",
       "brandTags": [
@@ -2723,7 +2723,7 @@
       "amount": 800,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/195-S12-S-03.jpg",
       "brandTags": [
@@ -2807,7 +2807,7 @@
       "amount": 240,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/201-8-SBW--SBS.jpg",
       "brandTags": [
@@ -2821,7 +2821,7 @@
       "amount": 1450,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/202-2-SP--SPE.jpg",
       "brandTags": [
@@ -2849,7 +2849,7 @@
       "amount": 1300,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/204---SP--SPE.jpg",
       "brandTags": [
@@ -2863,7 +2863,7 @@
       "amount": 1200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "50",
       "image": "assets/products/205-8-STRYKER-FM-12.jpg",
       "brandTags": [
@@ -2877,7 +2877,7 @@
       "amount": 700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/206----IMPACTOR-SMW12.jpg",
       "brandTags": [
@@ -2891,7 +2891,7 @@
       "amount": 650,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/207-b-IMPACTOR-S-12.jpg",
       "brandTags": [
@@ -2905,7 +2905,7 @@
       "amount": 650,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "50",
       "image": "assets/products/208----GLADIATOR-FSM-12.jpg",
       "brandTags": [
@@ -2933,7 +2933,7 @@
       "amount": 500,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMED",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "50",
       "image": "assets/products/210----GLADIATOR-D-122.jpg",
       "brandTags": [
@@ -2947,7 +2947,7 @@
       "amount": 1200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/211----Redstone-Elegant-Silver-Black.jpg",
       "brandTags": [
@@ -2961,7 +2961,7 @@
       "amount": 1150,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/212-Redstone-Gamo-Max5.jpg",
       "brandTags": [
@@ -2975,7 +2975,7 @@
       "amount": 1400,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/213---InterArms-Elegant-Silver-Black.jpg",
       "brandTags": [
@@ -2989,7 +2989,7 @@
       "amount": 1400,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/214-InterArms-Elegant-Black.jpg",
       "brandTags": [
@@ -3003,7 +3003,7 @@
       "amount": 1400,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/215-_InterArms-Gamo-Max5.jpg",
       "brandTags": [
@@ -3017,7 +3017,7 @@
       "amount": 1250,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/216---InterArms-Extra-Black.jpg",
       "brandTags": [
@@ -3031,7 +3031,7 @@
       "amount": 1000,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ARMSAN",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "76",
       "image": "assets/products/217---P612Grande_RealtreeMax5.jpg",
       "brandTags": [
@@ -3045,7 +3045,7 @@
       "amount": 1200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "47",
       "image": "assets/products/218-9-Aselkon-ASK-S4.jpg",
       "brandTags": [
@@ -3059,7 +3059,7 @@
       "amount": 850,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "47",
       "image": "assets/products/219---Aselkon-Tactical-RS1.jpg",
       "brandTags": [
@@ -3073,7 +3073,7 @@
       "amount": 1300,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ASELKON",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/220--Otomatik_Ahsap_Dark_Black-1.jpg",
       "brandTags": [
@@ -3087,7 +3087,7 @@
       "amount": 700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "PARDUS",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/221----PARDUS-AS.jpg",
       "brandTags": [
@@ -3101,7 +3101,7 @@
       "amount": 700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "PARDUS",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/222-7-PARDUS-SS.jpg",
       "brandTags": [
@@ -3955,7 +3955,7 @@
       "amount": 350,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "OFF GRID",
-      "caliber": "12",
+      "caliber": "",
       "barrelLength": "",
       "image": "assets/products/283-Inverter.jpg",
       "brandTags": [
@@ -4433,7 +4433,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "LAPUA",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/318-LAPUA-7-62x53R--MEGA-SP.jpg",
       "brandTags": [
@@ -5129,7 +5129,7 @@
       "amount": 420,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ATA ARMS",
-      "caliber": "12",
+      "caliber": "12 GA",
       "barrelLength": "",
       "image": "assets/products/368-P4150112.JPG",
       "brandTags": [
