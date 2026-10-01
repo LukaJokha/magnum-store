@@ -53,6 +53,20 @@ check('ARKEN is not in firearms', !firearms.some(product => product.brandTags.in
 check('water pumps, clay targets, hoses, electronics, and mounts are not firearms', !firearms.some(product => /PADDLE|WHISTLE|WATER PUMP|INVERTER|SOLAR|ELASTICITY HOSE|DIN HOSE|SEA SCOOTER|PREDATOR POLYMAG|SPARE MAGAZINE|^BARRELS|სასროლი თეფში|კრონშტეინი/i.test(product.name)));
 check('accessories cannot leak calibers or barrel lengths into a firearm filter', catalog.filter(product => !['ცეცხლსასროლი იარაღი', 'ვაზნები', 'პნევმატიკა'].includes(product.category)).every(product => !product.caliber && !product.barrelLength));
 check('Lapua tag belongs only to actual Lapua ammunition', catalog.filter(product => product.brandTags.includes('LAPUA')).every(product => product.category === 'ვაზნები'));
+const lapuaMega = catalogById.get('magnum-318');
+check('Lapua 7.62×53R is not mistaken for its 12 gram projectile weight', lapuaMega?.caliber === '7.62×53R' && lapuaMega.caliber !== '12 GA');
+const twelveGramProducts = catalog.filter(product => /\b12g\b/i.test(product.name));
+check('a projectile weight written as 12g is never exposed as 12 gauge', twelveGramProducts.length > 0 && twelveGramProducts.every(product => product.caliber !== '12 GA'));
+const hasExplicit12Gauge = name => /\b12\s*(?:GA(?:UGE)?\b|CAL(?:IBER)?\b\.?|\/\s*(?:65|70|76|89)\b)/i.test(name)
+  || /(?:\bCAL(?:IBER)?\b\.?|კალ\.?)\s*[:.]?\s*12(?!\s*(?:G(?:R)?|GRAM|გრ)\b)/i.test(name);
+const twelveGaugeProducts = catalog.filter(product => product.caliber === '12 GA');
+check('every 12 GA option comes from explicit gauge notation', twelveGaugeProducts.length === 56 && twelveGaugeProducts.every(product => hasExplicit12Gauge(product.name)));
+const expectedCalibers = new Map([
+  ['magnum-60', '5.56×45 MM'], ['magnum-128', '7 MM REM MAG'], ['magnum-163', '8×57 JRS'],
+  ['magnum-223', '9.3×72R'], ['magnum-227', '17 WSM'], ['magnum-230', '5.7×28 MM'],
+  ['magnum-318', '7.62×53R'], ['magnum-319', '243 WIN'], ['magnum-354', '8×68S'], ['magnum-364', '4.5 MM']
+]);
+for (const [id, caliber] of expectedCalibers) check(`${id} has its audited caliber`, catalogById.get(id)?.caliber === caliber);
 
 const rock = filter({ ...empty(), brand: ['ROCK ISLAND ARMORY'] });
 check('Rock Island Armory filters exactly its product', rock.length === 1 && rock[0].brandTags.includes('ROCK ISLAND ARMORY'));

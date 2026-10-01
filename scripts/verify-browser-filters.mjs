@@ -133,6 +133,20 @@ try {
   assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('DB15')`), true, 'ბრენდის ტეგით ნაპოვნი პროდუქტი არ გამოჩნდა');
 
   await clear();
+  const ammunitionCount = await (async () => {
+    await selectCategory('ვაზნები');
+    return waitForCount(count => strictCatalog ? count === 106 : count > 0, 'ვაზნების კატეგორია');
+  })();
+  const lapuaCount = await (async () => {
+    await selectFacet('brand', 'LAPUA');
+    return waitForCount(count => strictCatalog ? count === 2 : count > 0 && count <= ammunitionCount, 'LAPUA ვაზნები');
+  })();
+  assert.equal(await evaluate(`![...document.querySelectorAll('#caliberOptions .facet-choice span')].some(item => item.textContent.trim() === '12 GA')`), true, '12 გრამი LAPUA ვაზნებში 12 GA კალიბრად გამოჩნდა');
+  await selectFacet('caliber', '7.62×53R');
+  await waitForCount(count => strictCatalog ? count === 1 : count > 0 && count <= lapuaCount, 'LAPUA 7.62×53R კალიბრი');
+  assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('7,62x53R')`), true, 'LAPUA-ს სწორი კალიბრის პროდუქტი არ გამოჩნდა');
+
+  await clear();
   await click(`(() => {
     const setValue = (selector, value) => {
       const input = document.querySelector(selector);
@@ -147,7 +161,7 @@ try {
 
   await clear();
   await waitForCount(count => count === initialCount, 'საბოლოო გასუფთავება');
-  console.log('Browser filter verification passed: category, exact caliber, multi-brand selection, clear, search, and price range.');
+  console.log('Browser filter verification passed: category, exact caliber, Lapua weight-vs-caliber, multi-brand selection, clear, search, and price range.');
 } finally {
   socket.close();
 }

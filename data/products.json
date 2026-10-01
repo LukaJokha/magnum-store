@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T18:37:32.035Z",
+  "updatedAt": "2026-10-01T18:48:03.522Z",
   "source": "http://magnum.ge",
   "products": [
     {
@@ -443,7 +443,7 @@
       "amount": 1700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROCK ISLAND ARMORY",
-      "caliber": "",
+      "caliber": "38 SPL",
       "barrelLength": "",
       "image": "assets/products/032-Rock-Island-Armory--M206--51289.jpg",
       "brandTags": [
@@ -499,7 +499,7 @@
       "amount": 2240,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "RUGER",
-      "caliber": "",
+      "caliber": "17 HMR",
       "barrelLength": "",
       "image": "assets/products/036-Ruger-American-Rimfire-Standard--8321--Caliber-.22WMR-Bolt-Action-Rifle.jpg",
       "brandTags": [
@@ -513,7 +513,7 @@
       "amount": 11600,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "GUERINI",
-      "caliber": "",
+      "caliber": "30-06",
       "barrelLength": "55",
       "image": "assets/products/037-carabine-express-caesar-guerini-reflexo-acier-z-2503-250379.jpg",
       "brandTags": [
@@ -611,7 +611,7 @@
       "amount": 33,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/044-baracuda-match_45_web.jpg",
       "brandTags": [
@@ -625,7 +625,7 @@
       "amount": 36,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/045---slug-hp.jpg",
       "brandTags": [
@@ -833,7 +833,7 @@
       "amount": 4450,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROCK RIVER",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/060-1-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg",
       "brandTags": [
@@ -847,7 +847,7 @@
       "amount": 4350,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROCK RIVER",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/061-ROCK-RIVER-PRAGE-3G--cal.-5-56--1-magazine-30-rd..jpg",
       "brandTags": [
@@ -861,7 +861,7 @@
       "amount": 4250,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "DIAMONDBACK FIREARMS",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "",
       "image": "assets/products/062-DB171AK192-1.jpg",
       "brandTags": [
@@ -1603,7 +1603,7 @@
       "amount": 1825,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MORISSON",
-      "caliber": "44 MAG",
+      "caliber": "45 COLT",
       "barrelLength": "51",
       "image": "assets/products/115-b-ML1218-ML1220.jpg",
       "brandTags": [
@@ -1743,7 +1743,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "308 WIN",
       "barrelLength": "",
       "image": "assets/products/125-308-WIN--SPCE--180.jpg",
       "brandTags": [
@@ -1757,7 +1757,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "223 REM",
       "barrelLength": "",
       "image": "assets/products/126-223-REM--69.jpg",
       "brandTags": [
@@ -1771,7 +1771,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "223 REM",
       "barrelLength": "",
       "image": "assets/products/127-223-REM--55.jpg",
       "brandTags": [
@@ -1785,7 +1785,7 @@
       "amount": 13,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "7 MM REM MAG",
       "barrelLength": "",
       "image": "assets/products/128-7-mm-REM.-MAG.--Edge.jpg",
       "brandTags": [
@@ -1799,7 +1799,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "357 MAG",
       "barrelLength": "",
       "image": "assets/products/129-357-Magnum.jpg",
       "brandTags": [
@@ -1813,7 +1813,7 @@
       "amount": 7200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "POF USA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "41.9",
       "image": "assets/products/130-POF-USA-P-415-EDGE.jpg",
       "brandTags": [
@@ -1827,7 +1827,7 @@
       "amount": 7200,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "POF USA",
-      "caliber": "",
+      "caliber": "5.56×45 MM",
       "barrelLength": "26.67",
       "image": "assets/products/131-POF-USA-P-415-EDGE-SBR.jpg",
       "brandTags": [
@@ -2191,7 +2191,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "GGG",
-      "caliber": "",
+      "caliber": "308 WIN",
       "barrelLength": "",
       "image": "assets/products/157-GGG--308--165.jpg",
       "brandTags": [
@@ -2205,7 +2205,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "6.5 CREEDMOOR",
       "barrelLength": "",
       "image": "assets/products/158-6-5-CREEDMOOR--TXRG-EDGE--120.jpg",
       "brandTags": [
@@ -2219,7 +2219,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "6.5 CREEDMOOR",
       "barrelLength": "",
       "image": "assets/products/159-6-5-CREEDMOOR--TXRG--120.jpg",
       "brandTags": [
@@ -2233,7 +2233,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "6.5 CREEDMOOR",
       "barrelLength": "",
       "image": "assets/products/160-6-5-CREEDMOOR--SP--156.jpg",
       "brandTags": [
@@ -2247,7 +2247,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "300 WIN MAG",
       "barrelLength": "",
       "image": "assets/products/161-300_win_mag_hpbt_smk_168grs.jpg",
       "brandTags": [
@@ -2261,7 +2261,7 @@
       "amount": 4,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "300 AAC BLACKOUT",
       "barrelLength": "",
       "image": "assets/products/162-300-AAC--FMJ.jpg",
       "brandTags": [
@@ -2275,7 +2275,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "8×57 JRS",
       "barrelLength": "",
       "image": "assets/products/163-7-8x57-JRS.jpg",
       "brandTags": [
@@ -2289,7 +2289,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "8×57 JS",
       "barrelLength": "",
       "image": "assets/products/164-8x57_JS_SB_SPCE.jpg",
       "brandTags": [
@@ -2303,7 +2303,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "30-30 WIN",
       "barrelLength": "",
       "image": "assets/products/165-30-30-Win.jpg",
       "brandTags": [
@@ -2317,7 +2317,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "7×57R",
       "barrelLength": "",
       "image": "assets/products/166-7x57R--FMJ.jpg",
       "brandTags": [
@@ -2331,7 +2331,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "7×57",
       "barrelLength": "",
       "image": "assets/products/167-7x57--spce.jpg",
       "brandTags": [
@@ -2345,7 +2345,7 @@
       "amount": 4,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "22-250 REM",
       "barrelLength": "",
       "image": "assets/products/168-22-250-REM.jpg",
       "brandTags": [
@@ -2359,7 +2359,7 @@
       "amount": 3,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "45 COLT",
       "barrelLength": "",
       "image": "assets/products/169-45-COLT.jpg",
       "brandTags": [
@@ -2373,7 +2373,7 @@
       "amount": 3,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "44 MAG",
       "barrelLength": "",
       "image": "assets/products/170-44-Rem.-Mag..jpg",
       "brandTags": [
@@ -2387,7 +2387,7 @@
       "amount": 0,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "4 MM RANDZ COURT",
       "barrelLength": "",
       "image": "assets/products/171-4-mm-Randz-Court.jpg",
       "brandTags": [
@@ -2499,7 +2499,7 @@
       "amount": 36,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/179-a-slug-hp.jpg",
       "brandTags": [
@@ -2513,7 +2513,7 @@
       "amount": 36,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/180----slug-hp.jpg",
       "brandTags": [
@@ -2527,7 +2527,7 @@
       "amount": 36,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/181-slug-hp.jpg",
       "brandTags": [
@@ -2541,7 +2541,7 @@
       "amount": 50,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/182-hornet.jpg",
       "brandTags": [
@@ -2555,7 +2555,7 @@
       "amount": 32,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/183-baracuda_8.jpg",
       "brandTags": [
@@ -3115,7 +3115,7 @@
       "amount": 13,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "9.3×72R",
       "barrelLength": "",
       "image": "assets/products/223-9-3-x-72-R.jpg",
       "brandTags": [
@@ -3129,7 +3129,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "10 MM",
       "barrelLength": "",
       "image": "assets/products/224-10-mm-AUTO.jpg",
       "brandTags": [
@@ -3143,7 +3143,7 @@
       "amount": 1,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "9×19 MM",
       "barrelLength": "",
       "image": "assets/products/225-9-mm-LUGER.jpg",
       "brandTags": [
@@ -3157,7 +3157,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "9×17 MM",
       "barrelLength": "",
       "image": "assets/products/226-9-mm-BROW.-COURT.jpg",
       "brandTags": [
@@ -3171,7 +3171,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "WINCHESTER",
-      "caliber": "",
+      "caliber": "17 WSM",
       "barrelLength": "",
       "image": "assets/products/227-Winchester-S17W20-Caliber-17WSM.jpg",
       "brandTags": [
@@ -3213,7 +3213,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "FN",
-      "caliber": "",
+      "caliber": "5.7×28 MM",
       "barrelLength": "",
       "image": "assets/products/230----5-7x28.jpg",
       "brandTags": [
@@ -3255,7 +3255,7 @@
       "amount": 5,
       "category": "ვაზნები",
       "brand": "SELLIER & BELLOT",
-      "caliber": "",
+      "caliber": "303 BRITISH",
       "barrelLength": "",
       "image": "assets/products/233-SB-V340532.jpg",
       "brandTags": [
@@ -3787,7 +3787,7 @@
       "amount": 31,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/271---silver_point_45.jpg",
       "brandTags": [
@@ -3801,7 +3801,7 @@
       "amount": 35,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/272-baracuda-hunter-extreme_45_web.jpg",
       "brandTags": [
@@ -3815,7 +3815,7 @@
       "amount": 32,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/273-terminator_45_web.jpg",
       "brandTags": [
@@ -3829,7 +3829,7 @@
       "amount": 34,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/274----baracuda_hunter_45.jpg",
       "brandTags": [
@@ -3843,7 +3843,7 @@
       "amount": 34,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/275-baracuda_ft_45_web.jpg",
       "brandTags": [
@@ -3857,7 +3857,7 @@
       "amount": 33,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/276-d-field_target_trophy_45.jpg",
       "brandTags": [
@@ -3871,7 +3871,7 @@
       "amount": 31,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/277-2-baracuda_45.jpg",
       "brandTags": [
@@ -3885,7 +3885,7 @@
       "amount": 25,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/278-a-baracuda_power_45.jpg",
       "brandTags": [
@@ -3899,7 +3899,7 @@
       "amount": 17,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/279---excite-spike-45-dose.jpg",
       "brandTags": [
@@ -3913,7 +3913,7 @@
       "amount": 17,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/280----excite-hammer-45-dose.jpg",
       "brandTags": [
@@ -3927,7 +3927,7 @@
       "amount": 13,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/281----econ_ii_45_web.jpg",
       "brandTags": [
@@ -3941,7 +3941,7 @@
       "amount": 13,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/282----excite-plinking-45-dose.jpg",
       "brandTags": [
@@ -4037,7 +4037,7 @@
       "amount": 30,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/289-sniper_medium_45.jpg",
       "brandTags": [
@@ -4051,7 +4051,7 @@
       "amount": 32,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/290-crow_magnum_45.jpg",
       "brandTags": [
@@ -4065,7 +4065,7 @@
       "amount": 35,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/291-spitzkugel_45.jpg",
       "brandTags": [
@@ -4079,7 +4079,7 @@
       "amount": 29,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/292-rabbit_magnum_ii_45.jpg",
       "brandTags": [
@@ -4251,7 +4251,7 @@
       "amount": 30,
       "category": "ვაზნები",
       "brand": "JSB",
-      "caliber": "4.50 MM",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/305-straton.jpg",
       "brandTags": [
@@ -4265,7 +4265,7 @@
       "amount": 18,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/306-Baracuda-Green-DOSE.JPG",
       "brandTags": [
@@ -4279,7 +4279,7 @@
       "amount": 17,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/307-Field-Target-Trophy-Green-DOSE.JPG",
       "brandTags": [
@@ -4293,7 +4293,7 @@
       "amount": 32,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/308-Piledriver-4-5-DOSE.JPG",
       "brandTags": [
@@ -4307,7 +4307,7 @@
       "amount": 18,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/309-exctite_smartshotbbs1.JPG",
       "brandTags": [
@@ -4321,7 +4321,7 @@
       "amount": 27,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/310-Apollo-4-5-DOSE.JPG",
       "brandTags": [
@@ -4391,7 +4391,7 @@
       "amount": 2,
       "category": "ვაზნები",
       "brand": "S&B",
-      "caliber": "",
+      "caliber": "40 S&W",
       "barrelLength": "",
       "image": "assets/products/315-20151229_111750.jpg",
       "brandTags": [
@@ -4405,7 +4405,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "S&B",
-      "caliber": "",
+      "caliber": "8×64S",
       "barrelLength": "",
       "image": "assets/products/316-20151228_104653.jpg",
       "brandTags": [
@@ -4419,7 +4419,7 @@
       "amount": 3,
       "category": "ვაზნები",
       "brand": "S&B",
-      "caliber": "",
+      "caliber": "22 HORNET",
       "barrelLength": "",
       "image": "assets/products/317-20151228_105336.jpg",
       "brandTags": [
@@ -4433,7 +4433,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "LAPUA",
-      "caliber": "12 GA",
+      "caliber": "7.62×53R",
       "barrelLength": "",
       "image": "assets/products/318-LAPUA-7-62x53R--MEGA-SP.jpg",
       "brandTags": [
@@ -4447,7 +4447,7 @@
       "amount": 6,
       "category": "ვაზნები",
       "brand": "LAPUA",
-      "caliber": "",
+      "caliber": "243 WIN",
       "barrelLength": "",
       "image": "assets/products/319-Lapua-.243Win-5-8g-B503-FMJ-4594.jpg",
       "brandTags": [
@@ -4461,7 +4461,7 @@
       "amount": 740,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
-      "caliber": "",
+      "caliber": "30-06",
       "barrelLength": "",
       "image": "assets/products/320---WR308B_22.jpg",
       "brandTags": [
@@ -4823,7 +4823,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "30R BLASER",
       "barrelLength": "",
       "image": "assets/products/346-30R-BLASER-GAME.jpg",
       "brandTags": [
@@ -4837,7 +4837,7 @@
       "amount": 11,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "300 WSM",
       "barrelLength": "",
       "image": "assets/products/347-300-W.S.M..jpg",
       "brandTags": [
@@ -4851,7 +4851,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "7×64",
       "barrelLength": "",
       "image": "assets/products/348-7x64.jpg",
       "brandTags": [
@@ -4865,7 +4865,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "280 REM",
       "barrelLength": "",
       "image": "assets/products/349-280-REM..jpg",
       "brandTags": [
@@ -4879,7 +4879,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "270 WSM",
       "barrelLength": "",
       "image": "assets/products/350-270-W.S.M..jpg",
       "brandTags": [
@@ -4893,7 +4893,7 @@
       "amount": 15,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "458 WIN MAG",
       "barrelLength": "",
       "image": "assets/products/351-458-WIN.-MAG..jpg",
       "brandTags": [
@@ -4907,7 +4907,7 @@
       "amount": 20,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "404 RIMLESS",
       "barrelLength": "",
       "image": "assets/products/352-404-RIMLESS-N.E..jpg",
       "brandTags": [
@@ -4921,7 +4921,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "35 WHELEN",
       "barrelLength": "",
       "image": "assets/products/353-35-WHELEN.jpg",
       "brandTags": [
@@ -4935,7 +4935,7 @@
       "amount": 11,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "8×68S",
       "barrelLength": "",
       "image": "assets/products/354-8x68-S.jpg",
       "brandTags": [
@@ -4949,7 +4949,7 @@
       "amount": 11,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "308 WIN",
       "barrelLength": "",
       "image": "assets/products/355-308-WIN.jpg",
       "brandTags": [
@@ -4963,7 +4963,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "30R BLASER",
       "barrelLength": "",
       "image": "assets/products/356-30R-BLASER.jpg",
       "brandTags": [
@@ -4977,7 +4977,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "300 WEATHERBY MAG",
       "barrelLength": "",
       "image": "assets/products/357-300-WEATH.-MAG..JPG",
       "brandTags": [
@@ -4991,7 +4991,7 @@
       "amount": 10,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "300 WSM",
       "barrelLength": "",
       "image": "assets/products/358-300-W.S.M..JPG",
       "brandTags": [
@@ -5005,7 +5005,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "7×64",
       "barrelLength": "",
       "image": "assets/products/359-7x64.JPG",
       "brandTags": [
@@ -5019,7 +5019,7 @@
       "amount": 8,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "280 REM",
       "barrelLength": "",
       "image": "assets/products/360-280-REM..JPG",
       "brandTags": [
@@ -5033,7 +5033,7 @@
       "amount": 9,
       "category": "ვაზნები",
       "brand": "SAUVESTRE",
-      "caliber": "",
+      "caliber": "270 WSM",
       "barrelLength": "",
       "image": "assets/products/361-270-W.S.M..JPG",
       "brandTags": [
@@ -5061,7 +5061,7 @@
       "amount": 26,
       "category": "ვაზნები",
       "brand": "H&N",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/363-sampler.jpg",
       "brandTags": [
@@ -5075,7 +5075,7 @@
       "amount": 27,
       "category": "ვაზნები",
       "brand": "JSB",
-      "caliber": "",
+      "caliber": "4.5 MM",
       "barrelLength": "",
       "image": "assets/products/364-Polymag.jpg",
       "brandTags": [
