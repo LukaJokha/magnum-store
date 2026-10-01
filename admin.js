@@ -32,7 +32,8 @@ $('#productForm [name=image]').onchange = event => {
 
 $('#productForm').onsubmit = async event => {
   event.preventDefault();
-  const form = new FormData(event.currentTarget), file = form.get('image'), button = $('#saveButton');
+  const formElement = event.currentTarget;
+  const form = new FormData(formElement), file = form.get('image'), button = $('#saveButton');
   if (!(file instanceof File) || !file.size) return message($('#productMessage'), 'აირჩიეთ პროდუქტის სურათი.');
   button.disabled = true; button.textContent = 'ინახება…';
   try {
@@ -45,7 +46,7 @@ $('#productForm').onsubmit = async event => {
     const row = { id: crypto.randomUUID(), name: form.get('name').trim(), amount, price: `${amount} ₾`, category: form.get('category'), brand: form.get('brand').trim() || null, caliber: form.get('caliber').trim() || null, barrelLength: form.get('barrelLength').trim() || null, image: imageUrl.publicUrl, description: form.get('description').trim() || null, source: 'admin' };
     const { error } = await db.from('products').insert(row);
     if (error) { await db.storage.from('product-images').remove([fileName]); throw error; }
-    event.currentTarget.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
+    formElement.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
   } catch (error) { message($('#productMessage'), `შენახვა ვერ მოხერხდა: ${error.message}`); }
   finally { button.disabled = false; button.textContent = 'პროდუქტის დამატება'; }
 };
@@ -55,8 +56,14 @@ $('#importButton').onclick = async () => {
   try {
     const response = await fetch('data/products.json'); if (!response.ok) throw new Error('კატალოგის ფაილი ვერ მოიძებნა.');
     const { products } = await response.json();
-    for (let index = 0; index < products.length; index += 50) {
-      const { error } = await db.from('products').upsert(products.slice(index, index + 50), { onConflict: 'id' });
+    const rows = products.map(product => ({
+      id: product.id, name: product.name, price: product.price, amount: product.amount,
+      category: product.category, brand: product.brand || null, caliber: product.caliber || null,
+      barrelLength: product.barrelLength || null, image: product.image,
+      description: product.description || null, source: 'magnum.ge'
+    }));
+    for (let index = 0; index < rows.length; index += 50) {
+      const { error } = await db.from('products').upsert(rows.slice(index, index + 50), { onConflict: 'id' });
       if (error) throw error;
     }
     message($('#importMessage'), `${products.length} პროდუქტი წარმატებით დაემატა ონლაინ ბაზას.`, true);
