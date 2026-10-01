@@ -116,7 +116,7 @@ async function init() {
         const baselineById = new Map(baseline.map(product => [product.id, product]));
         state.products = online.map(product => {
           const original = baselineById.get(product.id);
-          return original && product.source === 'magnum.ge' ? { ...original, ...product, brand: product.brand || original.brand, caliber: product.caliber || original.caliber, barrelLength: product.barrelLength || original.barrelLength } : product;
+          return original && product.source === 'magnum.ge' ? { ...product, ...original, createdAt: product.createdAt, source: product.source } : product;
         });
       }
       else {

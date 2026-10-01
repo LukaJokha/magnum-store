@@ -24,11 +24,24 @@ const barrelLength = name => {
   const match = name.match(/(?:barrel(?:\s+length)?|ლულ[ა-ის]*)\s*[:.-]?\s*(\d+(?:[.,]\d+)?)\s*(?:cm|სმ)?/i);
   return match ? match[1].replace(',', '.') : '';
 };
+const opticsBrands = new Set(['ARKEN', 'REDWIN', 'SCHMIDT & BENDER']);
+const ammunitionBrands = new Set(['H&N', 'SELLIER & BELLOT', 'SAUVESTRE', 'YAF', 'LAMBRO', 'ELEY', 'S&B', 'GGG']);
+const classify = product => {
+  if (product.category !== 'ცეცხლსასროლი იარაღი') return product.category;
+  const upper = product.name.toUpperCase();
+  if (opticsBrands.has(product.brand) || /\b(?:FFP|SFP|LPVO|MOA|MIL|RIFLESCOPE|SCOPE)\b|კოლიმატ/.test(upper)) return 'ოპტიკა';
+  if (product.brand === 'FENIX' || /ფანარ|FLASHLIGHT/i.test(product.name)) return 'ფანრები';
+  if (ammunitionBrands.has(product.brand) || /\b(?:AMMUNITION|CARTRIDGE)\b|ვაზნ/.test(upper)) return 'ვაზნები';
+  if (/პნევმატ|\b(?:PCP|DIABOLO)\b/i.test(product.name)) return 'პნევმატიკა';
+  if (/დან[ა-ის]/i.test(product.name)) return 'დანები';
+  return 'ცეცხლსასროლი იარაღი';
+};
 
 for (const product of catalog.products) {
   product.brand = normalizeBrand(product.name);
   product.caliber = caliber(product.name) || '';
   product.barrelLength = barrelLength(product.name) || '';
+  product.category = classify(product);
   delete product.sourceImage;
 }
 catalog.updatedAt = new Date().toISOString();
