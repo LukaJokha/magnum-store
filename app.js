@@ -34,7 +34,8 @@ function renderFilters() {
   const categorySource = availableFor('category');
   const counts = categorySource.reduce((map, product) => (map[product.category] = (map[product.category] || 0) + 1, map), {});
   const wrap = $('#categories'); wrap.innerHTML = '';
-  [['all', 'ყველა პროდუქტი', categorySource.length], ...Object.entries(counts)].forEach(([key, label, count]) => {
+  const categoryChoices = [['all', 'ყველა პროდუქტი', categorySource.length], ...Object.entries(counts).map(([category, count]) => [category, category, count])];
+  categoryChoices.forEach(([key, label, count]) => {
     const choice = document.createElement('label'); choice.className = 'choice';
     const input = document.createElement('input'); input.type = 'radio'; input.name = 'category'; input.value = key; input.checked = state.category === key;
     input.addEventListener('change', () => { state.category = key; state.page = 1; update(); });
