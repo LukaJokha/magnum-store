@@ -81,6 +81,13 @@ const clear = async () => click(`(() => {
   button.click();
   return true;
 })()`, 'გასუფთავების ღილაკი');
+const searchFor = value => click(`(() => {
+  const input = document.querySelector('#search');
+  if (!input) return false;
+  input.value = ${JSON.stringify(value)};
+  input.dispatchEvent(new Event('input', { bubbles: true }));
+  return true;
+})()`, 'საძიებო ველი');
 
 try {
   await call('Runtime.enable');
@@ -89,15 +96,21 @@ try {
   if (strictCatalog) assert.equal(initialCount, catalogCount, 'საწყის კატალოგში პროდუქტის რაოდენობა შეცვლილია');
 
   await selectCategory('ცეცხლსასროლი იარაღი');
-  const firearmsCount = await waitForCount(count => strictCatalog ? count === 140 : count > 0, 'ცეცხლსასროლი იარაღის კატეგორია');
+  const firearmsCount = await waitForCount(count => strictCatalog ? count === 121 : count > 0, 'ცეცხლსასროლი იარაღის კატეგორია');
   assert.equal(await evaluate(`[...document.querySelectorAll('#products .category')].every(item => item.textContent.trim() === 'ცეცხლსასროლი იარაღი')`), true, 'კატეგორიაში უცხო პროდუქტი გამოჩნდა');
+  await searchFor('Mini water pump');
+  await waitForCount(count => count === 0, 'წყლის ტუმბოს გამორიცხვა ცეცხლსასროლი იარაღიდან');
+  await searchFor('სასროლი თეფში');
+  await waitForCount(count => count === 0, 'თიხის დისკის გამორიცხვა ცეცხლსასროლი იარაღიდან');
+  await searchFor('');
+  await waitForCount(count => count === firearmsCount, 'ცეცხლსასროლი იარაღის ძიების გასუფთავება');
 
   await selectFacet('caliber', '12 GA');
-  const caliberCount = await waitForCount(count => strictCatalog ? count === 38 : count > 0 && count <= firearmsCount, '12 GA კალიბრი');
+  const caliberCount = await waitForCount(count => strictCatalog ? count === 37 : count > 0 && count <= firearmsCount, '12 GA კალიბრი');
   await selectFacet('brand', 'ARMSAN');
-  const armsanCount = await waitForCount(count => strictCatalog ? count === 2 : count > 0 && count <= caliberCount, '12 GA + ARMSAN');
+  const armsanCount = await waitForCount(count => strictCatalog ? count === 1 : count > 0 && count <= caliberCount, '12 GA + ARMSAN');
   await selectFacet('brand', 'HUGLU');
-  await waitForCount(count => strictCatalog ? count === 5 : count >= armsanCount && count <= caliberCount, 'რამდენიმე ბრენდის OR-არჩევა');
+  await waitForCount(count => strictCatalog ? count === 4 : count >= armsanCount && count <= caliberCount, 'რამდენიმე ბრენდის OR-არჩევა');
   assert.equal(await evaluate(`document.querySelectorAll('#activeFilters .filter-chip').length === 4`), true, 'აქტიური ფილტრის ჩიპები არ გამოჩნდა');
 
   await clear();
@@ -109,19 +122,13 @@ try {
     && !document.querySelector('#maxPrice').value`), true, 'გასუფთავების შემდეგ ძველი არჩევანი დარჩა');
 
   await selectCategory('ოპტიკა');
-  const opticsCount = await waitForCount(count => strictCatalog ? count === 78 : count > 0, 'ოპტიკის კატეგორია');
+  const opticsCount = await waitForCount(count => strictCatalog ? count === 72 : count > 0, 'ოპტიკის კატეგორია');
   await selectFacet('brand', 'ARKEN');
   await waitForCount(count => strictCatalog ? count === 5 : count > 0 && count <= opticsCount, 'ოპტიკა + ARKEN');
   assert.equal(await evaluate(`[...document.querySelectorAll('#products .category')].every(item => item.textContent.trim() === 'ოპტიკა')`), true, 'ოპტიკის ფილტრში სხვა კატეგორია გამოჩნდა');
 
   await clear();
-  await click(`(() => {
-    const input = document.querySelector('#search');
-    if (!input) return false;
-    input.value = 'DIAMONDBACK FIREARMS';
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-    return true;
-  })()`, 'საძიებო ველი');
+  await searchFor('DIAMONDBACK FIREARMS');
   await waitForCount(count => strictCatalog ? count === 1 : count > 0, 'ბრენდით ძიება');
   assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('DB15')`), true, 'ბრენდის ტეგით ნაპოვნი პროდუქტი არ გამოჩნდა');
 
