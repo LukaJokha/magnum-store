@@ -1,0 +1,356 @@
+{
+  "range": "magnum-126..magnum-250",
+  "reviewedIds": [
+    "magnum-126",
+    "magnum-127",
+    "magnum-128",
+    "magnum-129",
+    "magnum-130",
+    "magnum-131",
+    "magnum-132",
+    "magnum-133",
+    "magnum-134",
+    "magnum-135",
+    "magnum-136",
+    "magnum-137",
+    "magnum-138",
+    "magnum-139",
+    "magnum-140",
+    "magnum-141",
+    "magnum-142",
+    "magnum-143",
+    "magnum-144",
+    "magnum-145",
+    "magnum-146",
+    "magnum-147",
+    "magnum-148",
+    "magnum-149",
+    "magnum-150",
+    "magnum-151",
+    "magnum-152",
+    "magnum-153",
+    "magnum-154",
+    "magnum-155",
+    "magnum-156",
+    "magnum-157",
+    "magnum-158",
+    "magnum-159",
+    "magnum-160",
+    "magnum-161",
+    "magnum-162",
+    "magnum-163",
+    "magnum-164",
+    "magnum-165",
+    "magnum-166",
+    "magnum-167",
+    "magnum-168",
+    "magnum-169",
+    "magnum-170",
+    "magnum-171",
+    "magnum-172",
+    "magnum-173",
+    "magnum-174",
+    "magnum-175",
+    "magnum-176",
+    "magnum-177",
+    "magnum-178",
+    "magnum-179",
+    "magnum-180",
+    "magnum-181",
+    "magnum-182",
+    "magnum-183",
+    "magnum-184",
+    "magnum-185",
+    "magnum-186",
+    "magnum-187",
+    "magnum-188",
+    "magnum-189",
+    "magnum-190",
+    "magnum-191",
+    "magnum-192",
+    "magnum-193",
+    "magnum-194",
+    "magnum-195",
+    "magnum-196",
+    "magnum-197",
+    "magnum-198",
+    "magnum-199",
+    "magnum-200",
+    "magnum-201",
+    "magnum-202",
+    "magnum-203",
+    "magnum-204",
+    "magnum-205",
+    "magnum-206",
+    "magnum-207",
+    "magnum-208",
+    "magnum-209",
+    "magnum-210",
+    "magnum-211",
+    "magnum-212",
+    "magnum-213",
+    "magnum-214",
+    "magnum-215",
+    "magnum-216",
+    "magnum-217",
+    "magnum-218",
+    "magnum-219",
+    "magnum-220",
+    "magnum-221",
+    "magnum-222",
+    "magnum-223",
+    "magnum-224",
+    "magnum-225",
+    "magnum-226",
+    "magnum-227",
+    "magnum-228",
+    "magnum-229",
+    "magnum-230",
+    "magnum-231",
+    "magnum-232",
+    "magnum-233",
+    "magnum-234",
+    "magnum-235",
+    "magnum-236",
+    "magnum-237",
+    "magnum-238",
+    "magnum-239",
+    "magnum-240",
+    "magnum-241",
+    "magnum-242",
+    "magnum-243",
+    "magnum-244",
+    "magnum-245",
+    "magnum-246",
+    "magnum-247",
+    "magnum-248",
+    "magnum-249",
+    "magnum-250"
+  ],
+  "reviewScope": "Read all fields of every record; reviewed source photos for 223–226 and 234; verified model-family information with primary manufacturer material. Existing brands/categories in this range are supported by names or source packaging; no missing brand values in this range.",
+  "corrections": [
+    {
+      "id": "magnum-184",
+      "caliber": "12 GA",
+      "reason": "SCX12 / SCX-001 is explicitly 12 GA in Hunt Group's manufacturer catalog, not inferred from a projectile weight.",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf"
+      ]
+    },
+    {
+      "id": "magnum-189",
+      "barrelLength": "71",
+      "reason": "Source title explicitly gives shotgun barrel as 71sm (centimeters), but parser only accepts the English Barrel marker.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "id": "magnum-190",
+      "barrelLength": "71",
+      "reason": "Source title explicitly gives shotgun barrel as 71sm (centimeters), but parser only accepts the English Barrel marker.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "id": "magnum-193",
+      "barrelLength": "71",
+      "reason": "Source title explicitly gives shotgun barrel as 71sm (centimeters), but parser only accepts the English Barrel marker.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "id": "magnum-221",
+      "barrelLength": "71",
+      "reason": "Source title explicitly gives 12/76, 71 cm; 71 cm is the barrel length, but current parser requires a Barrel prefix.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "id": "magnum-222",
+      "barrelLength": "71",
+      "reason": "Source title explicitly gives 12/76, 71 cm; 71 cm is the barrel length, but current parser requires a Barrel prefix.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    }
+  ],
+  "confirmedBrands": [
+    {
+      "ids": [
+        "magnum-145",
+        "magnum-146",
+        "magnum-147",
+        "magnum-148",
+        "magnum-149",
+        "magnum-150",
+        "magnum-151",
+        "magnum-152",
+        "magnum-153",
+        "magnum-154",
+        "magnum-155"
+      ],
+      "brand": "MKA",
+      "reason": "MKA is a genuine marketed brand by Husan, rather than an invented first-token brand; retain existing MKA if that is the store's canonical display. Manufacturer is HUSAN ARMS; do not relabel as Akdal.",
+      "sources": [
+        "https://www.husanarms.com/",
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://img1.wsimg.com/blobby/go/cf0c9250-35d3-40e4-b4a6-925532e52e24/HUSAN%20CATALOG%202022A.pdf"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-223",
+        "magnum-224",
+        "magnum-225",
+        "magnum-226"
+      ],
+      "brand": "SELLIER & BELLOT",
+      "reason": "Visually inspected all four local source product photos. Packaging clearly shows Sellier & Bellot, supporting current explicit brand overrides despite absent brand in text.",
+      "sources": [
+        "local:assets/products/223-9-3-x-72-R.jpg",
+        "local:assets/products/224-10-mm-AUTO.jpg",
+        "local:assets/products/225-9-mm-LUGER.jpg",
+        "local:assets/products/226-9-mm-BROW.-COURT.jpg"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-234"
+      ],
+      "brand": "REDWIN",
+      "category": "აქსესუარები",
+      "reason": "Visually inspected local photo. REDWIN logo and M9/M10 mount model data printed on manufacturer product sheet; item is a mount, not scope or firearm.",
+      "sources": [
+        "local:assets/products/234-30mm-One-Piece-Mount-Ring-M9.jpg"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-235",
+        "magnum-236",
+        "magnum-237",
+        "magnum-238",
+        "magnum-239",
+        "magnum-240",
+        "magnum-241",
+        "magnum-242",
+        "magnum-243",
+        "magnum-244",
+        "magnum-245",
+        "magnum-246",
+        "magnum-247",
+        "magnum-248",
+        "magnum-249",
+        "magnum-250"
+      ],
+      "brand": "UTG",
+      "category": "ოპტიკა",
+      "reason": "Source titles explicitly identify UTG scope model codes. Leapers manufacturer site corroborates UTG as marketed brand; do not make LEAPERS a duplicate brand.",
+      "sources": [
+        "https://www.leapers.com/products/scopes/utg.html",
+        "https://www.leapers.com/products-utg-op3-gm4164umoa.html"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "ids": [
+        "magnum-156",
+        "magnum-196"
+      ],
+      "field": "caliber",
+      "reason": "XRS-001/XRS-002 source titles do not state gauge. Manufacturer source confirms XRS-101 12 Ga, but exact catalog variant equivalence was not fully established; do not blindly fill based on another XRS model.",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2023/02/2023HUNTGROUPCATALOG.pdf",
+        "https://www.huntgrouparms.com/wp-content/uploads/2023/11/XRS.pdf"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-189",
+        "magnum-190",
+        "magnum-193",
+        "magnum-197"
+      ],
+      "field": "caliber",
+      "reason": "SS12-201/202, MH-X-03, HS12-001 are shotgun model names suggesting 12 GA; original source does not explicitly state gauge, and the current available indexed catalog exposed other HS12 variants. Owner/exact old catalog confirmation recommended before filling.",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2023/02/2022-katolog.pdf",
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-203"
+      ],
+      "field": "caliber",
+      "reason": "Source title says Armed SP 20 but ends cal.2, an obvious source typo/conflict. Likely 20 GA; exact primary manufacturer confirmation required. Do not turn cal.2 into 2 MM or silently assume 12 GA.",
+      "sources": [
+        "local:data/products.json",
+        "https://www.armedguns.com.tr/"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-209"
+      ],
+      "field": "caliber",
+      "reason": "Armed Gladiator W 121 title omits gauge. Other Gladiator series likely 12 GA, but exact primary model confirmation unavailable.",
+      "sources": [
+        "local:data/products.json",
+        "https://www.armedguns.com.tr/"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-141"
+      ],
+      "field": "variant",
+      "reason": "Original title combines Mantis 1x22 Gen II RWD20 with Mantis 1x25 Solar RWD31 but image/model filename is RWD20. Keep original data with review flag; do not assert both variants stock.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-201",
+        "magnum-234"
+      ],
+      "field": "variantPrices",
+      "reason": "Single records cover two named model variants and two explicit prices. Root should preserve source text and choose valid displayed/from price, not create a fake single-price interpretation.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    },
+    {
+      "ids": [
+        "magnum-191",
+        "magnum-194",
+        "magnum-195",
+        "magnum-197",
+        "magnum-211",
+        "magnum-212",
+        "magnum-213",
+        "magnum-214",
+        "magnum-215",
+        "magnum-216",
+        "magnum-220"
+      ],
+      "field": "barrelVariants",
+      "reason": "Source title lists multiple barrel lengths; current scalar barrelLength only captures first. Product belongs under each available listed length if UI supports barrelLengthTags. Do not infer that all manufacturer variants are in stock.",
+      "sources": [
+        "local:data/products.json"
+      ]
+    }
+  ],
+  "systemicIssues": [
+    "All comma-decimal monetary strings have truncated amount (e.g. 126 2,80=>2; 171 0,90=>0). Root owns price parser.",
+    "Discounted product price strings have old numeric amount rather than final discounted price (e.g. 202 1450-10%=1305 has amount 1450).",
+    "234 M9-210 and M10-225 parses amount 9 (model number), not price.",
+    "Descriptions for 138–142 and 187 are concatenated in price field and should be preserved in description, with clean monetary price."
+  ]
+}

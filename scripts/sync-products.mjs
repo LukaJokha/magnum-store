@@ -49,5 +49,5 @@ await limited(products, 8, async product => {
   try { await writeFile(target, Buffer.from(await (await get(product.sourceImage)).arrayBuffer())); }
   catch (error) { console.warn(`Image skipped: ${product.name} (${error.message})`); product.image = product.sourceImage; }
 });
-await writeFile(resolve(OUT, 'data/products.json'), JSON.stringify({ updatedAt: new Date().toISOString(), source: ROOT, products }, null, 2));
-console.log(`Saved ${products.length} verified products and images.`);
+await writeFile(resolve(OUT, 'data/products-source-review.json'), JSON.stringify({ updatedAt: new Date().toISOString(), source: ROOT, products }, null, 2));
+console.log(`Captured ${products.length} source listings in data/products-source-review.json. Review identities, specifications, and prices before updating the audited catalog.`);

@@ -2,34 +2,9 @@ import fs from 'node:fs/promises';
 
 const file = new URL('../data/products.json', import.meta.url);
 const catalog = JSON.parse(await fs.readFile(file, 'utf8'));
-const aliases = [
-  ['ROCK ISLAND ARMORY', /^ROCK\s+ISLAND\s+ARMORY/i], ['ROCK RIVER', /^ROCK\s+RIVER/i],
-  ['HUNT GROUP', /^HUNT\s+GROUP/i], ['SELLIER & BELLOT', /^SELLIER[-\s]?BELLOT/i],
-  ['SCHMIDT & BENDER', /^SCHMIDT\s*&?\s*BENDER/i], ['POF USA', /^POF[-\s]?USA/i],
-  ['S&W', /^S&W\b/i], ['H&N', /^H&N\b/i], ['MKA', /^MKA(?:556|919)/i],
-  ['UTG', /\bUTG\b|\b(?:SCP|OP3|OP|OT|RB|MNT)-|\b(?:RGPM|RGWM|RG2W|RQ2W)/i],
-  ['GANZO', /\bGANZO\b/i], ['HILL', /\bHILL\b/i], ['LAPUA', /^(?:AMMUNITION\s+)?LAPUA\b/i],
-  ['AIR ARMS', /\bAIR\s+ARMS\b/i], ['ASELKON', /\bRAVELLO\b/i],
-  ['DIAMONDBACK FIREARMS', /^DB15\b/i]
-];
-const nonBrands = /^(?:\d|PADDLE|AMMUNITION|PCP|OFF|PWM|MINI|DIABOLO|ARE-|ARW-|SF-|RG|RQ|SCP-|KNIFE|BARRELS|Კ|Ს|Ხ|Დ|Ო|Ა|Მ|Პ)/i;
-const overrides = new Map([
-  ...['magnum-223', 'magnum-224', 'magnum-225', 'magnum-226'].map(id => [id, ['SELLIER & BELLOT']]),
-  ['magnum-234', ['REDWIN']], ['magnum-260', ['ASELKON']], ['magnum-270', ['MIDI']],
-  ['magnum-283', ['OFF GRID']], ['magnum-305', ['JSB']],
-  ...['magnum-311', 'magnum-312', 'magnum-313', 'magnum-314'].map(id => [id, ['FENIX']]),
-  ...['magnum-318', 'magnum-319'].map(id => [id, ['LAPUA']]),
-  ['magnum-365', ['AIR ARMS']], ['magnum-368', ['ATA ARMS', 'ARMSAN']], ['magnum-372', ['UTG']],
-  ['magnum-373', ['UTG']], ['magnum-375', ['FABARM']]
-]);
-const normalizeBrands = product => {
-  const explicit = overrides.get(product.id);
-  if (explicit) return explicit;
-  const name = product.name;
-  for (const [brand, pattern] of aliases) if (pattern.test(name)) return [brand];
-  const first = name.trim().split(/[\s,]+/)[0].replace(/[^\p{L}\p{N}&.-]/gu, '');
-  return !first || nonBrands.test(first) ? [] : [first.toUpperCase()];
-};
+const metadata = JSON.parse(await fs.readFile(new URL('../data/catalog-metadata.json', import.meta.url), 'utf8'));
+// All known identities use explicit audited decisions. Never derive a maker
+// from the first word (MIDI, MPPT, OFF GRID are types, not manufacturers).
 // The source mixes cartridge caliber with pellet head size and projectile
 // weight. These aliases are deliberately specific: `12g` means 12 grams, not
 // 12 gauge, so it must never become a gauge filter value.
@@ -74,54 +49,50 @@ const caliber = name => {
   const xCaliber = name.match(/\b(\d+(?:[.,]\d+)?)\s*[x×]\s*(\d+(?:[.,]\d+)?)(?:\s*(MM|R))?\b/i);
   return xCaliber ? canonicalCaliber(`${xCaliber[1]}×${xCaliber[2]}${xCaliber[3] || ''}`) : '';
 };
-const barrelLength = name => {
-  const match = name.match(/(?:barrel(?:\s+length)?|ლულ[ა-ის]*)\s*[:.-]?\s*(\d+(?:[.,]\d+)?)\s*(?:cm|სმ)?/i);
-  return match ? match[1].replace(',', '.') : '';
+const unique = values => [...new Set(values.filter(Boolean))];
+const calibers = name => {
+  const matches = caliberAliases.filter(([pattern]) => pattern.test(name)).map(([, value]) => value);
+  return unique(matches.length ? matches : [caliber(name)]);
 };
-const opticsBrands = new Set(['ARKEN', 'REDWIN', 'SCHMIDT & BENDER']);
-const ammunitionBrands = new Set(['H&N', 'SELLIER & BELLOT', 'SAUVESTRE', 'YAF', 'LAMBRO', 'ELEY', 'S&B', 'GGG', 'JSB']);
-const firearmBrands = new Set([
-  'HUGLU', 'ROSSI', 'TAURUS', 'ROCK ISLAND ARMORY', 'GLOCK', 'RUGER', 'GUERINI', 'HUNT GROUP', 'ROCK RIVER', 'MORISSON',
-  'SARSILMAZ', 'S&W', 'KRAL', 'HK', 'FABARM', 'POF USA', 'MKA', 'CITADEL', 'ARMED', 'ARMSAN', 'ASELKON', 'PARDUS', 'MAUSER', 'DIAMONDBACK FIREARMS'
-]);
-// These entries are checked individually because their original source page put
-// most of the catalog in one broad section. Keep this list explicit so a later
-// catalog refresh cannot silently put non-firearm goods back into firearms.
-const categoryOverrides = new Map([
-  ['magnum-58', 'ნავები და ძრავები'], ['magnum-59', 'ცეცხლსასროლი იარაღი'], ['magnum-62', 'ცეცხლსასროლი იარაღი'],
-  ['magnum-124', 'აქსესუარები'], ['magnum-152', 'ცეცხლსასროლი იარაღი'], ['magnum-154', 'ცეცხლსასროლი იარაღი'],
-  ['magnum-227', 'ვაზნები'], ['magnum-230', 'ვაზნები'], ['magnum-234', 'აქსესუარები'], ['magnum-251', 'აქსესუარები'],
-  ['magnum-257', 'ოპტიკა'], ['magnum-258', 'ოპტიკა'], ['magnum-259', 'აქსესუარები'], ['magnum-263', 'ტურიზმი'],
-  ['magnum-264', 'აქსესუარები'], ['magnum-265', 'პნევმატიკა'], ['magnum-270', 'აქსესუარები'],
-  ['magnum-283', 'აქსესუარები'], ['magnum-284', 'აქსესუარები'], ['magnum-285', 'აქსესუარები'], ['magnum-286', 'აქსესუარები'],
-  ['magnum-300', 'აქსესუარები'], ['magnum-301', 'აქსესუარები'], ['magnum-302', 'აქსესუარები'], ['magnum-303', 'აქსესუარები'], ['magnum-304', 'აქსესუარები'],
-  ['magnum-305', 'ვაზნები'], ['magnum-321', 'ნავები და ძრავები'], ['magnum-364', 'ვაზნები'],
-  ['magnum-365', 'აქსესუარები'], ['magnum-368', 'აქსესუარები'], ['magnum-369', 'აქსესუარები'],
-  ['magnum-370', 'აქსესუარები'], ['magnum-371', 'აქსესუარები'], ['magnum-374', 'აქსესუარები'], ['magnum-375', 'აქსესუარები']
-]);
+const barrelLengths = name => {
+  const fragment = name.match(/(?:barrel(?:\s+length)?|ლულ[ა-ის]*)\s*[:.-]?\s*(.+)/i)?.[1];
+  if (!fragment) return [];
+  // Unitless values cannot be assumed to be centimeters.
+  return unique([...fragment.matchAll(/(\d+(?:[.,]\d+)?)\s*(cm|mm|სმ|მმ|inch(?:es)?|″|")/gi)].map(([, number, unit]) => {
+    const size = Number(number.replace(',', '.'));
+    const value = /^(mm|მმ)$/i.test(unit) ? size / 10 : /^(inch|″|")/i.test(unit) ? size * 2.54 : size;
+    return value > 0 && value <= 130 ? String(Number(value.toFixed(2))) : '';
+  }));
+};
+const parsePrice = raw => {
+  const range = raw.trim().match(/^(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*(?:ლარი|lari|₾)/i);
+  const amounts = [...raw.matchAll(/(\d+(?:[.,]\d+)?)\s*(?:ლარი|lari|₾)/gi)].map(match => Number(match[1].replace(',', '.')));
+  if (range) amounts.push(Number(range[1].replace(',', '.')));
+  if (!amounts.length || amounts.some(value => !Number.isFinite(value) || value <= 0)) throw new Error(`Unrecognized monetary price: ${raw}`);
+  return { amount: Math.min(...amounts), variable: new Set(amounts).size > 1 };
+};
 const caliberCategories = new Set(['ცეცხლსასროლი იარაღი', 'ვაზნები', 'პნევმატიკა']);
-const classify = product => {
-  const upper = product.name.toUpperCase();
-  const brands = product.brandTags || [];
-  const verified = categoryOverrides.get(product.id);
-  if (verified) return verified;
-  if (ammunitionBrands.has(product.brand) || /\b(?:AMMUNITION|CARTRIDGE|AMMO|FMJ|POLYMER\s+TIP)\b|ვაზნ/.test(upper)) return 'ვაზნები';
-  if (product.brand === 'FENIX' || /ფანარ|FLASHLIGHT/i.test(product.name)) return 'ფანრები';
-  if (/\b(?:PADDLE|SEA\s+SCOOTER|BOAT)\b|ნავი|ნიჩაბ/i.test(product.name)) return 'ნავები და ძრავები';
-  if (/დან[ა-ის]|\bKNIFE\b/i.test(product.name)) return 'დანები';
-  if (/პნევმატ|\b(?:PCP|AIR\s+RIFLE|COMPRESSED\s+AIR|DIABOLO)\b/i.test(product.name)) return 'პნევმატიკა';
-  if (opticsBrands.has(product.brand) || brands.includes('UTG') && /\b(?:SCP|OP3|OP-|OT-|SCOPE|DOT|MAGNIFIER)\b|კოლიმატ|ოპტიკურ/.test(upper) || /\b(?:FFP|SFP|LPVO|RIFLESCOPE|SCOPE|MAGNIFIER|BINOCULAR)\b|კოლიმატ/.test(upper)) return 'ოპტიკა';
-  if (firearmBrands.has(product.brand) || /\b(?:RIFLE|PISTOL|REVOLVER|SHOTGUN|SEMI[-\s]?AUTO|LEVER\s+ACTION|BOLT\s+ACTION|PUMP\s+ACTION)\b|თოფ|პისტოლ/.test(upper)) return 'ცეცხლსასროლი იარაღი';
-  if (brands.includes('UTG') || /\b(?:MOUNT|RING|PAD|ADAPTOR|BARRELS?|MAGAZINE|HOSE|CYLINDER|PUMP|INVERTER|CONTROLLER|TARGET)\b|კრონშტეინ|ამორტიზატ|მჭიდ|სამიზნ/.test(upper)) return 'აქსესუარები';
-  return product.category;
-};
 
 for (const product of catalog.products) {
-  product.brandTags = normalizeBrands(product);
+  const decision = metadata.products[product.id];
+  if (!decision) throw new Error(`Product requires individual identity review: ${product.id}`);
+  product.brandTags = unique(decision.brandTags);
   product.brand = product.brandTags[0] || '';
-  product.category = classify(product);
-  product.caliber = caliberCategories.has(product.category) ? caliber(product.name) || '' : '';
-  product.barrelLength = product.category === 'ცეცხლსასროლი იარაღი' ? barrelLength(product.name) || '' : '';
+  product.brandStatus = decision.brandStatus;
+  product.category = decision.category;
+  product.caliberTags = caliberCategories.has(product.category) ? unique(decision.caliberTags || calibers(product.name)) : [];
+  product.barrelLengthTags = ['ცეცხლსასროლი იარაღი', 'პნევმატიკა'].includes(product.category) ? unique(decision.barrelLengthTags || barrelLengths(product.name)) : [];
+  product.caliber = product.caliberTags[0] || '';
+  product.barrelLength = product.barrelLengthTags[0] || '';
+  product.sourcePrice ||= product.price;
+  const price = parsePrice(product.sourcePrice);
+  product.amount = price.amount;
+  const formatted = Number.isInteger(price.amount) ? String(price.amount) : price.amount.toFixed(2).replace('.', ',');
+  product.price = `${formatted} ${price.variable ? 'ლარიდან' : 'ლარი'}`;
+  product.description = String(product.description || '').trim();
+  if (!/^\s*\d+(?:[.,]\d+)?\s*(?:ლარი|lari|₾)\s*$/i.test(product.sourcePrice) && !product.description.includes(product.sourcePrice)) {
+    product.description = [product.description, `ფასი და ვარიანტები: ${product.sourcePrice}`].filter(Boolean).join('\n\n');
+  }
   delete product.sourceImage;
 }
 catalog.updatedAt = new Date().toISOString();

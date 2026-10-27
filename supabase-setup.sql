@@ -11,8 +11,19 @@ create table if not exists public.products (
   image text not null,
   description text,
   "createdAt" timestamptz default now(),
-  source text
+  source text,
+  "brandTags" jsonb not null default '[]'::jsonb,
+  "caliberTags" jsonb not null default '[]'::jsonb,
+  "barrelLengthTags" jsonb not null default '[]'::jsonb,
+  "brandStatus" text not null default 'unverified',
+  "sourcePrice" text not null default ''
 );
+
+alter table public.products add column if not exists "brandTags" jsonb not null default '[]'::jsonb;
+alter table public.products add column if not exists "caliberTags" jsonb not null default '[]'::jsonb;
+alter table public.products add column if not exists "barrelLengthTags" jsonb not null default '[]'::jsonb;
+alter table public.products add column if not exists "brandStatus" text not null default 'unverified';
+alter table public.products add column if not exists "sourcePrice" text not null default '';
 
 -- Optional product attributes are stored as empty strings, never the literal value "null".
 update public.products set brand = coalesce(brand, ''), caliber = coalesce(caliber, ''), "barrelLength" = coalesce("barrelLength", ''), description = coalesce(description, '');

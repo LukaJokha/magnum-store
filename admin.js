@@ -13,11 +13,11 @@ function populateSelect(name, values, suffix = '') {
 
 async function loadStandardProductValues() {
   const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] });
-  const { data } = await db.from('products').select('brand,caliber,barrelLength');
+  const { data } = await db.from('products').select('brand,caliber,barrelLength,brandTags,caliberTags,barrelLengthTags');
   const products = [...catalog.products, ...(data || [])];
   populateSelect('brand', products.flatMap(product => Array.isArray(product.brandTags) ? product.brandTags : [product.brand]));
-  populateSelect('caliber', products.map(product => product.caliber));
-  populateSelect('barrelLength', products.map(product => product.barrelLength), ' სმ');
+  populateSelect('caliber', products.flatMap(product => product.caliberTags?.length ? product.caliberTags : [product.caliber]));
+  populateSelect('barrelLength', products.flatMap(product => product.barrelLengthTags?.length ? product.barrelLengthTags : [product.barrelLength]), ' სმ');
 }
 
 async function refreshSession() {
@@ -62,6 +62,15 @@ $('#productForm').onsubmit = async event => {
     const { data: imageUrl } = db.storage.from('product-images').getPublicUrl(fileName);
     const amount = Number(form.get('amount'));
     const row = { id: crypto.randomUUID(), name: form.get('name').trim(), amount, price: `${amount} ₾`, category: form.get('category'), brand: form.get('brand') || '', caliber: form.get('caliber') || '', barrelLength: form.get('barrelLength') || '', image: imageUrl.publicUrl, description: form.get('description').trim() || '', source: 'admin' };
+    const supportsCaliber = ['ცეცხლსასროლი იარაღი', 'პნევმატიკა', 'ვაზნები'].includes(row.category);
+    const supportsBarrel = ['ცეცხლსასროლი იარაღი', 'პნევმატიკა'].includes(row.category);
+    if (!supportsCaliber) row.caliber = '';
+    if (!supportsBarrel) row.barrelLength = '';
+    row.brandTags = [row.brand].filter(Boolean);
+    row.caliberTags = [row.caliber].filter(Boolean);
+    row.barrelLengthTags = [row.barrelLength].filter(Boolean);
+    row.brandStatus = row.brand ? 'verified' : 'unverified';
+    row.sourcePrice = row.price;
     const { error } = await db.from('products').insert(row);
     if (error) { await db.storage.from('product-images').remove([fileName]); throw error; }
     formElement.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
@@ -78,7 +87,11 @@ $('#importButton').onclick = async () => {
       id: product.id, name: product.name, price: product.price, amount: product.amount,
       category: product.category, brand: product.brand || '', caliber: product.caliber || '',
       barrelLength: product.barrelLength || '', image: product.image,
-      description: product.description || '', source: 'magnum.ge'
+      description: product.description || '', source: 'magnum.ge',
+      brandTags: product.brandTags || [], caliberTags: product.caliberTags || [],
+      barrelLengthTags: product.barrelLengthTags || [],
+      brandStatus: product.brandStatus || (product.brand ? 'verified' : 'unverified'),
+      sourcePrice: product.sourcePrice || product.price
     }));
     for (let index = 0; index < rows.length; index += 50) {
       const { error } = await db.from('products').upsert(rows.slice(index, index + 50), { onConflict: 'id' });

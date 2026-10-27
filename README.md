@@ -1,28 +1,34 @@
-# Magnum Products Shop
+# Magnum Store catalog
 
-Professional product catalog for Magnum. It includes a password-protected admin page for adding products, but intentionally does not include checkout, payments, or customer accounts.
+Georgian product catalog with home/contact pages, faceted product search, and Supabase-backed administration. Checkout and payments are not implemented.
 
-## Open locally
+Run `start.bat` locally. Open `admin.html` to sign in with an account created in the project's Supabase Authentication. There is no shared website administrator password in the frontend.
 
-Run `start.bat`—do not open `index.html` directly. It starts the catalog server in the background, waits for it to become available, then opens the public catalog. Use `open-admin.bat` to open the password-protected admin page directly.
+## Data and administration
 
-## Add a product
+- `data/products.json` is the audited offline catalog and initial import source.
+- Supabase's `public.products` table becomes authoritative once the original catalog is imported. Existing product changes and deletions are respected; local metadata no longer overwrites online records.
+- `brandTags`, `caliberTags`, and `barrelLengthTags` preserve multiple manufacturer/specification values on combined source listings. Scalar fields retain a primary value for compatibility. Barrel lengths use centimeters.
+- `amount` is the numeric selling/from price. `sourcePrice` preserves the original price string; variant and bulk-price notes remain in `description`.
+- `brandStatus: unverified` marks a manufacturer that could not be established. Do not replace it with a guessed brand.
 
-Open the admin page, log in, add the product name, price, category, description and image, then select **პროდუქტის დამატება**. The product appears in the public catalog immediately.
+Create the schema using `supabase-setup.sql`. Existing installations need its additional attribute columns before using the updated admin importer. The administration page's **არსებული კატალოგის იმპორტი** imports the audited original listings; new products use the same canonical option values.
 
-The temporary development password is `magnum-admin`. Before delivery or deployment, set a unique `ADMIN_PASSWORD` and `SESSION_SECRET` environment variable (see `.env.example`).
+## Catalog review and backups
 
-## Refresh products
+The full review and remaining source uncertainties are documented in `data/CATALOG-AUDIT.md`. `data/catalog-metadata.json` records explicit per-product identity decisions; the three `scripts/audit-range-*.json` files provide evidence and review coverage.
 
-Run `sync-products.bat`. It reads the public Magnum catalog pages, downloads product images, and rewrites `data/products.json`. Review the refreshed products and prices before publishing.
+Useful commands (run from this directory):
 
-## Files
+```powershell
+node scripts/backup-catalog.mjs
+node scripts/normalize-catalog.mjs
+node scripts/verify-catalog-audit.mjs
+node scripts/verify-filters.mjs
+node scripts/prepare-catalog-migration.mjs
+node scripts/verify-supabase-catalog.mjs
+```
 
-- `index.html` — catalog markup
-- `styles.css` — responsive design system
-- `app.js` — filtering, sorting, pagination, product dialog
-- `data/products.json` — locally stored catalog data
-- `assets/products/` — downloaded catalog images
-- `scripts/sync-products.mjs` — source sync script
+Backups and the generated SQL import are written to the sibling desktop folder `magnum-store-database-backup`. The migration upserts the reviewed IDs in one transaction and verifies them before committing. It does not delete unrelated products. The verification command reads Supabase again and compares every imported field with the local catalog.
 
-The catalog data and images were captured from `http://magnum.ge/production-ka` on the date the sync script was run. The store should approve its final product information and any publishing rights before launch.
+`sync-products.bat` captures the public source into `data/products-source-review.json` for a new review. It does not overwrite the audited published file. New or changed source items require individual identity review before normalization/publication.

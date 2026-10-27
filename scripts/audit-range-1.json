@@ -1,0 +1,340 @@
+{
+  "range": "magnum-1..magnum-125",
+  "reviewedIds": [
+    "magnum-1",
+    "magnum-2",
+    "magnum-3",
+    "magnum-4",
+    "magnum-5",
+    "magnum-6",
+    "magnum-7",
+    "magnum-8",
+    "magnum-9",
+    "magnum-10",
+    "magnum-11",
+    "magnum-12",
+    "magnum-13",
+    "magnum-14",
+    "magnum-15",
+    "magnum-16",
+    "magnum-17",
+    "magnum-18",
+    "magnum-19",
+    "magnum-20",
+    "magnum-21",
+    "magnum-22",
+    "magnum-23",
+    "magnum-24",
+    "magnum-25",
+    "magnum-26",
+    "magnum-27",
+    "magnum-28",
+    "magnum-29",
+    "magnum-30",
+    "magnum-31",
+    "magnum-32",
+    "magnum-33",
+    "magnum-34",
+    "magnum-35",
+    "magnum-36",
+    "magnum-37",
+    "magnum-38",
+    "magnum-39",
+    "magnum-40",
+    "magnum-41",
+    "magnum-42",
+    "magnum-43",
+    "magnum-44",
+    "magnum-45",
+    "magnum-46",
+    "magnum-47",
+    "magnum-48",
+    "magnum-49",
+    "magnum-50",
+    "magnum-51",
+    "magnum-52",
+    "magnum-53",
+    "magnum-54",
+    "magnum-55",
+    "magnum-56",
+    "magnum-57",
+    "magnum-58",
+    "magnum-59",
+    "magnum-60",
+    "magnum-61",
+    "magnum-62",
+    "magnum-63",
+    "magnum-64",
+    "magnum-65",
+    "magnum-66",
+    "magnum-67",
+    "magnum-68",
+    "magnum-69",
+    "magnum-70",
+    "magnum-71",
+    "magnum-72",
+    "magnum-73",
+    "magnum-74",
+    "magnum-75",
+    "magnum-76",
+    "magnum-77",
+    "magnum-78",
+    "magnum-79",
+    "magnum-80",
+    "magnum-81",
+    "magnum-82",
+    "magnum-83",
+    "magnum-84",
+    "magnum-85",
+    "magnum-86",
+    "magnum-87",
+    "magnum-88",
+    "magnum-89",
+    "magnum-90",
+    "magnum-91",
+    "magnum-92",
+    "magnum-93",
+    "magnum-94",
+    "magnum-95",
+    "magnum-96",
+    "magnum-97",
+    "magnum-98",
+    "magnum-99",
+    "magnum-100",
+    "magnum-101",
+    "magnum-102",
+    "magnum-103",
+    "magnum-104",
+    "magnum-105",
+    "magnum-106",
+    "magnum-107",
+    "magnum-108",
+    "magnum-109",
+    "magnum-110",
+    "magnum-111",
+    "magnum-112",
+    "magnum-113",
+    "magnum-114",
+    "magnum-115",
+    "magnum-116",
+    "magnum-117",
+    "magnum-118",
+    "magnum-119",
+    "magnum-120",
+    "magnum-121",
+    "magnum-122",
+    "magnum-123",
+    "magnum-124",
+    "magnum-125"
+  ],
+  "reviewMethod": "Read every complete JSON record in this range. Compared product type and explicit brand in titles with stored classification. Researched ambiguous/supplementary specifications using official manufacturer pages and catalogs; inspected unbranded paddle image. Preserved explicit existing brand spelling.",
+  "brandCategorySummary": "All 125 existing category assignments agree with product types under the current top-level taxonomy. 124 products have explicit recognizable product brands; magnum-58 does not identify a brand in title or image and must not receive an invented brand. No first-token pseudo-brand found in this range.",
+  "corrections": [
+    {
+      "id": "magnum-33",
+      "caliber": "9×19 MM",
+      "barrelLength": "11.4",
+      "reason": "Exact G17 Gen5 model is specified. Official GLOCK page identifies 9 mm Luger and 114 mm barrel. Existing generic 9 MM can be consolidated with 9×19 MM; 114 mm equals 11.4 cm.",
+      "sources": [
+        "https://eu.glock.com/en/products/pistols/g17-gen5"
+      ]
+    },
+    {
+      "id": "magnum-34",
+      "caliber": "9×19 MM",
+      "barrelLength": "10.2",
+      "reason": "Exact G19 Gen5 model is specified. Official GLOCK page identifies 9 mm Luger and 102 mm barrel. Existing generic 9 MM can be consolidated with 9×19 MM; 102 mm equals 10.2 cm.",
+      "sources": [
+        "https://eu.glock.com/en/products/pistols/g19-gen5"
+      ]
+    },
+    {
+      "id": "magnum-36",
+      "barrelLength": "45.72",
+      "reason": "Title specifies exact Ruger model 8313. Official specification identifies 17 HMR and 18-inch barrel, equal to 45.72 cm. Preserve title caliber over filename, which refers to another Ruger model.",
+      "sources": [
+        "https://ruger.com/products/americanRimfireCompact/specSheets/8313.html"
+      ]
+    },
+    {
+      "id": "magnum-72",
+      "barrelLength": "41.91",
+      "reason": "Existing 16.5 is an inch value incorrectly exposed as centimeters. Official S&W Response page embedded product description explicitly specifies 16.5-inch barrel and exact two-23-round-magazine configuration; convert to 41.91 cm.",
+      "sources": [
+        "https://www.smith-wesson.com/product/response"
+      ]
+    },
+    {
+      "id": "magnum-96",
+      "caliber": "9×19 MM",
+      "barrelLength": "8.3",
+      "reason": "Exact SKU 81001108 is present in both source title and official HK listing. Official technical specs identify 9 mm x 19 and 83 mm barrel (8.3 cm in manufacturer's catalog).",
+      "sources": [
+        "https://hk-usa.com/product/p30sk/",
+        "https://s3.amazonaws.com/hk-manuals/files/Catalogs/Civilian/HK_Sport_and_Security_2018_Catalog.pdf"
+      ]
+    },
+    {
+      "id": "magnum-122",
+      "caliber": "12 GA",
+      "barrelLength": "76",
+      "reason": "Title identifies STL COMPETITION C6 and 76 cm. Official exact model page gives gauge 12/76. The parser missed caliber because original title abbreviates it as 12M and missed barrel because title omits word Barrel.",
+      "sources": [
+        "https://www.fabarm.com/web_eng/dettaglio-prodotto.asp?i=89"
+      ]
+    },
+    {
+      "id": "magnum-123",
+      "caliber": "12 GA",
+      "reason": "Title identifies AXIS S&H AS, 12M. Official exact model page confirms 12/76 gauge; title's 71 cm OR 76 cm requires variant/multiple-value handling rather than arbitrarily selecting one barrel.",
+      "sources": [
+        "https://www.fabarm.com/web_eng/dettaglio-prodotto.asp?i=202"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "magnum-58",
+      "field": "brand",
+      "reason": "Paddle standard 1500 mm has no brand in title; local image shows no visible manufacturer mark. Leave empty until shop supplies manufacturer.",
+      "sources": []
+    },
+    {
+      "id": "magnum-115",
+      "field": "caliber",
+      "reason": "Single catalog row explicitly combines PRZ44 cal.44 MAG and PRZ45 cal.45 LC. Current scalar 45 COLT loses 44 MAG. Preserve as product variants or caliberTags ['44 MAG','45 COLT']; do not pick one arbitrarily.",
+      "sources": [
+        "https://www.deryasilah.com/demo/parantez-arge/wp-content/uploads/2026/01/digital-catalogue.pdf"
+      ]
+    },
+    {
+      "id": "magnum-123",
+      "field": "barrelLength",
+      "reason": "Source explicitly offers 71 cm or 76 cm. Store both variant lengths or keep scalar empty and show available variants; choosing a single barrel misrepresents source.",
+      "sources": [
+        "https://www.fabarm.com/web_eng/dettaglio-prodotto.asp?i=202"
+      ]
+    },
+    {
+      "id": "magnum-32",
+      "field": "image",
+      "reason": "Title SKU is 51261; image filename says 51289. Image may be generic M206 family photo. Do not change SKU/caliber by filename alone.",
+      "sources": []
+    },
+    {
+      "id": "magnum-36",
+      "field": "image",
+      "reason": "Title model 8313 17HMR agrees with official exact SKU; filename says model 8321 22WMR. Stock model representation is inconsistent in source. Retain title-based specs and flag image for shop verification.",
+      "sources": [
+        "https://ruger.com/products/americanRimfireCompact/specSheets/8313.html"
+      ]
+    },
+    {
+      "id": "magnum-7",
+      "field": "image",
+      "reason": "Title specifies 22WMR; filename says 17HMR. Do not change explicit caliber based on a reusable family image filename.",
+      "sources": []
+    },
+    {
+      "ids": [
+        "magnum-50",
+        "magnum-51",
+        "magnum-52",
+        "magnum-53",
+        "magnum-54",
+        "magnum-55",
+        "magnum-56",
+        "magnum-57",
+        "magnum-98",
+        "magnum-99"
+      ],
+      "field": "caliber",
+      "reason": "Titles omit caliber. Official Hunt Group catalogs establish firearm category but model families can have variants. Do not infer stocked chambering from generic family.",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2023/02/2022-katolog.pdf",
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf"
+      ]
+    }
+  ],
+  "sourceConfirmedBrands": [
+    {
+      "brand": "GUERINI",
+      "canonicalFullName": "CAESAR GUERINI",
+      "ids": [
+        "magnum-37",
+        "magnum-38",
+        "magnum-39",
+        "magnum-40",
+        "magnum-41",
+        "magnum-42",
+        "magnum-43"
+      ],
+      "reason": "Official manufacturer history explicitly names Figura, Tempio, Magnus, Roman MMI; official manufacturer catalog names Reflexo. Keep original catalog label unless a global alias migration is intended.",
+      "sources": [
+        "https://www.caesarguerini.it/en/storia-gli-inizi/",
+        "https://www.caesarguerini.it/sites/default/files/2020-02/Catalogo%20D-R%202020.pdf"
+      ]
+    },
+    {
+      "brand": "MORISSON",
+      "ids": [
+        "magnum-63",
+        "magnum-64",
+        "magnum-65",
+        "magnum-66",
+        "magnum-67",
+        "magnum-68",
+        "magnum-115",
+        "magnum-116"
+      ],
+      "reason": "MORISSON is an explicit commercial product line in Derya official catalog. Do not overwrite with ROSSI or HUNT GROUP based on resemblance.",
+      "sources": [
+        "https://www.deryasilah.com/demo/parantez-arge/wp-content/uploads/2026/01/digital-catalogue.pdf"
+      ]
+    }
+  ],
+  "additionalDataIssues": [
+    {
+      "ids": [
+        "magnum-85",
+        "magnum-86",
+        "magnum-87",
+        "magnum-88",
+        "magnum-89",
+        "magnum-90",
+        "magnum-91",
+        "magnum-92",
+        "magnum-93",
+        "magnum-94",
+        "magnum-95",
+        "magnum-100",
+        "magnum-101",
+        "magnum-106",
+        "magnum-107",
+        "magnum-109",
+        "magnum-110",
+        "magnum-111",
+        "magnum-112",
+        "magnum-113",
+        "magnum-114",
+        "magnum-125"
+      ],
+      "field": "amount",
+      "reason": "Comma-decimal prices are truncated at comma by initial parser. Derive amount from monetary expression before ლარი and normalize comma to decimal point."
+    },
+    {
+      "id": "magnum-58",
+      "field": "amount",
+      "current": 1,
+      "expected": 70,
+      "reason": "Current amount is quantity 1, while title price states 1 piece costs 70 GEL, pair costs 130 GEL."
+    },
+    {
+      "id": "magnum-124",
+      "field": "amount",
+      "current": 61,
+      "expected": 1500,
+      "reason": "Current amount incorrectly extracts first barrel length 61; first actual listed GEL price is 1500 (alternative slug barrel 1670)."
+    }
+  ]
+}

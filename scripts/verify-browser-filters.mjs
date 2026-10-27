@@ -106,7 +106,7 @@ try {
   await waitForCount(count => count === firearmsCount, 'ცეცხლსასროლი იარაღის ძიების გასუფთავება');
 
   await selectFacet('caliber', '12 GA');
-  const caliberCount = await waitForCount(count => strictCatalog ? count === 37 : count > 0 && count <= firearmsCount, '12 GA კალიბრი');
+  const caliberCount = await waitForCount(count => strictCatalog ? count === 40 : count > 0 && count <= firearmsCount, '12 GA კალიბრი');
   await selectFacet('brand', 'ARMSAN');
   const armsanCount = await waitForCount(count => strictCatalog ? count === 1 : count > 0 && count <= caliberCount, '12 GA + ARMSAN');
   await selectFacet('brand', 'HUGLU');
@@ -135,7 +135,7 @@ try {
   await clear();
   const ammunitionCount = await (async () => {
     await selectCategory('ვაზნები');
-    return waitForCount(count => strictCatalog ? count === 106 : count > 0, 'ვაზნების კატეგორია');
+    return waitForCount(count => strictCatalog ? count === 105 : count > 0, 'ვაზნების კატეგორია');
   })();
   const lapuaCount = await (async () => {
     await selectFacet('brand', 'LAPUA');
@@ -145,6 +145,45 @@ try {
   await selectFacet('caliber', '7.62×53R');
   await waitForCount(count => strictCatalog ? count === 1 : count > 0 && count <= lapuaCount, 'LAPUA 7.62×53R კალიბრი');
   assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('7,62x53R')`), true, 'LAPUA-ს სწორი კალიბრის პროდუქტი არ გამოჩნდა');
+
+  await clear();
+  await selectCategory('ცეცხლსასროლი იარაღი');
+  await searchFor('MORISSON PRZ44');
+  await waitForCount(count => count === 1, 'MORISSON მრავალკალიბრიანი მოდელი');
+  await selectFacet('caliber', '45 COLT');
+  await waitForCount(count => count === 1, 'MORISSON მეორე კალიბრი 45 COLT');
+  assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('PRZ45')`), true, 'მეორე კალიბრი პროდუქტს ვერ პოულობს');
+  await selectFacet('caliber', '44 MAG');
+  await waitForCount(count => count === 1, 'რამდენიმე კალიბრი პროდუქტს არ აორმაგებს');
+
+  await clear();
+  await searchFor('FABARM AXIS');
+  await waitForCount(count => count === 1, 'FABARM AXIS მრავალსიგრძიანი მოდელი');
+  await selectFacet('barrel', '76 სმ');
+  await waitForCount(count => count === 1, 'FABARM AXIS მეორე ლულა 76 სმ');
+  await selectFacet('barrel', '71 სმ');
+  await waitForCount(count => count === 1, 'რამდენიმე ლულის არჩევა პროდუქტს არ აორმაგებს');
+
+  await clear();
+  await selectCategory('აქსესუარები');
+  await selectFacet('brand', 'FENIX');
+  await waitForCount(count => strictCatalog ? count === 8 : count > 0, 'FENIX დამტენები და აქსესუარები');
+  assert.equal(await evaluate(`[...document.querySelectorAll('#products .category')].every(item => item.textContent.trim() === 'აქსესუარები')`), true, 'FENIX აქსესუარი ფანრის კატეგორიაში მოხვდა');
+
+  await clear();
+  assert.equal(await evaluate(`![...document.querySelectorAll('#brandOptions .facet-choice span')].some(item => ['MIDI', 'OFF GRID', 'MPPT', 'PWM', 'S&B'].includes(item.textContent.trim()))`), true, 'ზომა, ტექნოლოგია ან ბრენდის დუბლიკატი ფილტრში გამოჩნდა');
+  await selectFacet('brand', 'LIPETSK');
+  await waitForCount(count => strictCatalog ? count === 1 : count > 0, 'სასროლი თეფშის ნამდვილი ბრენდი');
+  assert.equal(await evaluate(`document.querySelector('#products h2')?.textContent.includes('MIDI')`), true, 'LIPETSK თეფშის პროდუქტი ვერ მოიძებნა');
+
+  await clear();
+  await selectFacet('brand', 'YANGTZE SOLAR');
+  await waitForCount(count => strictCatalog ? count === 4 : count > 0, 'ინვერტერისა და კონტროლერების მწარმოებელი');
+
+  await clear();
+  await selectFacet('brand', 'SELLIER & BELLOT');
+  await searchFor('S&B');
+  await waitForCount(count => strictCatalog ? count === 3 : count > 0, 'S&B ერთიან ბრენდში გაერთიანება');
 
   await clear();
   await click(`(() => {
@@ -157,11 +196,11 @@ try {
     setValue('#maxPrice', '2000');
     return true;
   })()`, 'ფასის დიაპაზონი');
-  await waitForCount(count => strictCatalog ? count === 55 : count >= 0 && count <= initialCount, 'ფასის დიაპაზონი 1000–2000');
+  await waitForCount(count => strictCatalog ? count === 54 : count >= 0 && count <= initialCount, 'ფასის დიაპაზონი 1000–2000');
 
   await clear();
   await waitForCount(count => count === initialCount, 'საბოლოო გასუფთავება');
-  console.log('Browser filter verification passed: category, exact caliber, Lapua weight-vs-caliber, multi-brand selection, clear, search, and price range.');
+  console.log('Browser filter verification passed: audited categories and manufacturers, multi-value calibers/barrels, Lapua weight-vs-caliber, multi-brand selection, clear, search, and corrected price range.');
 } finally {
   socket.close();
 }

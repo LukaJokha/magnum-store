@@ -1,0 +1,415 @@
+{
+  "range": {
+    "from": 251,
+    "to": 376
+  },
+  "reviewedIds": [
+    "magnum-251",
+    "magnum-252",
+    "magnum-253",
+    "magnum-254",
+    "magnum-255",
+    "magnum-256",
+    "magnum-257",
+    "magnum-258",
+    "magnum-259",
+    "magnum-260",
+    "magnum-261",
+    "magnum-262",
+    "magnum-263",
+    "magnum-264",
+    "magnum-265",
+    "magnum-266",
+    "magnum-267",
+    "magnum-268",
+    "magnum-269",
+    "magnum-270",
+    "magnum-271",
+    "magnum-272",
+    "magnum-273",
+    "magnum-274",
+    "magnum-275",
+    "magnum-276",
+    "magnum-277",
+    "magnum-278",
+    "magnum-279",
+    "magnum-280",
+    "magnum-281",
+    "magnum-282",
+    "magnum-283",
+    "magnum-284",
+    "magnum-285",
+    "magnum-286",
+    "magnum-287",
+    "magnum-288",
+    "magnum-289",
+    "magnum-290",
+    "magnum-291",
+    "magnum-292",
+    "magnum-293",
+    "magnum-294",
+    "magnum-295",
+    "magnum-296",
+    "magnum-297",
+    "magnum-298",
+    "magnum-299",
+    "magnum-300",
+    "magnum-301",
+    "magnum-302",
+    "magnum-303",
+    "magnum-304",
+    "magnum-305",
+    "magnum-306",
+    "magnum-307",
+    "magnum-308",
+    "magnum-309",
+    "magnum-310",
+    "magnum-311",
+    "magnum-312",
+    "magnum-313",
+    "magnum-314",
+    "magnum-315",
+    "magnum-316",
+    "magnum-317",
+    "magnum-318",
+    "magnum-319",
+    "magnum-320",
+    "magnum-321",
+    "magnum-322",
+    "magnum-323",
+    "magnum-324",
+    "magnum-325",
+    "magnum-326",
+    "magnum-327",
+    "magnum-328",
+    "magnum-329",
+    "magnum-330",
+    "magnum-331",
+    "magnum-332",
+    "magnum-333",
+    "magnum-334",
+    "magnum-335",
+    "magnum-336",
+    "magnum-337",
+    "magnum-338",
+    "magnum-339",
+    "magnum-340",
+    "magnum-341",
+    "magnum-342",
+    "magnum-343",
+    "magnum-344",
+    "magnum-345",
+    "magnum-346",
+    "magnum-347",
+    "magnum-348",
+    "magnum-349",
+    "magnum-350",
+    "magnum-351",
+    "magnum-352",
+    "magnum-353",
+    "magnum-354",
+    "magnum-355",
+    "magnum-356",
+    "magnum-357",
+    "magnum-358",
+    "magnum-359",
+    "magnum-360",
+    "magnum-361",
+    "magnum-362",
+    "magnum-363",
+    "magnum-364",
+    "magnum-365",
+    "magnum-366",
+    "magnum-367",
+    "magnum-368",
+    "magnum-369",
+    "magnum-370",
+    "magnum-371",
+    "magnum-372",
+    "magnum-373",
+    "magnum-374",
+    "magnum-375",
+    "magnum-376"
+  ],
+  "readAllRecords": true,
+  "corrections": [
+    {
+      "id": "magnum-265",
+      "barrelLength": "65",
+      "reason": "The source specifies STEYR Hunting 5 Automatic, without Scout. The exact manufacturer page and original Hunting 5/Automatic manual give a 650 mm barrel for the standard Automatic, equal to 65 cm; the 520 mm Scout is a separately named variant.",
+      "sources": [
+        "https://www.steyr-sport.com/en/air-rifles/steyr-hunting-5-automatic-h5-a-scout",
+        "https://steyr-sport.com/en/downloads-air-rifles/manuals/68-hunting-5/file"
+      ]
+    },
+    {
+      "id": "magnum-257",
+      "name": "კოლიმატორული სამიზნე UTG 4.2″ ITA Red/Green T-Dot, QD Mount, SCP-DS3840TDQ",
+      "reason": "The original HTML parser cut the title at an escaped inch quote; product image filename identifies the exact model, verified by UTG Europe.",
+      "sources": [
+        "https://www.utgeurope.com/prod_detail.php?itemno=SCP-DS3840TDQ&mitem=Optics"
+      ]
+    },
+    {
+      "id": "magnum-258",
+      "name": "კოლიმატორული სამიზნე UTG 3.9″ ITA Red/Green CQB Dot Sight, SCP-DS3039W",
+      "reason": "The original title is truncated after the inch measurement. Exact image SKU and official manufacturer title restore its identity.",
+      "sources": [
+        "https://www.leapers.com/products-utg-scp-ds3039w.html"
+      ]
+    },
+    {
+      "id": "magnum-262",
+      "category": "აქსესუარები",
+      "reason": "დანის შალითა means knife sheath: an accessory, not a knife. GANZO brand is explicitly present in the source title.",
+      "sources": [
+        "catalog:name",
+        "catalog:image:262-Knife-bag2.jpg"
+      ]
+    },
+    {
+      "id": "magnum-266",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name"
+      ]
+    },
+    {
+      "id": "magnum-267",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name"
+      ]
+    },
+    {
+      "id": "magnum-268",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name"
+      ]
+    },
+    {
+      "id": "magnum-269",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name"
+      ]
+    },
+    {
+      "id": "magnum-311",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name",
+        "https://fenixlight.com.au/product/fenix-arw-10-12v-car-cigarette-charger-plug/"
+      ]
+    },
+    {
+      "id": "magnum-312",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name",
+        "https://fenixlight.com.au/product/fenix-arw-10-12v-car-cigarette-charger-plug/"
+      ]
+    },
+    {
+      "id": "magnum-313",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name",
+        "https://fenixlight.com.au/product/fenix-arw-10-12v-car-cigarette-charger-plug/"
+      ]
+    },
+    {
+      "id": "magnum-314",
+      "category": "აქსესუარები",
+      "reason": "FENIX remote tailcap, battery, charger, or car charger cable; not a flashlight. Brand remains FENIX.",
+      "sources": [
+        "catalog:name",
+        "https://fenixlight.com.au/product/fenix-arw-10-12v-car-cigarette-charger-plug/"
+      ]
+    },
+    {
+      "id": "magnum-270",
+      "brand": "LIPETSK",
+      "reason": "MIDI denotes clay target diameter/type, not maker. Local photo is exactly the orange Midi image from Lipetsk's official website, including embossed LIPETSK word and identical rim notches. Official specification matches 90 mm, 200 per box.",
+      "sources": [
+        "https://lipetsk-target.ru/en/",
+        "https://lipetsk-target.ru/upload/iblock/106/pgyvuu6xbkclnn4j6pd2xb5vldspw6du/77a1a04bbb58057eb71c2d76d9c73290.png",
+        "catalog:image:270-----.jpg"
+      ]
+    },
+    {
+      "id": "magnum-283",
+      "brand": "YANGTZE SOLAR",
+      "reason": "OFF GRID is an inverter type. The source photo shows the Yangtze Solar logo, and the official maker's 500W inverter specification exactly matches the source title.",
+      "sources": [
+        "https://www.yangtze-power.com/solar-inverter/off-grid-inverter/500w-inverter.html",
+        "catalog:image:283-Inverter.jpg"
+      ]
+    },
+    {
+      "id": "magnum-284",
+      "brand": "YANGTZE SOLAR",
+      "reason": "MPPT is the charging technology, not brand. Source photo has Yangtze Solar logo; official 60A controller page matches product.",
+      "sources": [
+        "https://www.yangtze-power.com/solar-controller/mppt-solar-charge-controller/mppt-solar-charge-controller-60a.html",
+        "catalog:image:284-MPPT-60A.jpg"
+      ]
+    },
+    {
+      "id": "magnum-285",
+      "brand": "YANGTZE SOLAR",
+      "reason": "MPPT is not a brand. Source photo visibly carries Yangtze Solar text/logo; official manufacturer has this 12/24V 40A controller.",
+      "sources": [
+        "https://www.yangtze-power.com/solar-controller/mppt-solar-charge-controller/mppt-solar-charge-controller-12v-24v-40a.html",
+        "catalog:image:285-MPPT-40A.jpg"
+      ]
+    },
+    {
+      "id": "magnum-286",
+      "brand": "YANGTZE SOLAR",
+      "reason": "The previously unbranded PWM controller source photo clearly has YANGTZE SOLAR text and green/yellow logo.",
+      "sources": [
+        "https://www.yangtzeenergy.com/solar-controller/pwm-solar-charge-controller/",
+        "catalog:image:286-PWM-30A.jpg"
+      ]
+    },
+    {
+      "id": "magnum-315",
+      "brand": "SELLIER & BELLOT",
+      "reason": "S&B is the established abbreviation for Sellier & Bellot; normalize with the same manufacturer already present elsewhere in the catalog.",
+      "sources": [
+        "catalog:name",
+        "https://www.sellierbellot.cz/"
+      ]
+    },
+    {
+      "id": "magnum-316",
+      "brand": "SELLIER & BELLOT",
+      "reason": "S&B is the established abbreviation for Sellier & Bellot; normalize with the same manufacturer already present elsewhere in the catalog.",
+      "sources": [
+        "catalog:name",
+        "https://www.sellierbellot.cz/"
+      ]
+    },
+    {
+      "id": "magnum-317",
+      "brand": "SELLIER & BELLOT",
+      "reason": "S&B is the established abbreviation for Sellier & Bellot; normalize with the same manufacturer already present elsewhere in the catalog.",
+      "sources": [
+        "catalog:name",
+        "https://www.sellierbellot.cz/"
+      ]
+    },
+    {
+      "id": "magnum-320",
+      "barrelLength": "58",
+      "reason": "The source product title states 58 cm for ROSSI WIZ M606. This dimension is omitted from the current barrelLength field.",
+      "sources": [
+        "catalog:name"
+      ]
+    },
+    {
+      "id": "magnum-362",
+      "category": "აქსესუარები",
+      "reason": "H&N Tin Clip is a closure/holder for pellet tins, not ammunition. Its category was incorrectly chosen based solely on the H&N brand.",
+      "sources": [
+        "catalog:name",
+        "https://usermanual.wiki/Pdf/Instruction163147E163Eb40B2A62E7A102651C1Dc.1750936780.pdf"
+      ]
+    },
+    {
+      "id": "magnum-366",
+      "name": "UTG პნევმატური იარაღის ოპტიკის სამაგრი ადაპტერი, MNT-DN034",
+      "brand": "UTG",
+      "category": "აქსესუარები",
+      "reason": "The title was cut at a source quote. Local filename MNT_DN034_PRO_1 and the photograph show UTG's airgun dovetail-to-Picatinny compensating adapter rail, not an air rifle.",
+      "sources": [
+        "https://www.utgeurope.com/prod_detail.php?itemno=MNT-DN034&mitem=Mounting+Systems",
+        "catalog:image:366-MNT_DN034_PRO_1.jpg"
+      ]
+    },
+    {
+      "id": "magnum-376",
+      "category": "აქსესუარები",
+      "reason": "Pneumatic piston/seal is an airgun replacement component rather than an airgun. Photo shows replacement seals. Actual maker cannot be identified.",
+      "sources": [
+        "catalog:name",
+        "catalog:image:376-8789002076b.jpg"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "magnum-300",
+      "field": "brand",
+      "reason": "Generic PCP filling equipment. Complete source title and inspected product photo contain no legible maker or unique manufacturer SKU. Leave empty rather than inventing a brand."
+    },
+    {
+      "id": "magnum-301",
+      "field": "brand",
+      "reason": "Generic PCP filling equipment. Complete source title and inspected product photo contain no legible maker or unique manufacturer SKU. Leave empty rather than inventing a brand."
+    },
+    {
+      "id": "magnum-302",
+      "field": "brand",
+      "reason": "Generic PCP filling equipment. Complete source title and inspected product photo contain no legible maker or unique manufacturer SKU. Leave empty rather than inventing a brand."
+    },
+    {
+      "id": "magnum-303",
+      "field": "brand",
+      "reason": "Generic PCP filling equipment. Complete source title and inspected product photo contain no legible maker or unique manufacturer SKU. Leave empty rather than inventing a brand."
+    },
+    {
+      "id": "magnum-304",
+      "field": "brand",
+      "reason": "Generic PCP filling equipment. Complete source title and inspected product photo contain no legible maker or unique manufacturer SKU. Leave empty rather than inventing a brand."
+    },
+    {
+      "id": "magnum-321",
+      "field": "brand",
+      "reason": "SF-C001 sea scooter is generic/OEM. A supplier's own listing has a matching code and most specifications but a different motor rating (150W vs source 90W), so cannot safely assert the retail brand. https://chinasports.en.made-in-china.com/product/heCmqiBFAaHT/China-Sea-Scooter-SF-C001-.html"
+    },
+    {
+      "id": "magnum-369",
+      "field": "brand",
+      "reason": "Metal 10-shot 4.5mm magazine image has no legible branding; design is shared by several airgun makers. Do not infer a brand from compatibility alone."
+    },
+    {
+      "id": "magnum-370",
+      "field": "brand",
+      "reason": "Generic paper target sheets. No manufacturer identifier in title or image."
+    },
+    {
+      "id": "magnum-371",
+      "field": "brand",
+      "reason": "Generic steel pellet catcher with target face. No maker visible in title/photo."
+    },
+    {
+      "id": "magnum-374",
+      "field": "brand",
+      "reason": "Generic steel Weaver scope rings, no model code or legible maker in title/photo."
+    },
+    {
+      "id": "magnum-376",
+      "field": "brand",
+      "reason": "Generic replacement piston seals, no maker visible."
+    }
+  ],
+  "verifiedNotes": [
+    "All other products in this range have brands and categories consistent with complete source titles and SKU patterns.",
+    "magnum-260 ASELKON Ravello RX6 confirmed on manufacturer: https://aselkonarms.com/tr/urun/pcp-ravello-rx6/",
+    "magnum-265 STEYR Hunting 5 Automatic confirmed as airgun, not firearm: https://www.steyr-sport.com/en/air-rifles",
+    "magnum-375 FABARM semi-auto scope mount is legitimate manufacturer-branded accessory, confirmed in official product range: https://www.fabarm.com/web_eng/dettaglio-prodotto.asp?i=139",
+    "magnum-368 is a combined listing of ATA and ARMSAN barrels; both brands explicitly identified in the original title, keep both brand tags.",
+    "Comma-decimal amounts and sale expressions are incorrectly parsed across many records; root handles catalog-wide price parsing. Particularly magnum-254 amount is 20 (from SKU OP-RDM20CT) although source sale prices are 400 and 430.",
+    "No product description fields exist in these 126 source records."
+  ]
+}

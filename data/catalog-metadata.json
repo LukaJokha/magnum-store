@@ -1,0 +1,2690 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-27T17:55:33.081Z",
+  "reviewedCount": 376,
+  "reviewSources": [
+    "scripts/audit-range-1.json",
+    "scripts/audit-range-2.json",
+    "scripts/audit-range-3.json"
+  ],
+  "note": "Explicit per-product manufacturer/category decisions. Unverifiable manufacturers are not invented. Optional specifications are populated only from source titles or cited exact-model specifications.",
+  "products": {
+    "magnum-1": {
+      "brandTags": [
+        "HUGLU"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-2": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-3": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-4": {
+      "brandTags": [
+        "HUGLU"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-5": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-6": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-7": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-8": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-9": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-10": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-11": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-12": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-13": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-14": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-15": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-16": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-17": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-18": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-19": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-20": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-21": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-22": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-23": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-24": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-25": {
+      "brandTags": [
+        "TAURUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-26": {
+      "brandTags": [
+        "HUGLU"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-27": {
+      "brandTags": [
+        "ARKEN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-28": {
+      "brandTags": [
+        "ARKEN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-29": {
+      "brandTags": [
+        "ARKEN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-30": {
+      "brandTags": [
+        "ARKEN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-31": {
+      "brandTags": [
+        "ARKEN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-32": {
+      "brandTags": [
+        "ROCK ISLAND ARMORY"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-33": {
+      "brandTags": [
+        "GLOCK"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "9×19 MM"
+      ],
+      "barrelLengthTags": [
+        "11.4"
+      ]
+    },
+    "magnum-34": {
+      "brandTags": [
+        "GLOCK"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "9×19 MM"
+      ],
+      "barrelLengthTags": [
+        "10.2"
+      ]
+    },
+    "magnum-35": {
+      "brandTags": [
+        "RUGER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-36": {
+      "brandTags": [
+        "RUGER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "45.72"
+      ]
+    },
+    "magnum-37": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-38": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-39": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-40": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-41": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-42": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-43": {
+      "brandTags": [
+        "GUERINI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-44": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-45": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-46": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-47": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-48": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-49": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-50": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-51": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-52": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-53": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-54": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-55": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-56": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-57": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-58": {
+      "brandTags": [],
+      "category": "ნავები და ძრავები",
+      "brandStatus": "unverified"
+    },
+    "magnum-59": {
+      "brandTags": [
+        "MAUSER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-60": {
+      "brandTags": [
+        "ROCK RIVER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-61": {
+      "brandTags": [
+        "ROCK RIVER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-62": {
+      "brandTags": [
+        "DIAMONDBACK FIREARMS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-63": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-64": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-65": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-66": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-67": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-68": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-69": {
+      "brandTags": [
+        "HUGLU"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-70": {
+      "brandTags": [
+        "HUGLU"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-71": {
+      "brandTags": [
+        "SARSILMAZ"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-72": {
+      "brandTags": [
+        "S&W"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "41.91"
+      ]
+    },
+    "magnum-73": {
+      "brandTags": [
+        "KRAL"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-74": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-75": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-76": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-77": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-78": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-79": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-80": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-81": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-82": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-83": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-84": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-85": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-86": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-87": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-88": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-89": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-90": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-91": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-92": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-93": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-94": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-95": {
+      "brandTags": [
+        "YAF"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-96": {
+      "brandTags": [
+        "HK"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "9×19 MM"
+      ],
+      "barrelLengthTags": [
+        "8.3"
+      ]
+    },
+    "magnum-97": {
+      "brandTags": [
+        "RUGER"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-98": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-99": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-100": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-101": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-102": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-103": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-104": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-105": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-106": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-107": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-108": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-109": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-110": {
+      "brandTags": [
+        "LAMBRO"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-111": {
+      "brandTags": [
+        "ELEY"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-112": {
+      "brandTags": [
+        "ELEY"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-113": {
+      "brandTags": [
+        "ELEY"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-114": {
+      "brandTags": [
+        "ELEY"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-115": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "44 MAG",
+        "45 COLT"
+      ]
+    },
+    "magnum-116": {
+      "brandTags": [
+        "MORISSON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-117": {
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-118": {
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-119": {
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-120": {
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-121": {
+      "brandTags": [
+        "SCHMIDT & BENDER"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-122": {
+      "brandTags": [
+        "FABARM"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "barrelLengthTags": [
+        "76"
+      ]
+    },
+    "magnum-123": {
+      "brandTags": [
+        "FABARM"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "barrelLengthTags": [
+        "71",
+        "76"
+      ]
+    },
+    "magnum-124": {
+      "brandTags": [
+        "FABARM"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-125": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-126": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-127": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-128": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-129": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-130": {
+      "brandTags": [
+        "POF USA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-131": {
+      "brandTags": [
+        "POF USA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-132": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-133": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-134": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-135": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-136": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-137": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-138": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-139": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-140": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-141": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-142": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-143": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-144": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-145": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-146": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-147": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-148": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-149": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-150": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-151": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-152": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-153": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-154": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-155": {
+      "brandTags": [
+        "MKA"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-156": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-157": {
+      "brandTags": [
+        "GGG"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-158": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-159": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-160": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-161": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-162": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-163": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-164": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-165": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-166": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-167": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-168": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-169": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-170": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-171": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-172": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-173": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-174": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-175": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-176": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-177": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-178": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-179": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-180": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-181": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-182": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-183": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-184": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ]
+    },
+    "magnum-185": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-186": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-187": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-188": {
+      "brandTags": [
+        "CITADEL"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-189": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "71"
+      ]
+    },
+    "magnum-190": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "71"
+      ]
+    },
+    "magnum-191": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-192": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-193": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "71"
+      ]
+    },
+    "magnum-194": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-195": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-196": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-197": {
+      "brandTags": [
+        "HUNT GROUP"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-198": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-199": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-200": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-201": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-202": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-203": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-204": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-205": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-206": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-207": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-208": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-209": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-210": {
+      "brandTags": [
+        "ARMED"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-211": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-212": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-213": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-214": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-215": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-216": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-217": {
+      "brandTags": [
+        "ARMSAN"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-218": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-219": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-220": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified"
+    },
+    "magnum-221": {
+      "brandTags": [
+        "PARDUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "71"
+      ]
+    },
+    "magnum-222": {
+      "brandTags": [
+        "PARDUS"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "71"
+      ]
+    },
+    "magnum-223": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-224": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-225": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-226": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-227": {
+      "brandTags": [
+        "WINCHESTER"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-228": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-229": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-230": {
+      "brandTags": [
+        "FN"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-231": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-232": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-233": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-234": {
+      "brandTags": [
+        "REDWIN"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-235": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-236": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-237": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-238": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-239": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-240": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-241": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-242": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-243": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-244": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-245": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-246": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-247": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-248": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-249": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-250": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-251": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-252": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-253": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-254": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-255": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-256": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-257": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-258": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-259": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-260": {
+      "brandTags": [
+        "ASELKON"
+      ],
+      "category": "პნევმატიკა",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "55"
+      ]
+    },
+    "magnum-261": {
+      "brandTags": [
+        "GANZO"
+      ],
+      "category": "დანები",
+      "brandStatus": "verified"
+    },
+    "magnum-262": {
+      "brandTags": [
+        "GANZO"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-263": {
+      "brandTags": [
+        "GANZO"
+      ],
+      "category": "ტურიზმი",
+      "brandStatus": "verified"
+    },
+    "magnum-264": {
+      "brandTags": [
+        "HILL"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-265": {
+      "brandTags": [
+        "STEYR"
+      ],
+      "category": "პნევმატიკა",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "65"
+      ]
+    },
+    "magnum-266": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-267": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-268": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-269": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-270": {
+      "brandTags": [
+        "LIPETSK"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-271": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-272": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-273": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-274": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-275": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-276": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-277": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-278": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-279": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-280": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-281": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-282": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-283": {
+      "brandTags": [
+        "YANGTZE SOLAR"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-284": {
+      "brandTags": [
+        "YANGTZE SOLAR"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-285": {
+      "brandTags": [
+        "YANGTZE SOLAR"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-286": {
+      "brandTags": [
+        "YANGTZE SOLAR"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-287": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-288": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-289": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-290": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-291": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-292": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-293": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-294": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-295": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-296": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-297": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-298": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-299": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "ფანრები",
+      "brandStatus": "verified"
+    },
+    "magnum-300": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-301": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-302": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-303": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-304": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-305": {
+      "brandTags": [
+        "JSB"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-306": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-307": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-308": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-309": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-310": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-311": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-312": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-313": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-314": {
+      "brandTags": [
+        "FENIX"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-315": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-316": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-317": {
+      "brandTags": [
+        "SELLIER & BELLOT"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-318": {
+      "brandTags": [
+        "LAPUA"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-319": {
+      "brandTags": [
+        "LAPUA"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-320": {
+      "brandTags": [
+        "ROSSI"
+      ],
+      "category": "ცეცხლსასროლი იარაღი",
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "58"
+      ]
+    },
+    "magnum-321": {
+      "brandTags": [],
+      "category": "ნავები და ძრავები",
+      "brandStatus": "unverified"
+    },
+    "magnum-322": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-323": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-324": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-325": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "ოპტიკა",
+      "brandStatus": "verified"
+    },
+    "magnum-326": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-327": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-328": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-329": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-330": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-331": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-332": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-333": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-334": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-335": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-336": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-337": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-338": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-339": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-340": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-341": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-342": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-343": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-344": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-345": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-346": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-347": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-348": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-349": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-350": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-351": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-352": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-353": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-354": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-355": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-356": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-357": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-358": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-359": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-360": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-361": {
+      "brandTags": [
+        "SAUVESTRE"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-362": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-363": {
+      "brandTags": [
+        "H&N"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-364": {
+      "brandTags": [
+        "JSB"
+      ],
+      "category": "ვაზნები",
+      "brandStatus": "verified"
+    },
+    "magnum-365": {
+      "brandTags": [
+        "AIR ARMS"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-366": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-367": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-368": {
+      "brandTags": [
+        "ATA ARMS",
+        "ARMSAN"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-369": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-370": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-371": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-372": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-373": {
+      "brandTags": [
+        "UTG"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-374": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    },
+    "magnum-375": {
+      "brandTags": [
+        "FABARM"
+      ],
+      "category": "აქსესუარები",
+      "brandStatus": "verified"
+    },
+    "magnum-376": {
+      "brandTags": [],
+      "category": "აქსესუარები",
+      "brandStatus": "unverified"
+    }
+  }
+}

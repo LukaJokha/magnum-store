@@ -3,19 +3,22 @@ const state = { products: [], page: 1, perPage: 18, category: 'all', brand: [], 
 const $ = selector => document.querySelector(selector);
 const normalize = value => String(value || '').toLocaleLowerCase('ka-GE');
 const filterDefinitions = [['brand', 'brand', 'ბრენდი'], ['caliber', 'caliber', 'კალიბრი'], ['barrel', 'barrelLength', 'ლულის სიგრძე']];
+const tagsOrScalar = (values, scalar) => [...new Set((Array.isArray(values) && values.length ? values : [scalar]).map(value => String(value || '').trim()).filter(Boolean))];
 const cleanProduct = product => {
   const brand = String(product.brand || '').trim();
-  const brandTags = [...new Set((Array.isArray(product.brandTags) ? product.brandTags : [brand]).map(value => String(value || '').trim()).filter(Boolean))];
-  return { ...product, brand, brandTags, caliber: String(product.caliber || '').trim(), barrelLength: String(product.barrelLength || '').trim(), description: String(product.description || '').trim() };
+  const brandTags = tagsOrScalar(product.brandTags, brand);
+  const caliberTags = tagsOrScalar(product.caliberTags, product.caliber);
+  const barrelLengthTags = tagsOrScalar(product.barrelLengthTags, product.barrelLength);
+  return { ...product, brand, brandTags, caliberTags, barrelLengthTags, caliber: String(product.caliber || '').trim(), barrelLength: String(product.barrelLength || '').trim(), description: String(product.description || '').trim() };
 };
-const facetValues = (product, key) => key === 'brand' ? product.brandTags : (product[key] ? [product[key]] : []);
-const searchableText = product => [product.name, product.category, ...product.brandTags, product.caliber, product.barrelLength].filter(Boolean).join(' ');
+const facetValues = (product, key) => product[key === 'brand' ? 'brandTags' : key === 'caliber' ? 'caliberTags' : 'barrelLengthTags'];
+const searchableText = product => [product.name, product.category, ...product.brandTags, ...product.caliberTags, ...product.barrelLengthTags].filter(Boolean).join(' ');
 
 function matches(product, ignored = '') {
   return (ignored === 'category' || state.category === 'all' || product.category === state.category)
     && (ignored === 'brand' || !state.brand.length || product.brandTags.some(brand => state.brand.includes(brand)))
-    && (ignored === 'caliber' || !state.caliber.length || state.caliber.includes(product.caliber))
-    && (ignored === 'barrel' || !state.barrel.length || state.barrel.includes(product.barrelLength))
+    && (ignored === 'caliber' || !state.caliber.length || product.caliberTags.some(value => state.caliber.includes(value)))
+    && (ignored === 'barrel' || !state.barrel.length || product.barrelLengthTags.some(value => state.barrel.includes(value)))
     && (!state.query || normalize(searchableText(product)).includes(normalize(state.query)))
     && (!state.min || product.amount >= Number(state.min))
     && (!state.max || product.amount <= Number(state.max));
@@ -37,9 +40,7 @@ function renderFacet(id, key, suffix = '') {
     facetValues(product, key).forEach(value => { map[value] = (map[value] || 0) + 1; });
     return map;
   }, {});
-  const values = Object.keys(counts).filter(Boolean).sort((a, b) => String(a).localeCompare(String(b), 'en', { numeric: true }));
-  const validSelected = state[id].filter(value => values.includes(value));
-  if (validSelected.length !== state[id].length) state[id] = validSelected;
+  const values = [...new Set([...Object.keys(counts), ...state[id]])].filter(Boolean).sort((a, b) => String(a).localeCompare(String(b), 'en', { numeric: true }));
   const container = $(`#${id}Options`); container.innerHTML = '';
   const facet = container.closest('.facet');
   facet.hidden = values.length === 0;
@@ -48,7 +49,7 @@ function renderFacet(id, key, suffix = '') {
     const input = document.createElement('input'); input.type = 'checkbox'; input.checked = state[id].includes(value);
     input.onchange = () => { state[id] = input.checked ? [...state[id], value] : state[id].filter(item => item !== value); state.page = 1; update(); };
     const name = document.createElement('span'); name.textContent = `${value}${suffix}`;
-    const count = document.createElement('em'); count.textContent = counts[value];
+    const count = document.createElement('em'); count.textContent = counts[value] || 0;
     choice.append(input, name, count); container.append(choice);
   });
   $(`#${id}Count`).textContent = state[id].length ? `(${state[id].length})` : '';
@@ -125,11 +126,8 @@ async function init() {
       const online = (data || []).map(cleanProduct);
       const importedCatalogExists = online.some(product => product.source === 'magnum.ge');
       if (importedCatalogExists) {
-        const baselineById = new Map(baseline.map(product => [product.id, product]));
-        state.products = online.map(product => {
-          const original = baselineById.get(product.id);
-          return original && product.source === 'magnum.ge' ? { ...product, ...original, createdAt: product.createdAt, source: product.source } : product;
-        });
+        // After import Supabase is authoritative, including edits and deletions.
+        state.products = online;
       }
       else {
         const merged = new Map(baseline.map(product => [product.id, product]));
