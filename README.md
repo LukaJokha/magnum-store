@@ -28,6 +28,8 @@ on conflict (user_id) do nothing;
 
 Keep public email signup disabled for this staff-only project. Removing an account from `catalog_admins` immediately removes catalog and image-management access. Never put a service-role key in this repository or in browser JavaScript.
 
+An authenticated catalog administrator can change their own password from the security section on `admin.html`. The form verifies the current password again, requires a strong 16–128 character replacement, and asks Supabase to revoke refresh sessions globally after a successful change. Supabase Auth handles the password; it is never stored in this repository.
+
 `start.bat` serves the site only on the current computer. Its optional legacy local write API is disabled unless `.env` contains a unique `ADMIN_PASSWORD` of at least 16 characters. Supabase/Vercel administration does not use this local password.
 
 ## Catalog review and backups
