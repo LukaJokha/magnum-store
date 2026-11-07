@@ -1,4 +1,7 @@
-document.head.insertAdjacentHTML('beforeend','<link rel="stylesheet" href="filter-ui.css">');
+const filterStyles = document.createElement('link');
+filterStyles.rel = 'stylesheet';
+filterStyles.href = 'filter-ui.css';
+document.head.append(filterStyles);
 const state = { products: [], page: 1, perPage: 18, category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '', sort: 'new' };
 const $ = selector => document.querySelector(selector);
 const normalize = value => String(value || '').toLocaleLowerCase('ka-GE');
@@ -87,8 +90,52 @@ function renderFilters() {
 }
 function showProduct(product) {
   const dialog = $('#productDialog');
-  const description = product.description ? `<p class="description">${product.description}</p>` : '';
-  dialog.querySelector('#dialogContent').innerHTML = `<div class="dialog-grid"><figure><img src="${product.image}" alt="${product.name}"></figure><div class="dialog-copy"><p class="category">${product.category}</p><h2>${product.name}</h2><p class="price">${product.price}</p>${description}<a class="contact-btn" href="tel:+995322953487">დარეკე კონსულტაციისთვის</a><p class="source">ფასი და ხელმისაწვდომობა გადაამოწმეთ მაღაზიაში.</p></div></div>`;
+  const content = dialog.querySelector('#dialogContent');
+  content.replaceChildren();
+
+  const grid = document.createElement('div');
+  grid.className = 'dialog-grid';
+  const figure = document.createElement('figure');
+  const image = document.createElement('img');
+  try {
+    const imageUrl = new URL(String(product.image || ''), window.location.href);
+    if (imageUrl.origin !== window.location.origin && imageUrl.protocol !== 'https:') throw new Error('Unsafe image URL');
+    image.src = imageUrl.href;
+  } catch {
+    image.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480"%3E%3Crect width="640" height="480" fill="%23ecebe5"/%3E%3C/svg%3E';
+  }
+  image.alt = String(product.name || 'პროდუქტი');
+  figure.append(image);
+
+  const copy = document.createElement('div');
+  copy.className = 'dialog-copy';
+  const category = document.createElement('p');
+  category.className = 'category';
+  category.textContent = String(product.category || '');
+  const title = document.createElement('h2');
+  title.textContent = String(product.name || '');
+  const price = document.createElement('p');
+  price.className = 'price';
+  price.textContent = String(product.price || '');
+  copy.append(category, title, price);
+
+  if (product.description) {
+    const description = document.createElement('p');
+    description.className = 'description';
+    description.textContent = String(product.description);
+    copy.append(description);
+  }
+
+  const contact = document.createElement('a');
+  contact.className = 'contact-btn';
+  contact.href = 'tel:+995322953487';
+  contact.textContent = 'დარეკე კონსულტაციისთვის';
+  const source = document.createElement('p');
+  source.className = 'source';
+  source.textContent = 'ფასი და ხელმისაწვდომობა გადაამოწმეთ მაღაზიაში.';
+  copy.append(contact, source);
+  grid.append(figure, copy);
+  content.append(grid);
   dialog.showModal();
 }
 function renderProducts() {
@@ -121,19 +168,11 @@ async function init() {
     const baseline = catalog.products.map(cleanProduct);
     try {
       const database = await window.magnumDbReady;
-      const { data, error } = await database.from('products').select('*').order('createdAt', { ascending: false });
+      const { data, error } = await database.from('storefront_products').select('*').order('createdAt', { ascending: false });
       if (error) throw error;
       const online = (data || []).map(cleanProduct);
-      const importedCatalogExists = online.some(product => product.source === 'magnum.ge');
-      if (importedCatalogExists) {
-        // After import Supabase is authoritative, including edits and deletions.
-        state.products = online;
-      }
-      else {
-        const merged = new Map(baseline.map(product => [product.id, product]));
-        online.forEach(product => merged.set(product.id, product));
-        state.products = [...merged.values()];
-      }
+      // A successful public-view query makes Supabase authoritative, including edits and deletions.
+      state.products = online;
     } catch { state.products = baseline; }
     update();
   } catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; }

@@ -7,7 +7,7 @@ const { products } = JSON.parse(await fs.readFile(file, 'utf8'));
 // Test the shop's actual functions rather than duplicating its implementation.
 // Startup remains awaiting fetch; these checks need no server or credentials.
 const context = vm.createContext({
-  document: { head: { insertAdjacentHTML() {} } },
+  document: { head: { append() {} }, createElement() { return {}; } },
   fetch: () => new Promise(() => {}), console, inputCatalog: products
 });
 vm.runInContext(await fs.readFile(new URL('../app.js', import.meta.url), 'utf8'), context, { filename: 'app.js' });

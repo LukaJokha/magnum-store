@@ -13,7 +13,7 @@ if (!endpoint || !key) throw new Error('Supabase configuration missing');
 const local = await fs.readFile(path.join(root, 'data/products.json'), 'utf8');
 const remote = [];
 for (let offset = 0; ; offset += 1000) {
-  const response = await fetch(`${endpoint}/rest/v1/products?select=*&order=id&offset=${offset}&limit=1000`, { headers: { apikey: key } });
+  const response = await fetch(`${endpoint}/rest/v1/storefront_products?select=*&order=id&offset=${offset}&limit=1000`, { headers: { apikey: key } });
   if (!response.ok) throw new Error(`Supabase backup failed: HTTP ${response.status}`);
   const page = await response.json();
   remote.push(...page);

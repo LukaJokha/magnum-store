@@ -1,5 +1,11 @@
 const $ = selector => document.querySelector(selector);
 const message = (element, text, ok = false) => { element.textContent = text; element.className = `form-message ${ok ? 'success' : 'error'}`; };
+const IMAGE_TYPES = new Map([
+  ['image/jpeg', 'jpg'],
+  ['image/png', 'png'],
+  ['image/webp', 'webp'],
+  ['image/gif', 'gif']
+]);
 let db;
 
 function populateSelect(name, values, suffix = '') {
@@ -21,13 +27,28 @@ async function loadStandardProductValues() {
 }
 
 async function refreshSession() {
-  const { data: { user } } = await db.auth.getUser();
-  $('#loginPanel').hidden = Boolean(user);
-  $('#productPanel').hidden = !user;
+  const { data: { user }, error: userError } = await db.auth.getUser();
+  if (userError) throw userError;
+  let isAdmin = false;
+  if (user) {
+    const { data, error } = await db.rpc('is_catalog_admin');
+    if (error) throw error;
+    isAdmin = data === true;
+  }
+  $('#loginPanel').hidden = isAdmin;
+  $('#productPanel').hidden = !isAdmin;
+  if (user && !isAdmin) {
+    await db.auth.signOut();
+    message($('#loginMessage'), 'ამ ანგარიშს ადმინისტრატორის უფლებები არ აქვს.');
+  }
+  return isAdmin;
 }
 
 async function init() {
-  try { db = await window.magnumDbReady; await refreshSession(); await loadStandardProductValues(); }
+  try {
+    db = await window.magnumDbReady;
+    if (await refreshSession()) await loadStandardProductValues();
+  }
   catch (error) { message($('#loginMessage'), 'ბაზასთან კავშირი ვერ დამყარდა. შეამოწმეთ Supabase პარამეტრები.'); }
 }
 
@@ -37,13 +58,14 @@ $('#loginForm').onsubmit = async event => {
   try {
     const { error } = await db.auth.signInWithPassword({ email: form.get('email'), password: form.get('password') });
     if (error) throw error;
-    await refreshSession();
+    if (await refreshSession()) await loadStandardProductValues();
   } catch (error) { message($('#loginMessage'), 'ელფოსტა ან პაროლი არასწორია.'); }
 };
 
 $('#productForm [name=image]').onchange = event => {
   const file = event.target.files[0];
   if (!file) return;
+  if (!IMAGE_TYPES.has(file.type)) { message($('#productMessage'), 'დაშვებულია მხოლოდ JPG, PNG, WEBP ან GIF სურათი.'); event.target.value = ''; return; }
   if (file.size > 5_000_000) { message($('#productMessage'), 'სურათის ზომა უნდა იყოს მაქსიმუმ 5 MB.'); event.target.value = ''; return; }
   $('#preview img').src = URL.createObjectURL(file); $('#preview').hidden = false;
 };
@@ -55,7 +77,8 @@ $('#productForm').onsubmit = async event => {
   if (!(file instanceof File) || !file.size) return message($('#productMessage'), 'აირჩიეთ პროდუქტის სურათი.');
   button.disabled = true; button.textContent = 'ინახება…';
   try {
-    const extension = (file.name.split('.').pop() || 'jpg').replace(/[^a-z0-9]/gi, '');
+    const extension = IMAGE_TYPES.get(file.type);
+    if (!extension || file.size > 5_000_000) throw new Error('სურათის ტიპი ან ზომა დაუშვებელია.');
     const fileName = `${crypto.randomUUID()}.${extension}`;
     const { error: uploadError } = await db.storage.from('product-images').upload(fileName, file, { contentType: file.type, upsert: false });
     if (uploadError) throw uploadError;

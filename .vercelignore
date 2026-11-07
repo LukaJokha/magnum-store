@@ -1,0 +1,15 @@
+# Local administration and migration tools must never be part of the public site.
+.env
+.env.*
+server.mjs
+launcher.ps1
+start.bat
+open-admin.bat
+sync-products.bat
+*.sql
+README.md
+scripts/
+
+# Internal catalog review data. The storefront only needs data/products.json.
+data/CATALOG-AUDIT.md
+data/catalog-metadata.json
