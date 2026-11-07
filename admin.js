@@ -38,8 +38,14 @@ async function loadStandardProductValues() {
 }
 
 async function refreshSession() {
-  const { data: { user }, error: userError } = await db.auth.getUser();
-  if (userError) throw userError;
+  const { data: { session }, error: sessionError } = await db.auth.getSession();
+  if (sessionError) throw sessionError;
+  let user = null;
+  if (session) {
+    const { data: { user: verifiedUser }, error: userError } = await db.auth.getUser();
+    if (userError) throw userError;
+    user = verifiedUser;
+  }
   currentUserEmail = user?.email || '';
   currentUserId = user?.id || '';
   let isAdmin = false;
@@ -101,7 +107,7 @@ $('#passwordForm').onsubmit = async event => {
     const { data: isAdmin, error: adminError } = await db.rpc('is_catalog_admin');
     if (adminError || isAdmin !== true) throw new Error('ადმინისტრატორის უფლება ვერ დადასტურდა.');
 
-    const { error: updateError } = await db.auth.updateUser({ password: newPassword });
+    const { error: updateError } = await db.auth.updateUser({ password: newPassword, current_password: currentPassword });
     if (updateError) throw new Error('ახალი პაროლი ვერ შეინახა. სცადეთ სხვა ძლიერი პაროლი.');
 
     const { error: signOutError } = await db.auth.signOut({ scope: 'global' });

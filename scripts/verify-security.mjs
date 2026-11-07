@@ -14,8 +14,10 @@ assert.match(app, /from\('storefront_products'\)/, 'Storefront must use the publ
 assert.doesNotMatch(app, /dialogContent[^\n]*\.innerHTML|innerHTML\s*=\s*`[^`]*\$\{product\./s, 'Product data must not enter innerHTML');
 assert.match(app, /textContent\s*=\s*String\(product\.description\)/, 'Description must render as text');
 assert.match(admin, /rpc\('is_catalog_admin'\)/, 'Admin page must verify the server-side allowlist');
+assert.match(admin, /auth\.getSession\(\)/, 'Anonymous admin visits must be handled without a false connection error');
+assert.match(admin, /if \(session\)[\s\S]*auth\.getUser\(\)/, 'Existing sessions must still be verified with the Auth server');
 assert.match(admin, /signInWithPassword\(\{ email: currentUserEmail, password: currentPassword \}\)/, 'Password changes must reauthenticate with the current password');
-assert.match(admin, /updateUser\(\{ password: newPassword \}\)/, 'Authenticated admins must be able to change their password');
+assert.match(admin, /updateUser\(\{ password: newPassword, current_password: currentPassword \}\)/, 'Password changes must support server-side current-password verification');
 assert.match(admin, /signOut\(\{ scope: 'global' \}\)/, 'Password changes must revoke refresh sessions globally');
 assert.match(admin, /PASSWORD_MIN_LENGTH\s*=\s*16/, 'Admin password minimum must remain at least 16 characters');
 assert.match(admin, /reauthenticated\.user\?\.id !== currentUserId/, 'Reauthentication must preserve the same administrator identity');
