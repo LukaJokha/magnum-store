@@ -2,3 +2,5 @@
 data/*.tmp
 
 .vercel
+.env*
+!.env.example
