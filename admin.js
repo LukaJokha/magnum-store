@@ -6,18 +6,7 @@ const IMAGE_TYPES = new Map([
   ['image/webp', 'webp'],
   ['image/gif', 'gif']
 ]);
-const PASSWORD_MIN_LENGTH = 16;
-const FORBIDDEN_ADMIN_PASSWORDS = new Set(['magnum-admin', 'password', 'admin123', 'replace-with-a-long-unique-password']);
-let db, currentUserEmail = '', currentUserId = '';
-
-function isStrongAdminPassword(value) {
-  return value.length >= PASSWORD_MIN_LENGTH
-    && value.length <= 128
-    && /\p{L}/u.test(value)
-    && /\d/.test(value)
-    && /[^\p{L}\d]/u.test(value)
-    && !FORBIDDEN_ADMIN_PASSWORDS.has(value.toLocaleLowerCase('en-US'));
-}
+let db;
 
 function populateSelect(name, values, suffix = '') {
   const select = document.querySelector(`[name="${name}"]`);
@@ -46,8 +35,6 @@ async function refreshSession() {
     if (userError) throw userError;
     user = verifiedUser;
   }
-  currentUserEmail = user?.email || '';
-  currentUserId = user?.id || '';
   let isAdmin = false;
   if (user) {
     const { data, error } = await db.rpc('is_catalog_admin');
@@ -58,8 +45,6 @@ async function refreshSession() {
   $('#productPanel').hidden = !isAdmin;
   if (user && !isAdmin) {
     await db.auth.signOut();
-    currentUserEmail = '';
-    currentUserId = '';
     message($('#loginMessage'), 'ამ ანგარიშს ადმინისტრატორის უფლებები არ აქვს.');
   }
   return isAdmin;
@@ -81,54 +66,6 @@ $('#loginForm').onsubmit = async event => {
     if (error) throw error;
     if (await refreshSession()) await loadStandardProductValues();
   } catch (error) { message($('#loginMessage'), 'ელფოსტა ან პაროლი არასწორია.'); }
-};
-
-$('#passwordForm').onsubmit = async event => {
-  event.preventDefault();
-  const formElement = event.currentTarget;
-  const form = new FormData(formElement);
-  const currentPassword = String(form.get('currentPassword') || '');
-  const newPassword = String(form.get('newPassword') || '');
-  const confirmPassword = String(form.get('confirmPassword') || '');
-  const button = $('#changePasswordButton');
-
-  if (button.disabled) return;
-  if (!currentUserEmail || !currentUserId) return message($('#passwordMessage'), 'სესია დასრულებულია. თავიდან შედით ადმინისტრირებაში.');
-  if (newPassword !== confirmPassword) return message($('#passwordMessage'), 'ახალი პაროლები ერთმანეთს არ ემთხვევა.');
-  if (currentPassword === newPassword) return message($('#passwordMessage'), 'ახალი პაროლი მიმდინარე პაროლისგან განსხვავებული უნდა იყოს.');
-  if (!isStrongAdminPassword(newPassword)) return message($('#passwordMessage'), 'გამოიყენეთ 16–128 სიმბოლო, ასო, ციფრი და სპეციალური სიმბოლო.');
-
-  button.disabled = true;
-  button.textContent = 'იცვლება…';
-  try {
-    const { data: reauthenticated, error: reauthenticationError } = await db.auth.signInWithPassword({ email: currentUserEmail, password: currentPassword });
-    if (reauthenticationError || reauthenticated.user?.id !== currentUserId) throw new Error('მიმდინარე პაროლი არასწორია.');
-
-    const { data: isAdmin, error: adminError } = await db.rpc('is_catalog_admin');
-    if (adminError || isAdmin !== true) throw new Error('ადმინისტრატორის უფლება ვერ დადასტურდა.');
-
-    const { error: updateError } = await db.auth.updateUser({ password: newPassword, current_password: currentPassword });
-    if (updateError) throw new Error('ახალი პაროლი ვერ შეინახა. სცადეთ სხვა ძლიერი პაროლი.');
-
-    const { error: signOutError } = await db.auth.signOut({ scope: 'global' });
-    if (signOutError) await db.auth.signOut({ scope: 'local' });
-    currentUserEmail = '';
-    currentUserId = '';
-    if (signOutError) {
-      const warning = $('#passwordMessage');
-      warning.textContent = 'პაროლი შეიცვალა, მაგრამ სხვა სესიების სრულად გაუქმება ვერ დადასტურდა. შედით ახალი პაროლით.';
-      warning.className = 'form-message warning';
-    } else {
-      message($('#passwordMessage'), 'პაროლი შეიცვალა. ახლა ახალი პაროლით შედით.', true);
-    }
-    setTimeout(() => window.location.reload(), signOutError ? 3200 : 1600);
-  } catch (error) {
-    message($('#passwordMessage'), error.message || 'პაროლის შეცვლა ვერ მოხერხდა.');
-  } finally {
-    formElement.reset();
-    button.disabled = false;
-    button.textContent = 'პაროლის შეცვლა';
-  }
 };
 
 $('#productForm [name=image]').onchange = event => {
@@ -194,5 +131,5 @@ $('#importButton').onclick = async () => {
   finally { button.disabled = false; button.textContent = 'არსებული კატალოგის იმპორტი'; }
 };
 
-$('#logout').onclick = async () => { await db.auth.signOut(); currentUserEmail = ''; currentUserId = ''; await refreshSession(); };
+$('#logout').onclick = async () => { await db.auth.signOut(); await refreshSession(); };
 init();

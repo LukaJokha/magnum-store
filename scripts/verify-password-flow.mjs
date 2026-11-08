@@ -4,12 +4,6 @@ import vm from 'node:vm';
 
 const source = await fs.readFile(new URL('../admin.js', import.meta.url), 'utf8');
 const user = { id: 'test-admin-id', email: 'admin@example.invalid' };
-const passwords = {
-  currentPassword: 'Previous!TestPassword2025',
-  newPassword: 'Replacement!TestPassword2026',
-  confirmPassword: 'Replacement!TestPassword2026'
-};
-
 // Execute the real page and its submit handler; all browser and Supabase I/O stays local.
 async function page(options = {}) {
   const state = { session: true, admin: true, ...options };
@@ -33,19 +27,6 @@ async function page(options = {}) {
       async getUser() {
         calls.push('getUser');
         return { data: { user }, error: state.userError || null };
-      },
-      async signInWithPassword(credentials) {
-        calls.push('reauthenticate');
-        assert.equal(credentials.email, user.email, 'Use the server-verified administrator email');
-        assert.equal(credentials.password, passwords.currentPassword);
-        if (state.reauthenticationWait) await state.reauthenticationWait;
-        return { data: { user: state.differentUser ? { ...user, id: 'other-user' } : user }, error: state.reauthenticationError || null };
-      },
-      async updateUser(attributes) {
-        calls.push('updateUser');
-        assert.equal(attributes.password, passwords.newPassword);
-        assert.equal(attributes.current_password, passwords.currentPassword);
-        return { error: state.updateError || null };
       },
       async signOut(options) {
         calls.push(`signOut:${options?.scope || 'default'}`);
@@ -77,13 +58,7 @@ async function page(options = {}) {
   return {
     state, calls, timers, element,
     get reloads() { return reloads; },
-    async submit(overrides = {}) {
-      const form = element('#passwordForm');
-      form.fields = { ...passwords, ...overrides };
-      let prevented = false;
-      await form.onsubmit({ currentTarget: form, preventDefault() { prevented = true; } });
-      assert.equal(prevented, true);
-    }
+
   };
 }
 
@@ -99,9 +74,6 @@ await check('anonymous visit', async () => {
   assert.equal(p.element('#loginMessage').textContent, '');
   assert.equal(p.element('#loginPanel').hidden, false);
   assert.equal(p.element('#productPanel').hidden, true);
-  await p.submit();
-  assert.deepEqual(p.calls, ['getSession'], 'An expired session must not change a password');
-  assert.equal(p.element('#passwordMessage').className, 'form-message error');
 });
 
 await check('verified admin session', async () => {
@@ -115,84 +87,12 @@ await check('unverified session', async () => {
   const p = await page({ userError: new Error('Auth verification failed') });
   assert.deepEqual(p.calls, ['getSession', 'getUser']);
   assert.equal(p.element('#loginMessage').className, 'form-message error');
-  await p.submit();
-  assert.equal(p.calls.includes('updateUser'), false);
 });
 
 await check('non-admin session', async () => {
   const p = await page({ admin: false });
   assert.deepEqual(p.calls, ['getSession', 'getUser', 'is_catalog_admin', 'signOut:default']);
   assert.equal(p.element('#productPanel').hidden, true);
-  await p.submit();
-  assert.equal(p.calls.includes('reauthenticate'), false);
 });
 
-for (const [name, fields] of [
-  ['weak password', { newPassword: 'weak', confirmPassword: 'weak' }],
-  ['password mismatch', { confirmPassword: 'Different!Password2026' }],
-  ['unchanged password', { newPassword: passwords.currentPassword, confirmPassword: passwords.currentPassword }]
-]) await check(name, async () => {
-  const p = await page();
-  p.calls.length = 0;
-  await p.submit(fields);
-  assert.deepEqual(p.calls, [], 'Invalid input must be rejected before any Auth request');
-  assert.equal(p.element('#passwordMessage').className, 'form-message error');
-});
-
-for (const [name, state, expected] of [
-  ['wrong current password', { reauthenticationError: new Error('Invalid credentials') }, ['reauthenticate']],
-  ['different user', { differentUser: true }, ['reauthenticate']],
-  ['admin permission revoked', { admin: false }, ['reauthenticate', 'is_catalog_admin']],
-  ['admin check failed', { adminError: new Error('RPC unavailable') }, ['reauthenticate', 'is_catalog_admin']]
-]) await check(name, async () => {
-  const p = await page();
-  Object.assign(p.state, state);
-  p.calls.length = 0;
-  await p.submit();
-  assert.deepEqual(p.calls, expected, 'Failed authorization must never update the password');
-  assert.equal(p.element('#passwordMessage').className, 'form-message error');
-  assert.equal(p.element('#passwordForm').resets, 1, 'Clear entered passwords after an Auth attempt');
-  assert.equal(p.element('#changePasswordButton').disabled, false);
-});
-
-await check('valid password change', async () => {
-  const p = await page();
-  p.calls.length = 0;
-  await p.submit();
-  assert.deepEqual(p.calls, ['reauthenticate', 'is_catalog_admin', 'updateUser', 'signOut:global']);
-  assert.equal(p.element('#passwordMessage').className, 'form-message success');
-  assert.equal(p.element('#passwordForm').resets, 1);
-  assert.equal(p.element('#changePasswordButton').disabled, false);
-  assert.equal(p.timers.length, 1);
-  assert.equal(p.timers[0].delay, 1600);
-  p.timers[0].callback();
-  assert.equal(p.reloads, 1);
-  await p.submit();
-  assert.equal(p.calls.filter(call => call === 'reauthenticate').length, 1, 'Success must clear the active administrator identity');
-});
-
-await check('session revocation warning', async () => {
-  const p = await page({ revokeError: new Error('Revocation unavailable') });
-  p.calls.length = 0;
-  await p.submit();
-  assert.deepEqual(p.calls, ['reauthenticate', 'is_catalog_admin', 'updateUser', 'signOut:global', 'signOut:local']);
-  assert.equal(p.element('#passwordMessage').className, 'form-message warning');
-  assert.match(p.element('#passwordMessage').textContent, /პაროლი შეიცვალა.*ვერ დადასტურდა/u);
-  assert.equal(p.timers[0].delay, 3200);
-});
-
-await check('double submission', async () => {
-  let release;
-  const p = await page({ reauthenticationWait: new Promise(resolve => { release = resolve; }) });
-  p.calls.length = 0;
-  const first = p.submit();
-  assert.equal(p.element('#changePasswordButton').disabled, true);
-  await p.submit();
-  assert.deepEqual(p.calls, ['reauthenticate'], 'A second submit must not start another request');
-  release();
-  await first;
-  assert.deepEqual(p.calls, ['reauthenticate', 'is_catalog_admin', 'updateUser', 'signOut:global']);
-  assert.equal(p.element('#passwordForm').resets, 1);
-});
-
-console.log(`Password flow verification passed: ${checks} behavioral checks; no network or real accounts used.`);
+console.log(`Admin access verification passed: ${checks} behavioral checks; no network or real accounts used.`);

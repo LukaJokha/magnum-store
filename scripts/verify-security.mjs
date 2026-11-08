@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import vm from 'node:vm';
 
 const root = new URL('../', import.meta.url);
 const read = file => fs.readFile(new URL(file, root), 'utf8');
@@ -16,25 +15,9 @@ assert.match(app, /textContent\s*=\s*String\(product\.description\)/, 'Descripti
 assert.match(admin, /rpc\('is_catalog_admin'\)/, 'Admin page must verify the server-side allowlist');
 assert.match(admin, /auth\.getSession\(\)/, 'Anonymous admin visits must be handled without a false connection error');
 assert.match(admin, /if \(session\)[\s\S]*auth\.getUser\(\)/, 'Existing sessions must still be verified with the Auth server');
-assert.match(admin, /signInWithPassword\(\{ email: currentUserEmail, password: currentPassword \}\)/, 'Password changes must reauthenticate with the current password');
-assert.match(admin, /updateUser\(\{ password: newPassword, current_password: currentPassword \}\)/, 'Password changes must support server-side current-password verification');
-assert.match(admin, /signOut\(\{ scope: 'global' \}\)/, 'Password changes must revoke refresh sessions globally');
-assert.match(admin, /PASSWORD_MIN_LENGTH\s*=\s*16/, 'Admin password minimum must remain at least 16 characters');
-assert.match(admin, /reauthenticated\.user\?\.id !== currentUserId/, 'Reauthentication must preserve the same administrator identity');
-assert.match(admin, /if \(button\.disabled\) return;/, 'Password changes must reject concurrent submissions');
-assert.match(admin, /signOutError \? 3200 : 1600/, 'Global sign-out failures must remain visible to the administrator');
-assert.match(adminHtml, /name="currentPassword"[^>]*autocomplete="current-password"/);
-assert.match(adminHtml, /name="newPassword"[^>]*autocomplete="new-password"[^>]*minlength="16"/);
-assert.match(adminHtml, /name="confirmPassword"[^>]*autocomplete="new-password"/);
+assert.doesNotMatch(adminHtml, /id="passwordForm"|name="currentPassword"|name="newPassword"/, 'Dashboard password editor must be absent');
+assert.doesNotMatch(admin, /passwordForm|auth\.updateUser/, 'Dashboard must not register a removed password form');
 assert.match(manage, /rpc\('is_catalog_admin'\)/, 'Management page must verify the server-side allowlist');
-
-const passwordContext = vm.createContext({});
-vm.runInContext(admin.slice(0, admin.indexOf('function populateSelect')), passwordContext);
-const acceptsPassword = value => vm.runInContext(`isStrongAdminPassword(${JSON.stringify(value)})`, passwordContext);
-assert.equal(acceptsPassword('magnum-admin'), false, 'Known former default password must stay rejected');
-assert.equal(acceptsPassword('ThisPasswordIsLongButHasNoDigit!'), false, 'Password must contain a digit');
-assert.equal(acceptsPassword('StrongAdmin!2026Password'), true, 'A strong 16+ character password must be accepted');
-assert.equal(acceptsPassword('ძლიერი!ადმინი2026'), true, 'Unicode letters must be accepted');
 
 for (const sql of [setup, migration]) {
   assert.doesNotMatch(sql, /create\s+policy\s+"Authenticated catalog management"/i, 'Broad authenticated product policy returned');
