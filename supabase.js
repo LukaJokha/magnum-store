@@ -1,3 +1,4 @@
+const isolatedRecovery = document.currentScript?.hasAttribute('data-recovery');
 window.magnumDbReady = new Promise((resolve, reject) => {
   const script = document.createElement('script');
   script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.118.0/dist/umd/supabase.js';
@@ -8,7 +9,8 @@ window.magnumDbReady = new Promise((resolve, reject) => {
     try {
       window.magnumDb = window.supabase.createClient(
         'https://zhfvofpxqmzwbugoonmi.supabase.co',
-        'sb_publishable_mJb_4HhWX-d00E9PIVc4pQ_NlOUzID2'
+        'sb_publishable_mJb_4HhWX-d00E9PIVc4pQ_NlOUzID2',
+        isolatedRecovery ? { auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false } } : {}
       );
       resolve(window.magnumDb);
     } catch (error) { reject(error); }

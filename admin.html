@@ -13,6 +13,13 @@
     <section class="admin-card" id="loginPanel">
       <p class="eyebrow">ადმინისტრირება</p><h1>შესვლა</h1><p>შეიყვანეთ Supabase Authentication-ში შექმნილი ადმინისტრატორის ელფოსტა და პაროლი.</p>
       <form id="loginForm"><label>ელფოსტა<input name="email" type="email" autocomplete="email" required></label><label>პაროლი<input name="password" type="password" autocomplete="current-password" required></label><button class="primary">შესვლა</button><p class="form-message" id="loginMessage"></p></form>
+      <details class="security-panel"><summary>დამავიწყდა პაროლი</summary>
+        <form id="forgotPasswordForm" class="password-form">
+          <label>ადმინისტრატორის ელფოსტა<input name="email" type="email" autocomplete="email" required></label>
+          <button class="primary" type="submit">აღდგენის წერილის გაგზავნა</button>
+          <p id="forgotPasswordMessage" class="form-message" role="status"></p>
+        </form>
+      </details>
     </section>
     <section class="admin-card" id="productPanel" hidden>
       <div class="admin-title"><div><p class="eyebrow">ადმინისტრირება</p><h1>ახალი პროდუქტი</h1></div><div><a class="text-button" href="manage-products.html">პროდუქტების მართვა</a> <button id="logout" class="text-button">გასვლა</button></div></div>
@@ -42,5 +49,5 @@
       </form>
     </section>
   </main>
-  <script src="supabase.js"></script><script src="admin.js"></script>
+  <script src="supabase.js"></script><script src="admin.js"></script><script src="forgot-password.js"></script>
 </body></html>
