@@ -13,3 +13,6 @@ scripts/
 # Internal catalog review data. The storefront only needs data/products.json.
 data/CATALOG-AUDIT.md
 data/catalog-metadata.json
+
+RELEASE-TODO.md
+OWNER-GUIDE.md

@@ -6,7 +6,7 @@ const IMAGE_TYPES = new Map([
   ['image/webp', 'webp'],
   ['image/gif', 'gif']
 ]);
-let db;
+let db, pendingCreateId = null, uploadedFile = null, uploadedImage = '';
 
 function populateSelect(name, values, suffix = '') {
   const select = document.querySelector(`[name="${name}"]`);
@@ -18,9 +18,9 @@ function populateSelect(name, values, suffix = '') {
 }
 
 async function loadStandardProductValues() {
-  const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] });
-  const { data } = await db.from('products').select('brand,caliber,barrelLength,brandTags,caliberTags,barrelLengthTags');
-  const products = [...catalog.products, ...(data || [])];
+  const data = await window.MagnumProducts.readAll(() => db.from('products').select('*'));
+  const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] }).catch(() => ({ products: [] }));
+  const products = [...catalog.products, ...data];
   populateSelect('brand', products.flatMap(product => Array.isArray(product.brandTags) ? product.brandTags : [product.brand]));
   populateSelect('caliber', products.flatMap(product => product.caliberTags?.length ? product.caliberTags : [product.caliber]));
   populateSelect('barrelLength', products.flatMap(product => product.barrelLengthTags?.length ? product.barrelLengthTags : [product.barrelLength]), ' სმ');
@@ -55,16 +55,20 @@ async function init() {
     db = await window.magnumDbReady;
     if (await refreshSession()) await loadStandardProductValues();
   }
-  catch (error) { message($('#loginMessage'), 'ბაზასთან კავშირი ვერ დამყარდა. შეამოწმეთ Supabase პარამეტრები.'); }
+  catch (error) { message($('#productPanel').hidden ? $('#loginMessage') : $('#productMessage'), 'ბაზასთან კავშირი ვერ დამყარდა. განაახლეთ გვერდი და სცადეთ თავიდან.'); }
 }
 
 $('#loginForm').onsubmit = async event => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
   try {
+    db = await window.magnumDbReady;
     const { error } = await db.auth.signInWithPassword({ email: form.get('email'), password: form.get('password') });
     if (error) throw error;
-    if (await refreshSession()) await loadStandardProductValues();
+    if (await refreshSession()) {
+      try { await loadStandardProductValues(); }
+      catch { message($('#productMessage'), 'მახასიათებლები ვერ ჩაიტვირთა. განაახლეთ გვერდი და სცადეთ თავიდან.'); }
+    }
   } catch (error) { message($('#loginMessage'), 'ელფოსტა ან პაროლი არასწორია.'); }
 };
 
@@ -80,55 +84,28 @@ $('#productForm').onsubmit = async event => {
   event.preventDefault();
   const formElement = event.currentTarget;
   const form = new FormData(formElement), file = form.get('image'), button = $('#saveButton');
+  if (button.disabled) return;
   if (!(file instanceof File) || !file.size) return message($('#productMessage'), 'აირჩიეთ პროდუქტის სურათი.');
   button.disabled = true; button.textContent = 'ინახება…';
   try {
-    const extension = IMAGE_TYPES.get(file.type);
-    if (!extension || file.size > 5_000_000) throw new Error('სურათის ტიპი ან ზომა დაუშვებელია.');
-    const fileName = `${crypto.randomUUID()}.${extension}`;
-    const { error: uploadError } = await db.storage.from('product-images').upload(fileName, file, { contentType: file.type, upsert: false });
-    if (uploadError) throw uploadError;
-    const { data: imageUrl } = db.storage.from('product-images').getPublicUrl(fileName);
-    const amount = Number(form.get('amount'));
-    const row = { id: crypto.randomUUID(), name: form.get('name').trim(), amount, price: `${amount} ₾`, category: form.get('category'), brand: form.get('brand') || '', caliber: form.get('caliber') || '', barrelLength: form.get('barrelLength') || '', image: imageUrl.publicUrl, description: form.get('description').trim() || '', source: 'admin' };
-    const supportsCaliber = ['ცეცხლსასროლი იარაღი', 'პნევმატიკა', 'ვაზნები'].includes(row.category);
-    const supportsBarrel = ['ცეცხლსასროლი იარაღი', 'პნევმატიკა'].includes(row.category);
-    if (!supportsCaliber) row.caliber = '';
-    if (!supportsBarrel) row.barrelLength = '';
-    row.brandTags = [row.brand].filter(Boolean);
-    row.caliberTags = [row.caliber].filter(Boolean);
-    row.barrelLengthTags = [row.barrelLength].filter(Boolean);
-    row.brandStatus = row.brand ? 'verified' : 'unverified';
+    const allowed = Object.fromEntries(['brand', 'caliber', 'barrelLength'].map(key => [key, [...formElement.elements[key].options].map(option => option.value).filter(Boolean)]));
+    const input = Object.fromEntries(['name', 'amount', 'category', 'description'].map(key => [key, form.get(key)]));
+    for (const key of ['brand', 'caliber', 'barrelLength']) input[key] = [form.get(key)].filter(Boolean);
+    const patch = window.MagnumProducts.buildPatch(input, {}, allowed);
+    window.MagnumProducts.validateImage(file);
+    if (uploadedFile !== file || !uploadedImage) {
+      uploadedImage = await window.MagnumProducts.uploadImage(db, file); uploadedFile = file;
+    }
+    pendingCreateId ||= crypto.randomUUID();
+    const row = { brand: '', caliber: '', barrelLength: '', brandTags: [], caliberTags: [], barrelLengthTags: [], brandStatus: 'unverified', ...patch, id: pendingCreateId, image: uploadedImage, source: 'admin' };
     row.sourcePrice = row.price;
-    const { error } = await db.from('products').insert(row);
-    if (error) { await db.storage.from('product-images').remove([fileName]); throw error; }
+    const { data, error } = await db.from('products').insert(row).select('id');
+    if (error?.code === '23505') throw new Error('ეს პროდუქტი უკვე შენახულია. გადაამოწმეთ პროდუქტების მართვის გვერდი; ახალი პროდუქტის დასამატებლად განაახლეთ ეს გვერდი.');
+    if (error || !data?.length) throw new Error('შენახვა ვერ დადასტურდა. გადაამოწმეთ კავშირი და პროდუქტების მართვის გვერდი.');
+    pendingCreateId = null; uploadedFile = null; uploadedImage = '';
     formElement.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
   } catch (error) { message($('#productMessage'), `შენახვა ვერ მოხერხდა: ${error.message}`); }
   finally { button.disabled = false; button.textContent = 'პროდუქტის დამატება'; }
-};
-
-$('#importButton').onclick = async () => {
-  const button = $('#importButton'); button.disabled = true; button.textContent = 'იმპორტდება…';
-  try {
-    const response = await fetch('data/products.json'); if (!response.ok) throw new Error('კატალოგის ფაილი ვერ მოიძებნა.');
-    const { products } = await response.json();
-    const rows = products.map(product => ({
-      id: product.id, name: product.name, price: product.price, amount: product.amount,
-      category: product.category, brand: product.brand || '', caliber: product.caliber || '',
-      barrelLength: product.barrelLength || '', image: product.image,
-      description: product.description || '', source: 'magnum.ge',
-      brandTags: product.brandTags || [], caliberTags: product.caliberTags || [],
-      barrelLengthTags: product.barrelLengthTags || [],
-      brandStatus: product.brandStatus || (product.brand ? 'verified' : 'unverified'),
-      sourcePrice: product.sourcePrice || product.price
-    }));
-    for (let index = 0; index < rows.length; index += 50) {
-      const { error } = await db.from('products').upsert(rows.slice(index, index + 50), { onConflict: 'id' });
-      if (error) throw error;
-    }
-    message($('#importMessage'), `${products.length} პროდუქტი წარმატებით დაემატა ონლაინ ბაზას.`, true);
-  } catch (error) { message($('#importMessage'), `იმპორტი ვერ მოხერხდა: ${error.message}`); }
-  finally { button.disabled = false; button.textContent = 'არსებული კატალოგის იმპორტი'; }
 };
 
 $('#logout').onclick = async () => { await db.auth.signOut(); await refreshSession(); };

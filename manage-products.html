@@ -1,1 +1,42 @@
-<!doctype html><html lang="ka"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MAGNUM — პროდუქციის მართვა</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="admin.css"><link rel="stylesheet" href="manage.css"></head><body class="admin-body"><header class="admin-header"><a class="logo" href="index.html"><span class="logo-mark">M</span><span>MAGNUM</span></a><a href="admin.html">პროდუქტის დამატება</a></header><main class="admin-main"><section class="admin-card" id="blocked" hidden><p class="eyebrow">ადმინისტრირება</p><h1>ადმინისტრატორის უფლება აუცილებელია</h1><p>პროდუქტების სამართავად შედით ადმინისტრატორის ანგარიშით.</p><a class="primary manage-link" href="admin.html">ადმინისტრირებაში შესვლა</a></section><section class="admin-card" id="manager" hidden><div class="admin-title"><div><p class="eyebrow">კატალოგის მართვა</p><h1>პროდუქტების წაშლა</h1></div><a class="text-button" href="admin.html">ახალი პროდუქტი</a></div><p>მოძებნეთ პროდუქტი, შემდეგ დაადასტურეთ მისი წაშლა. ის გაქრება პროდუქტების გვერდიდანაც.</p><label class="admin-search">პროდუქტის ძიება<input id="query" type="search" placeholder="სახელი, ბრენდი ან კალიბრი"></label><p class="manage-summary" id="summary"></p><div id="productList" class="manage-products"></div></section></main><script src="supabase.js"></script><script src="manage-products.js"></script></body></html>
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MAGNUM — პროდუქციის მართვა</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="admin.css"><link rel="stylesheet" href="manage.css">
+</head>
+<body class="admin-body">
+  <header class="admin-header"><a class="logo" href="index.html"><span class="logo-mark">M</span><span>MAGNUM</span></a><a href="admin.html">პროდუქტის დამატება</a></header>
+  <main class="admin-main">
+    <section class="admin-card" id="blocked" hidden><p class="eyebrow">ადმინისტრირება</p><h1>ადმინისტრატორის უფლება აუცილებელია</h1><p id="accessMessage">პროდუქტების სამართავად შედით ადმინისტრატორის ანგარიშით.</p><a class="primary manage-link" href="admin.html">ადმინისტრირებაში შესვლა</a></section>
+    <section class="admin-card" id="manager" hidden>
+      <div class="admin-title"><div><p class="eyebrow">კატალოგის მართვა</p><h1>პროდუქტების მართვა</h1></div><a class="text-button" href="admin.html">ახალი პროდუქტი</a></div>
+      <p>შეცვალეთ ფასი, აღწერა, მახასიათებლები ან სურათი. შენახული ცვლილება გამოჩნდება კატალოგში.</p>
+      <div class="manage-tools"><button type="button" class="edit-button" id="refreshProducts">სიის განახლება</button><button type="button" class="edit-button" id="exportProducts">კატალოგის ასლის ჩამოტვირთვა</button></div>
+      <p id="managerMessage" class="form-message" role="status"></p>
+      <label class="admin-search">პროდუქტის ძიება<input id="query" type="search" placeholder="სახელი, ბრენდი ან კალიბრი"></label>
+      <p class="manage-summary" id="summary"></p><div id="productList" class="manage-products"></div>
+    </section>
+  </main>
+  <dialog id="editDialog" aria-labelledby="editTitle">
+    <section class="admin-card editor-card">
+      <div class="admin-title"><h2 id="editTitle">პროდუქტის რედაქტირება</h2><button type="button" id="closeEditor" class="text-button">დახურვა</button></div>
+      <form id="editForm">
+        <label>დასახელება<input name="name" required maxlength="300"></label>
+        <div class="two-cols"><label>კატეგორია<select name="category" required></select></label><label>ფასი, ₾<input name="amount" type="number" min="0.01" max="100000000" step="0.01" required></label></div>
+        <p class="file-note">მონიშნეთ ყველა შესაბამისი მნიშვნელობა. დაუდასტურებელი მახასიათებელი დატოვეთ მოუნიშნავი.</p>
+        <fieldset id="brandField"><legend>ბრენდი</legend><div id="editBrands" class="spec-options"></div></fieldset>
+        <fieldset id="caliberField"><legend>კალიბრი</legend><div id="editCalibers" class="spec-options"></div></fieldset>
+        <fieldset id="barrelField"><legend>ლულის სიგრძე</legend><div id="editBarrels" class="spec-options"></div></fieldset>
+        <label>აღწერა<textarea name="description" rows="5" maxlength="5000"></textarea></label>
+        <div class="preview"><img id="editImagePreview" alt="პროდუქტის სურათი"></div>
+        <label>სურათის შეცვლა <span class="optional">(არასავალდებულო)</span><input name="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif"><span class="file-note">თუ ახალ სურათს არ აირჩევთ, არსებული დარჩება. მაქს. 5 MB.</span></label>
+        <p id="editMessage" class="form-message" role="status"></p>
+        <div class="manage-tools"><button class="primary" id="saveEdit" type="submit">ცვლილებების შენახვა</button><button class="edit-button" id="cancelEdit" type="button">გაუქმება</button></div>
+      </form>
+    </section>
+  </dialog>
+  <script src="supabase.js"></script><script src="product-data.js"></script><script src="manage-products.js"></script>
+</body></html>

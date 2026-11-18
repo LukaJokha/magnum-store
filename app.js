@@ -162,20 +162,21 @@ function renderProducts() {
 }
 function update() { renderFilters(); renderProducts(); }
 async function init() {
+  $('#year').textContent = new Date().getFullYear();
+  $('#retryCatalog').onclick = () => window.location.reload();
   try {
-    // The bundled catalog remains the safe baseline until its one-time Supabase import is complete.
-    const catalog = await fetch('data/products.json').then(response => { if (!response.ok) throw Error(); return response.json(); });
-    const baseline = catalog.products.map(cleanProduct);
-    try {
-      const database = await window.magnumDbReady;
-      const { data, error } = await database.from('storefront_products').select('*').order('createdAt', { ascending: false });
-      if (error) throw error;
-      const online = (data || []).map(cleanProduct);
-      // A successful public-view query makes Supabase authoritative, including edits and deletions.
-      state.products = online;
-    } catch { state.products = baseline; }
+    const database = await window.magnumDbReady;
+    const data = await window.MagnumProducts.readAll(() => database.from('storefront_products').select('*'));
+    state.products = data.map(cleanProduct);
+    const category = new URLSearchParams(window.location.search).get('category');
+    if (category && state.products.some(product => product.category === category)) state.category = category;
     update();
-  } catch { $('#resultCount').textContent = 'კატალოგის ჩატვირთვა ვერ მოხერხდა'; return; }
+  } catch {
+    $('#resultCount').textContent = 'კატალოგი დროებით მიუწვდომელია';
+    $('#catalogError').hidden = false;
+    $('#empty').hidden = true;
+    return;
+  }
   $('#search').oninput = event => { state.query = event.target.value; state.page = 1; update(); };
   $('#minPrice').oninput = event => { state.min = event.target.value; state.page = 1; update(); };
   $('#maxPrice').oninput = event => { state.max = event.target.value; state.page = 1; update(); };

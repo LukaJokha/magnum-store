@@ -10,7 +10,7 @@ const context = vm.createContext({
   document: { head: { append() {} }, createElement() { return {}; } },
   fetch: () => new Promise(() => {}), console, inputCatalog: products
 });
-vm.runInContext(await fs.readFile(new URL('../app.js', import.meta.url), 'utf8'), context, { filename: 'app.js' });
+vm.runInContext((await fs.readFile(new URL('../app.js', import.meta.url), 'utf8')).replace(/\ninit\(\);\s*$/, ''), context, { filename: 'app.js' });
 const shop = vm.runInContext(`(() => {
   state.products = inputCatalog.map(cleanProduct);
   const defaults = { category: 'all', brand: [], caliber: [], barrel: [], query: '', min: '', max: '', sort: 'new', page: 1 };

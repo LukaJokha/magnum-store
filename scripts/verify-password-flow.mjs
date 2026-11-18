@@ -11,7 +11,7 @@ async function page(options = {}) {
   let reloads = 0;
   const element = selector => {
     if (!elements.has(selector)) elements.set(selector, {
-      hidden: false, disabled: false, textContent: '', className: '', value: '',
+      hidden: selector === '#productPanel', disabled: false, textContent: '', className: '', value: '',
       options: [], fields: {}, resets: 0,
       add(option) { this.options.push(option); },
       reset() { this.fields = {}; this.resets += 1; }
@@ -40,7 +40,7 @@ async function page(options = {}) {
     },
     from(name) {
       assert.equal(name, 'products');
-      return { async select() { return { data: [] }; } };
+      return { select() { return { order() { return this; }, async range() { return { data: [] }; } }; } };
     }
   };
   const context = vm.createContext({
@@ -54,6 +54,7 @@ async function page(options = {}) {
     },
     setTimeout(callback, delay) { timers.push({ callback, delay }); }
   });
+  vm.runInContext(await fs.readFile(new URL('../product-data.js', import.meta.url), 'utf8'), context);
   await vm.runInContext(source, context, { filename: 'admin.js' });
   return {
     state, calls, timers, element,
