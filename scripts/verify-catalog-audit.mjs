@@ -40,13 +40,13 @@ check('376 individually reviewed records, no overlap or omission', () => {
 });
 
 // Unknown manufacturer is an explicit review result, not a fabricated name.
-const unresolvedManufacturers = new Set([58, 300, 301, 302, 303, 304, 321, 369, 370, 371, 374, 376].map(id => `magnum-${id}`));
+const unresolvedManufacturers = new Set([58, 300, 301, 302, 303, 304, 321, 370, 371, 374, 376].map(id => `magnum-${id}`));
 const realBrands = new Set([
   'HUGLU', 'ROSSI', 'TAURUS', 'ARKEN', 'ROCK ISLAND ARMORY', 'GLOCK', 'RUGER', 'GUERINI', 'H&N', 'HUNT GROUP',
   'MAUSER', 'ROCK RIVER', 'DIAMONDBACK FIREARMS', 'MORISSON', 'SARSILMAZ', 'S&W', 'KRAL', 'REDWIN', 'YAF', 'HK',
   'LAMBRO', 'ELEY', 'SCHMIDT & BENDER', 'FABARM', 'SELLIER & BELLOT', 'POF USA', 'MKA', 'GGG', 'FENIX', 'CITADEL',
   'ARMED', 'ASELKON', 'ARMSAN', 'PARDUS', 'WINCHESTER', 'FN', 'UTG', 'GANZO', 'HILL', 'STEYR', 'LIPETSK',
-  'YANGTZE SOLAR', 'JSB', 'LAPUA', 'SAUVESTRE', 'AIR ARMS', 'ATA ARMS'
+  'YANGTZE SOLAR', 'JSB', 'LAPUA', 'SAUVESTRE', 'AIR ARMS', 'ATA ARMS', 'HATSAN'
 ]);
 const categories = new Set(['ცეცხლსასროლი იარაღი', 'ოპტიკა', 'ვაზნები', 'აქსესუარები', 'ფანრები', 'პნევმატიკა', 'დანები', 'ნავები და ძრავები', 'ტურიზმი']);
 const caliberCategories = new Set(['ცეცხლსასროლი იარაღი', 'ვაზნები', 'პნევმატიკა']);
@@ -133,6 +133,10 @@ for (const id of [270, 283, 284, 285, 286, 315, 316, 317]) {
   check(`magnum-${id} documented manufacturer`, () => assert.equal(row(`magnum-${id}`).brand, expected));
 }
 tags('magnum-368', 'brandTags', ['ATA ARMS', 'ARMSAN']);
+// Manufacturer photographs/product listings independently matched on 25 November.
+tags('magnum-369', 'brandTags', ['HATSAN']);
+// Exact XRP/KNT/XRS codes in Hunt Group's official catalog, not model-prefix inference.
+for (const id of [56, 57, 98, 99, 156, 196]) tags(`magnum-${id}`, 'caliberTags', ['12 GA']);
 tags('magnum-115', 'caliberTags', ['44 MAG', '45 COLT']);
 tags('magnum-123', 'barrelLengthTags', ['71', '76']);
 tags('magnum-191', 'barrelLengthTags', ['71', '47', '61']);

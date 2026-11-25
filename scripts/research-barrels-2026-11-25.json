@@ -1,0 +1,516 @@
+{
+  "reviewedAt": "2026-11-25T18:52:18.870Z",
+  "field": "barrelLengthTags",
+  "unit": "cm",
+  "policy": "Verified values describe the coherent exact named catalog model; unresolved title/image/SKU variants are not populated.",
+  "reviews": [
+    {
+      "id": "magnum-2",
+      "name": "ROSSI 7022 Wood, cal. 22LR, Semi-Auto, 10 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-3",
+      "name": "ROSSI 8122 Synthetic, cal. 22LR, Bolt Action, 10 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-5",
+      "name": "ROSSI PUMA Classic, cal. 44 MAG, Lever Action, 10 rounds",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf"
+      ],
+      "evidence": "Puma Classic manufacturer associates 10 rounds with 20 inches, 8 rounds with 16 inches.",
+      "reason": "Shop title says 10 rounds, but photo filename identifies 16-inch example. Exact delivered variant needs owner confirmation."
+    },
+    {
+      "id": "magnum-6",
+      "name": "ROSSI R95 Wood, cal. 44 MAG, Lever Action, 10 rounds",
+      "status": "verified",
+      "sources": [
+        "https://rossi-international.com/products/r95_classic_revolver_calibers/"
+      ],
+      "evidence": "R95 Classic in .44 MAG with wood stock and 10 rounds has a manufacturer-specified 20-inch barrel. 20 × 2.54 = 50.8 cm.",
+      "reason": "",
+      "values": [
+        "50.8"
+      ]
+    },
+    {
+      "id": "magnum-7",
+      "name": "ROSSI RIO BRAVO Wood, cal. 22WMR, Lever Action, 12 rounds",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf"
+      ],
+      "evidence": "Rossi original catalog distinguishes Rio Bravo .22WMR/12 rounds/20 inches from .17HMR/11 rounds/18 inches. Shop title specifies .22WMR and 12 rounds; length follows that coherent title configuration.",
+      "reason": "Title22WMR/12rounds matches20-inch manufacturer variant, but photo17HMR identifies a different18-inch model. Owner must confirm actual inventory model before selecting barrel length."
+    },
+    {
+      "id": "magnum-8",
+      "name": "ROSSI RIO BRAVO Wood, cal. 22LR, Lever Action, 15 rounds",
+      "status": "verified",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf"
+      ],
+      "evidence": "Rio Bravo wood .22LR 15-round specification maps to 18 inches; 18 × 2.54 = 45.72 cm.",
+      "reason": "",
+      "values": [
+        "45.72"
+      ]
+    },
+    {
+      "id": "magnum-9",
+      "name": "ROSSI 8122M Wood, cal. 22WMR, Bolt Action, 5 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-10",
+      "name": "ROSSI 8122M Synthetic, cal. 22WMR, Bolt Action, 5 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-11",
+      "name": "ROSSI 8122 Wood, cal. 22LR, Bolt Action, 10 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-12",
+      "name": "ROSSI 7022 Synthetic, cal. 22LR, Semi-Auto, 10 rounds, Threaded Barrel",
+      "status": "unresolved",
+      "sources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf",
+        "https://rossi-international.com/products/8122m/"
+      ],
+      "evidence": "Manufacturer lists several 16/18/21/23-inch configurations for 7022/8122/8122M.",
+      "reason": "Catalog title lacks exact barrel SKU; stock material/threading/capacity does not select one length. Do not add all manufacturer options as shop stock."
+    },
+    {
+      "id": "magnum-13",
+      "name": "TAURUS MOD G 3 TACTICAL, cal 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-g3-tactical/"
+      ],
+      "evidence": "Taurus G3 Tactical manufacturer product technical specifications state 4.50 inches. 4.5 × 2.54 = 11.43 cm.",
+      "reason": "",
+      "values": [
+        "11.43"
+      ]
+    },
+    {
+      "id": "magnum-14",
+      "name": "TAURUS MOD TS 9, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurusexport.com/assets/files/content/products/ts9_eng2.pdf"
+      ],
+      "evidence": "Taurus export TS9 technical sheet states 102 mm (4 inches). Use the explicit metric value: 10.2 cm. This is TS9, not TS9 C.",
+      "reason": "",
+      "values": [
+        "10.2"
+      ]
+    },
+    {
+      "id": "magnum-15",
+      "name": "TAURUS MOD TH 9, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ],
+      "evidence": "Full-size TH9 manufacturer catalog specifies 4.27 inches, distinct from compact TH9C. Converted and rounded to 10.85 cm.",
+      "reason": "",
+      "values": [
+        "10.85"
+      ]
+    },
+    {
+      "id": "magnum-16",
+      "name": "TAURUS MOD G3, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/wp-content/uploads/2025/05/Taurus_Manual_G3_G3c.pdf"
+      ],
+      "evidence": "Standard G3 9mm manual specifies 4 inches; 10.16 cm. Not G3c.",
+      "reason": "",
+      "values": [
+        "10.16"
+      ]
+    },
+    {
+      "id": "magnum-17",
+      "name": "TAURUS MOD GX4, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/wp-content/uploads/2025/06/Taurus_Manual_Taurus-GX4.pdf"
+      ],
+      "evidence": "Base GX4 manual specifies 3.06 inches; converted to 7.77 cm. Not GX4XL/Carry.",
+      "reason": "",
+      "values": [
+        "7.77"
+      ]
+    },
+    {
+      "id": "magnum-18",
+      "name": "TAURUS MOD G2S, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ],
+      "evidence": "Taurus 2021 manufacturer catalog technical table specifies 3.20 inches for G2s/G2c 9mm respectively; converted to 8.13 cm. Catalog shorthand descriptions use a different rounded inch label, so technical column is used.",
+      "reason": "",
+      "values": [
+        "8.13"
+      ]
+    },
+    {
+      "id": "magnum-19",
+      "name": "TAURUS MOD G2C, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ],
+      "evidence": "Taurus 2021 manufacturer catalog technical table specifies 3.20 inches for G2s/G2c 9mm respectively; converted to 8.13 cm. Catalog shorthand descriptions use a different rounded inch label, so technical column is used.",
+      "reason": "",
+      "values": [
+        "8.13"
+      ]
+    },
+    {
+      "id": "magnum-20",
+      "name": "TAURUS MOD G3XL, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-r-g3xl-tenifer-matte-black-9mm-luger-full-size-12-rds-steel-sights/"
+      ],
+      "evidence": "Current manufacturer G3XL technical specifications state 4.00 inches; 10.16 cm.",
+      "reason": "",
+      "values": [
+        "10.16"
+      ]
+    },
+    {
+      "id": "magnum-21",
+      "name": "TAURUS MOD G3X, cal. 9x19 mm.",
+      "status": "verified",
+      "sources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-r-g3x-tenifer-matte-black-9mm-luger-compact-15-rds/"
+      ],
+      "evidence": "Current manufacturer G3X technical specifications state 3.20 inches; converted to 8.13 cm. Earlier 2022 launch catalog used a rounded 3.25-inch label; current explicit technical table is preferred.",
+      "reason": "",
+      "values": [
+        "8.13"
+      ]
+    },
+    {
+      "id": "magnum-22",
+      "name": "TAURUS REV MOD 689, cal. 357 Mag.",
+      "status": "unresolved",
+      "sources": [
+        "https://academy.scene7.com/is/content/academy/ProductDocuments/usermanual/20079872"
+      ],
+      "evidence": "Original Taurus revolver manual lists multiple barrel configurations for 669/689.",
+      "reason": "Shop title has no barrel length or detailed SKU. Generic illustration cannot prove the inventory unit length."
+    },
+    {
+      "id": "magnum-23",
+      "name": "TAURUS REV MOD 669, cal. 357 Mag.",
+      "status": "unresolved",
+      "sources": [
+        "https://academy.scene7.com/is/content/academy/ProductDocuments/usermanual/20079872"
+      ],
+      "evidence": "Original Taurus revolver manual lists multiple barrel configurations for 669/689.",
+      "reason": "Shop title has no barrel length or detailed SKU. Generic illustration cannot prove the inventory unit length."
+    },
+    {
+      "id": "magnum-24",
+      "name": "TAURUS REV MOD 627 TRACKER, cal. 357 Mag.",
+      "status": "unresolved",
+      "sources": [
+        "https://www.taurususa.com/firearms/revolvers/small-frame-revolvers/",
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ],
+      "evidence": "Taurus model families include multiple barrel configurations; base name alone does not select exact variant.",
+      "reason": "Need full model number or owner measurement; do not assign the commonly sold barrel by default."
+    },
+    {
+      "id": "magnum-25",
+      "name": "TAURUS REV MOD 605, cal. 357 Mag.",
+      "status": "unresolved",
+      "sources": [
+        "https://www.taurususa.com/firearms/revolvers/small-frame-revolvers/",
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ],
+      "evidence": "Taurus model families include multiple barrel configurations; base name alone does not select exact variant.",
+      "reason": "Need full model number or owner measurement; do not assign the commonly sold barrel by default."
+    },
+    {
+      "id": "magnum-32",
+      "name": "Rock Island Armory, M206, 51261, Caliber 38 Special, Revolver, 6 Rounds, Made in Philippines",
+      "status": "unresolved",
+      "sources": [
+        "https://www.armscor.com/hubfs/Armscor_March2020%20Theme/Pdf%20Files/Arms_RIA_Catalog_AllPages_copy.pdf"
+      ],
+      "evidence": "Armscor catalog maps 51261 to M200; M206 variants are 51283/51280/51289.",
+      "reason": "Shop title combines M206 with M200 SKU51261; image filename51289. These imply different models/barrels, so identify actual unit before filling."
+    },
+    {
+      "id": "magnum-35",
+      "name": "Ruger AR-556, 8500, Caliber 5.56x45 mm, Semi Automatic Rifle",
+      "status": "verified",
+      "sources": [
+        "https://ruger.com/products/ar556/specSheets/8500.html",
+        "https://ruger-docs.s3.amazonaws.com/Ruger_International.pdf"
+      ],
+      "evidence": "Exact Ruger model8500 specification is 16.10 inches; 16.1 × 2.54 = 40.894, rounded40.89 cm.",
+      "reason": "",
+      "values": [
+        "40.89"
+      ]
+    },
+    {
+      "id": "magnum-59",
+      "name": "MAUSER M25 EXTREME, RAIL 20 MOA, cal. 308 Win, Twist - 1:11",
+      "status": "verified",
+      "sources": [
+        "https://www.mauser.com/media/24/0a/20/1738145320/MAUSER_25_Flyer_210x297mm_V26_EN_prev.pdf"
+      ],
+      "evidence": "Mauser25 original manufacturer flyer specifies 51cm standard-caliber barrel; shop model is Extreme .308Win, a standard caliber.",
+      "reason": "",
+      "values": [
+        "51"
+      ]
+    },
+    {
+      "id": "magnum-60",
+      "name": "ROCK RIVER PRAGE 3G 6-POS OPERATOR, cal. 5,56, 1 magazine 30 rd.",
+      "status": "unresolved",
+      "sources": [
+        "https://www.rockriverarms.com/",
+        "https://www.rockriverarms.com/catalog/long-guns/"
+      ],
+      "evidence": "Store spells model PRAGE3G; available current manufacturer catalog does not expose an exact matching variant specification.",
+      "reason": "RRAGE3G is a likely intended identity, but no primary exact page was recovered. Secondary reports say16 inches; need exact manufacturer SKU/source confirmation before applying."
+    },
+    {
+      "id": "magnum-61",
+      "name": "ROCK RIVER PRAGE 3G, cal. 5,56, 1 magazine 30 rd.",
+      "status": "unresolved",
+      "sources": [
+        "https://www.rockriverarms.com/",
+        "https://www.rockriverarms.com/catalog/long-guns/"
+      ],
+      "evidence": "Store spells model PRAGE3G; available current manufacturer catalog does not expose an exact matching variant specification.",
+      "reason": "RRAGE3G is a likely intended identity, but no primary exact page was recovered. Secondary reports say16 inches; need exact manufacturer SKU/source confirmation before applying."
+    },
+    {
+      "id": "magnum-62",
+      "name": "DB15, 16″ Black Gold Series, w/ 15″ M-LOK V Rail w/ Anti-Slip Texture Pads, 5.56 NATO, w/ MagPul MBUS Sights, ODG",
+      "status": "verified",
+      "sources": [
+        "https://www.magnum.ge/production-ka"
+      ],
+      "evidence": "Shop original product title explicitly identifies DB15 BlackGold16-inch configuration and separately a15-inch M-LOK rail. Barrel is16 inches =40.64cm; rail length is not barrel length.",
+      "reason": "Current exact Diamondback DB171AK192 manufacturer page was not found; explicit source title supplies the measurement.",
+      "values": [
+        "40.64"
+      ]
+    },
+    {
+      "id": "magnum-71",
+      "name": "SARSILMAZ SAR15T, კალ.7.62X39, 5 მჭიდი, კეისი",
+      "status": "verified",
+      "sources": [
+        "https://www.sarsilmaz.com/public/uploads/1738761377en.pdf"
+      ],
+      "evidence": "Sarsilmaz manufacturer SAR15T 7.62×39 technical specification lists410mm barrel =41cm.",
+      "reason": "",
+      "values": [
+        "41"
+      ]
+    },
+    {
+      "id": "magnum-145",
+      "name": "MKA556 120S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, O.D. GREEN CERAKOTE",
+      "status": "unresolved",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-m-lok-series",
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf"
+      ],
+      "evidence": "Manufacturer family exists but exact120S variant not recovered.",
+      "reason": "Title120S differs from image140S; cannot infer inches by stripping model digits."
+    },
+    {
+      "id": "magnum-146",
+      "name": "MKA556 145S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, O.D. GREEN CERAKOTE",
+      "status": "unresolved",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-145s-ml"
+      ],
+      "evidence": "Current manufacturer145S is14.5in, but shop photo filename says140S.",
+      "reason": "Store title and image identity conflict; no exact shop SKU confirms same generation/variant."
+    },
+    {
+      "id": "magnum-147",
+      "name": "MKA556 160S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, BLACK ANODIZED",
+      "status": "verified",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-160s-ml"
+      ],
+      "evidence": "Manufacturer160S M-LOK page specifies16-inch barrel. Shop title and image both160S; 40.64cm.",
+      "reason": "",
+      "values": [
+        "40.64"
+      ]
+    },
+    {
+      "id": "magnum-148",
+      "name": "MKA556 160S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, BARRETT BROWN CERAKOTE",
+      "status": "unresolved",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-160s-ml"
+      ],
+      "evidence": "Manufacturer160S length is16in.",
+      "reason": "Shop title160S, image filename180S; cannot select without resolving actual model."
+    },
+    {
+      "id": "magnum-149",
+      "name": "MKA556 180S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, FDE (FLAT DARK EARTH) CERAKOTE",
+      "status": "unresolved",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-m-lok-series",
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf"
+      ],
+      "evidence": "Manufacturer generic556 brochure offers several lengths; current lineup lists185S rather than180S.",
+      "reason": "No exact180S primary model data recovered. Generic range does not prove exact length."
+    },
+    {
+      "id": "magnum-150",
+      "name": "MKA556 220S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, BLACK ANODIZED",
+      "status": "verified",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-220s-ml"
+      ],
+      "evidence": "Exact220S manufacturer page specifies22-inch barrel; shop title/image both220S, 22×2.54=55.88cm. Finish does not change this model length.",
+      "reason": "",
+      "values": [
+        "55.88"
+      ]
+    },
+    {
+      "id": "magnum-151",
+      "name": "MKA556 220S, 5.56x45 CALIBER, SEMI AUTO RIFLE, TELESCOPIC2*30RD MAGAZINE, POLYMER CASE, TAN CERAKOTE",
+      "status": "verified",
+      "sources": [
+        "https://husanarms.com/en/product/mka-556-220s-ml"
+      ],
+      "evidence": "Exact220S manufacturer page specifies22-inch barrel; shop title/image both220S, 22×2.54=55.88cm. Finish does not change this model length.",
+      "reason": "",
+      "values": [
+        "55.88"
+      ]
+    },
+    {
+      "id": "magnum-152",
+      "name": "MKA919 TR2 9x19 CALIBER, PISTOL, 2*19RD MAGAZINE, CLEANING KIT, 3*BACK, PADS, OPTICS READY, POLYMER CASE, O.D. GREEN CERAKOTE",
+      "status": "verified",
+      "sources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ],
+      "evidence": "Original Husan MKA919TR2 technical sheet specifies113mm barrel (rounded4.4in). Current ST page explicitly includes2×14rd and RD2×19rd; both specify4.40inches. Use original explicit113mm=11.3cm rather than converting a rounded inch label.",
+      "reason": "",
+      "values": [
+        "11.3"
+      ]
+    },
+    {
+      "id": "magnum-153",
+      "name": "MKA919 TR2 9x19 CALIBER, PISTOL, 2*14RD MAGAZINE, CLEANING KIT, 3*BACK, PADS, POLYMER CASE, O.D. GREEN CERAKOTE",
+      "status": "verified",
+      "sources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ],
+      "evidence": "Original Husan MKA919TR2 technical sheet specifies113mm barrel (rounded4.4in). Current ST page explicitly includes2×14rd and RD2×19rd; both specify4.40inches. Use original explicit113mm=11.3cm rather than converting a rounded inch label.",
+      "reason": "",
+      "values": [
+        "11.3"
+      ]
+    },
+    {
+      "id": "magnum-154",
+      "name": "MKA919 TR2 9x19 CALIBER, PISTOL, 2*19RD MAGAZINE, CLEANING KIT, 3*BACK, PADS, OPTICS READY, POLYMER CASE, BLACK ANODIZED",
+      "status": "verified",
+      "sources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ],
+      "evidence": "Original Husan MKA919TR2 technical sheet specifies113mm barrel (rounded4.4in). Current ST page explicitly includes2×14rd and RD2×19rd; both specify4.40inches. Use original explicit113mm=11.3cm rather than converting a rounded inch label.",
+      "reason": "",
+      "values": [
+        "11.3"
+      ]
+    },
+    {
+      "id": "magnum-155",
+      "name": "MKA919 TR2 9x19 CALIBER, PISTOL, 2*14RD MAGAZINE, CLEANING KIT, 3*BACK, PADS, POLYMER CASE, BLACK ANODIZED",
+      "status": "verified",
+      "sources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ],
+      "evidence": "Original Husan MKA919TR2 technical sheet specifies113mm barrel (rounded4.4in). Current ST page explicitly includes2×14rd and RD2×19rd; both specify4.40inches. Use original explicit113mm=11.3cm rather than converting a rounded inch label.",
+      "reason": "",
+      "values": [
+        "11.3"
+      ]
+    },
+    {
+      "id": "magnum-188",
+      "name": "Citadel Arms Centurion CP9, cal. 9 mm.,CITCP9ODG, Made in USA",
+      "status": "unresolved",
+      "sources": [
+        "https://www.legacysports.com/wp-content/uploads/2025/08/Citadel-CP9-UM.pdf",
+        "https://citadelfirearms.com/wp-content/uploads/2024/02/GAAP-231100-CIT.pdf"
+      ],
+      "evidence": "Official CP9 manual lists4.0-inch standard and4.5-inch threaded variants, but does not map CITCP9ODG SKU to one length.",
+      "reason": "Exact SKU-to-barrel mapping is not explicit in recovered manufacturer manual; absence of threaded wording alone is insufficient."
+    }
+  ]
+}

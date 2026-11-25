@@ -1,11 +1,14 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-10-27T17:55:33.081Z",
+  "reviewedAt": "2026-11-25T18:54:54.532Z",
   "reviewedCount": 376,
   "reviewSources": [
     "scripts/audit-range-1.json",
     "scripts/audit-range-2.json",
-    "scripts/audit-range-3.json"
+    "scripts/audit-range-3.json",
+    "scripts/research-brands-2026-11-25.json",
+    "scripts/research-calibers-2026-11-25.json",
+    "scripts/research-barrels-2026-11-25.json"
   ],
   "note": "Explicit per-product manufacturer/category decisions. Unverifiable manufacturers are not invented. Optional specifications are populated only from source titles or cited exact-model specifications.",
   "products": {
@@ -49,7 +52,13 @@
         "ROSSI"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "50.8"
+      ],
+      "researchSources": [
+        "https://rossi-international.com/products/r95_classic_revolver_calibers/"
+      ]
     },
     "magnum-7": {
       "brandTags": [
@@ -63,7 +72,13 @@
         "ROSSI"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "45.72"
+      ],
+      "researchSources": [
+        "https://rossi-international.com/wp-content/uploads/2021/10/Rossi-International-Catalogue-2022-digital.pdf"
+      ]
     },
     "magnum-9": {
       "brandTags": [
@@ -98,63 +113,117 @@
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "11.43"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-g3-tactical/"
+      ]
     },
     "magnum-14": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "10.2"
+      ],
+      "researchSources": [
+        "https://www.taurusexport.com/assets/files/content/products/ts9_eng2.pdf"
+      ]
     },
     "magnum-15": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "10.85"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ]
     },
     "magnum-16": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "10.16"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/wp-content/uploads/2025/05/Taurus_Manual_G3_G3c.pdf"
+      ]
     },
     "magnum-17": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "7.77"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/wp-content/uploads/2025/06/Taurus_Manual_Taurus-GX4.pdf"
+      ]
     },
     "magnum-18": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "8.13"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ]
     },
     "magnum-19": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "8.13"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/images/downloads/catalog/Taurus_2021_Product_Catalog.pdf"
+      ]
     },
     "magnum-20": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "10.16"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-r-g3xl-tenifer-matte-black-9mm-luger-full-size-12-rds-steel-sights/"
+      ]
     },
     "magnum-21": {
       "brandTags": [
         "TAURUS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "8.13"
+      ],
+      "researchSources": [
+        "https://www.taurususa.com/product/pistols/taurus-g3/taurus-r-g3x-tenifer-matte-black-9mm-luger-compact-15-rds/"
+      ]
     },
     "magnum-22": {
       "brandTags": [
@@ -264,7 +333,14 @@
         "RUGER"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "40.89"
+      ],
+      "researchSources": [
+        "https://ruger.com/products/ar556/specSheets/8500.html",
+        "https://ruger-docs.s3.amazonaws.com/Ruger_International.pdf"
+      ]
     },
     "magnum-36": {
       "brandTags": [
@@ -414,14 +490,28 @@
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ]
     },
     "magnum-57": {
       "brandTags": [
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ]
     },
     "magnum-58": {
       "brandTags": [],
@@ -433,7 +523,13 @@
         "MAUSER"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "51"
+      ],
+      "researchSources": [
+        "https://www.mauser.com/media/24/0a/20/1738145320/MAUSER_25_Flyer_210x297mm_V26_EN_prev.pdf"
+      ]
     },
     "magnum-60": {
       "brandTags": [
@@ -454,7 +550,13 @@
         "DIAMONDBACK FIREARMS"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "40.64"
+      ],
+      "researchSources": [
+        "https://www.magnum.ge/production-ka"
+      ]
     },
     "magnum-63": {
       "brandTags": [
@@ -517,7 +619,13 @@
         "SARSILMAZ"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "41"
+      ],
+      "researchSources": [
+        "https://www.sarsilmaz.com/public/uploads/1738761377en.pdf"
+      ]
     },
     "magnum-72": {
       "brandTags": [
@@ -715,14 +823,27 @@
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=30"
+      ]
     },
     "magnum-99": {
       "brandTags": [
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ]
     },
     "magnum-100": {
       "brandTags": [
@@ -1075,7 +1196,13 @@
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "40.64"
+      ],
+      "researchSources": [
+        "https://husanarms.com/en/product/mka-556-160s-ml"
+      ]
     },
     "magnum-148": {
       "brandTags": [
@@ -1096,49 +1223,100 @@
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "55.88"
+      ],
+      "researchSources": [
+        "https://husanarms.com/en/product/mka-556-220s-ml"
+      ]
     },
     "magnum-151": {
       "brandTags": [
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "55.88"
+      ],
+      "researchSources": [
+        "https://husanarms.com/en/product/mka-556-220s-ml"
+      ]
     },
     "magnum-152": {
       "brandTags": [
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "11.3"
+      ],
+      "researchSources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ]
     },
     "magnum-153": {
       "brandTags": [
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "11.3"
+      ],
+      "researchSources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ]
     },
     "magnum-154": {
       "brandTags": [
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "11.3"
+      ],
+      "researchSources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ]
     },
     "magnum-155": {
       "brandTags": [
         "MKA"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "barrelLengthTags": [
+        "11.3"
+      ],
+      "researchSources": [
+        "https://www.askturkiye.com/firms/product_catalog/12103/2f6a04fb-16e3-451d-bcd9-f94c292fbf62.pdf",
+        "https://husanarms.com/en/product/mka919-tr2-st",
+        "https://husanarms.com/en/product/mka919-tr2-rd"
+      ]
     },
     "magnum-156": {
       "brandTags": [
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=11",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=15"
+      ]
     },
     "magnum-157": {
       "brandTags": [
@@ -1430,7 +1608,14 @@
         "HUNT GROUP"
       ],
       "category": "ცეცხლსასროლი იარაღი",
-      "brandStatus": "verified"
+      "brandStatus": "verified",
+      "caliberTags": [
+        "12 GA"
+      ],
+      "researchSources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=11",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=15"
+      ]
     },
     "magnum-197": {
       "brandTags": [
@@ -2641,9 +2826,15 @@
       "brandStatus": "verified"
     },
     "magnum-369": {
-      "brandTags": [],
+      "brandTags": [
+        "HATSAN"
+      ],
       "category": "აქსესუარები",
-      "brandStatus": "unverified"
+      "brandStatus": "verified",
+      "researchSources": [
+        "https://hatsan.com.tr/airgun-accessories/",
+        "https://hatsan.com.tr/wp-content/uploads/2024/05/magazine.webp"
+      ]
     },
     "magnum-370": {
       "brandTags": [],

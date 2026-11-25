@@ -67,8 +67,8 @@ check('a projectile weight written as 12g is never exposed as 12 gauge', twelveG
 const hasExplicit12Gauge = name => /\b12\s*(?:GA(?:UGE)?\b|CAL(?:IBER)?\b\.?|\/\s*(?:65|70|76|89)\b)/i.test(name)
   || /(?:\bCAL(?:IBER)?\b\.?|კალ\.?)\s*[:.]?\s*12(?!\s*(?:G(?:R)?|GRAM|გრ)\b)/i.test(name);
 const twelveGaugeProducts = filter({ ...empty(), caliber: ['12 GA'] });
-const manufacturerVerifiedGauge = new Set(['magnum-122', 'magnum-123', 'magnum-184']);
-check('every 12 GA option comes from explicit notation or an audited manufacturer source', twelveGaugeProducts.length === 59 && twelveGaugeProducts.every(product => hasExplicit12Gauge(product.name) || manufacturerVerifiedGauge.has(product.id)));
+const manufacturerVerifiedGauge = new Set(['magnum-122', 'magnum-123', 'magnum-184', ...[56, 57, 98, 99, 156, 196].map(id => `magnum-${id}`)]);
+check('every 12 GA option comes from explicit notation or an audited manufacturer source', twelveGaugeProducts.length === 65 && twelveGaugeProducts.every(product => hasExplicit12Gauge(product.name) || manufacturerVerifiedGauge.has(product.id)));
 const expectedCalibers = new Map([
   ['magnum-60', '5.56×45 MM'], ['magnum-128', '7 MM REM MAG'], ['magnum-163', '8×57 JRS'],
   ['magnum-223', '9.3×72R'], ['magnum-227', '17 WSM'], ['magnum-230', '5.7×28 MM'],
@@ -89,7 +89,7 @@ const scopedUtg = filter({ ...empty(), category: 'ოპტიკა', brand: ['
 check('category + brand is an intersection', scopedUtg.length > 0 && scopedUtg.every(product => product.category === 'ოპტიკა' && product.brandTags.includes('UTG')));
 
 const caliber = filter({ ...empty(), category: 'ცეცხლსასროლი იარაღი', caliber: ['12 GA'] });
-check('caliber filter returns all exact normalized variants', caliber.length === 40 && caliber.every(product => hasValue(product, 'caliber', '12 GA')));
+check('caliber filter returns all exact normalized variants', caliber.length === 46 && caliber.every(product => hasValue(product, 'caliber', '12 GA')));
 const caliberValues = new Set(catalog.flatMap(product => shop.values(product, 'caliber')));
 check('legacy caliber spellings are absent', !['12', '12GA', '22LR', '22WMR', '9MM', '9×19'].some(value => caliberValues.has(value)));
 const price = filter({ ...empty(), min: '1000', max: '2000' });

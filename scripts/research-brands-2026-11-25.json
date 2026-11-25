@@ -1,0 +1,194 @@
+{
+  "reviewedAt": "2026-11-25T18:51:55.314Z",
+  "field": "brandTags",
+  "reviewedCount": 12,
+  "verifiedCount": 1,
+  "unresolvedCount": 8,
+  "method": "Web primary-source research plus independent visual comparison of local and exact official product artwork. Generic OEM supplier candidates stay unresolved.",
+  "reviews": [
+    {
+      "id": "magnum-58",
+      "status": "skipped_by_user",
+      "values": [
+        "KOLIBRI"
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://kolibriboats.com/en/catalog/accessories/components/paddle-standard-1500-mm-assembled/",
+        "https://kolibriboats.com/wp-content/uploads/2022/05/veslo.png"
+      ],
+      "localImage": "assets/products/058-veslo.jpg",
+      "evidence": "Manufacturer page uses the identical full title, length 1500 mm, SKU family 12.003.**. Independently viewed official full-resolution veslo.png matches the catalog photograph: same two-paddle arrangement, silver shafts, handle shapes, oarlock position/orange button, blade grooves, and embossed KOLIBRI on blade. Attribution is based on matching source artwork plus exact manufacturer title, rather than generic paddle shape.",
+      "reason": "User requested category-only treatment for outdoor items and targets rather than brand enrichment; primary research retained for reference."
+    },
+    {
+      "id": "magnum-300",
+      "status": "unresolved",
+      "sources": [
+        "https://syacecare.com/product/6-8l-carbon-fiber-cylinder-air-tank-with-valve-for-scuba-diving-and-firefighting/",
+        "https://alsafecylinders.com/industries/scba/",
+        "https://www.alsafechina.com/html/product/show/?id=192"
+      ],
+      "evidence": "Catalog photo shows CRPIII-145 family label and generic filling assembly, but no confidently readable retail brand. Official Acecare and Alsafe pages both use CRPIII-145-6.8-30-T designation for 6.8 L/300 bar cylinders.",
+      "reason": "The visible designation is shared across manufacturers and identifies a cylinder specification, not an exclusive brand. Need cylinder maker label/certificate or supplier invoice.",
+      "searchQueries": [
+        "\"Innovation 2018\" \"6.8L\" air bottle",
+        "\"CRPIII\" \"6.8\" cylinder"
+      ]
+    },
+    {
+      "id": "magnum-301",
+      "status": "unresolved",
+      "candidateBrands": [
+        "PORTAIR"
+      ],
+      "sources": [
+        "https://www.portair.cn/product-category/accessories/page/2/",
+        "https://www.portair.cn/product/pcp-compressor-accessories-mini-water-pump-for-airgun-compressor/",
+        "https://www.portair.cn/wp-content/uploads/2018/01/PCP-Compressor-Accessories-Mini-Water-Pump-For-Airgun-Compressor1.jpg",
+        "https://www.portair.cn/about-us/"
+      ],
+      "localImage": "assets/products/301-PCP-Compressor-Accessories-Mini-Water-Pump-For-Airgun-Compressor1.jpg",
+      "evidence": "PortAir accessories catalog contains the exact title and original image filename. Downloaded direct supplier image is available. PortAir says it manufactures PCP pumps/compressors and related accessories, including OEM cooperation. The local photo has no maker mark on the pump; LEADER printing is on the power cable, not proof of pump brand.",
+      "reason": "Exact source-photo origin establishes a supplier candidate, but generic/OEM item has no product-level brand confirmation. Do not assign PORTAIR or cable manufacturer automatically."
+    },
+    {
+      "id": "magnum-302",
+      "status": "unresolved",
+      "candidateBrands": [
+        "PORTAIR"
+      ],
+      "sources": [
+        "https://www.portair.cn/product-category/accessories/",
+        "https://www.portair.cn/product/1-6-feet-63mpa-high-pressure-flexible-pcp-pump-hose/",
+        "https://www.portair.cn/wp-content/uploads/2018/02/1.6feet-63mpa-high-pressure-flexible-hose3.jpg",
+        "https://www.portair.cn/about-us/"
+      ],
+      "localImage": "assets/products/302-1.6feet-63mpa-high-pressure-flexible-hose3.jpg",
+      "evidence": "PortAir catalog contains the original exact image filename and matching 1.6 Feet/63MPa hose listing. Generic unmarked hose in local photo; supplier offers OEM manufacture.",
+      "reason": "PORTAIR is a source supplier candidate. No exclusive model, packaging or retail brand on this generic hose confirms the actual stocked brand."
+    },
+    {
+      "id": "magnum-303",
+      "status": "unresolved",
+      "candidateBrands": [
+        "PORTAIR"
+      ],
+      "sources": [
+        "https://www.portair.cn/product-category/accessories/",
+        "https://www.portair.cn/product/300-bar-din-kit-screw-and-1-6-feet-microbore-hose-with-female-foster/",
+        "https://www.portair.cn/wp-content/uploads/2018/01/300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2.jpg",
+        "https://www.portair.cn/about-us/"
+      ],
+      "localImage": "assets/products/303-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2.jpg",
+      "evidence": "PortAir catalog has original exact image filename for its 300 BAR DIN kit with 1.6 feet microbore hose. Local kit is unmarked and manufacturer offers OEM products.",
+      "reason": "Source supplier candidate is found, but generic component assembly has no product-level brand confirmation."
+    },
+    {
+      "id": "magnum-304",
+      "status": "unresolved",
+      "candidateBrands": [
+        "PORTAIR"
+      ],
+      "sources": [
+        "https://www.portair.cn/product-category/accessories/",
+        "https://www.portair.cn/product/300-bar-din-kit-screw-and-1-6-feet-microbore-hose-with-female-foster-2/",
+        "https://www.portair.cn/wp-content/uploads/2018/01/300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2-1.jpg",
+        "https://www.portair.cn/about-us/"
+      ],
+      "localImage": "assets/products/304-300-BAR-DIN-Kit-Screw-And-1.6-feet-Microbore-Hose-With-Female-Foster2-1.jpg",
+      "evidence": "PortAir catalog has original exact image filename for the second 300 BAR DIN kit. Local image shows generic unmarked assembly, supplier does OEM.",
+      "reason": "Do not convert supplier/image origin to a confirmed retail brand without packaging or invoice."
+    },
+    {
+      "id": "magnum-321",
+      "status": "unresolved",
+      "sources": [
+        "https://chinasports.en.made-in-china.com/product/heCmqiBFAaHT/China-Sea-Scooter-SF-C001-.html"
+      ],
+      "localImage": "assets/products/321-917.jpg",
+      "evidence": "Manufacturer Jinhua Zhongfa Machinery Manufacture Co., Ltd. publishes SF-C001 with matching 12AH/12V battery, speed 4.8km/h, thrust 11lbf/5kgf, depth 20m, runtime 1h and weight 11kg. However it gives a 150W motor versus the catalog 90W. No retail brand mark is legible in local photograph.",
+      "reason": "Model/specification conflict and no retail branding. Manufacturer/supplier name alone cannot safely become the stocked product brand. Need rating label/packaging.",
+      "searchQueries": [
+        "\"SF-C001\" \"90W\"",
+        "\"SF-C001\" sea scooter"
+      ]
+    },
+    {
+      "id": "magnum-369",
+      "status": "verified",
+      "values": [
+        "HATSAN"
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://hatsan.com.tr/airgun-accessories/",
+        "https://hatsan.com.tr/wp-content/uploads/2024/05/magazine.webp"
+      ],
+      "localImage": "assets/products/369-magazine.jpg",
+      "evidence": "Independently viewed official Hatsan magazine.webp is the same original photograph used in the catalog: two machined metal rotary magazines in identical angles, with exactly the same loose-pellet arrangement below. Manufacturer page identifies magazines as Hatsan airgun accessories. Title specifies 10-shot/4.5mm. Attribution is to exact manufacturer artwork, not just compatible shape.",
+      "reason": "Exact official manufacturer accessory-photo identity supports HATSAN. Do not infer additional compatible rifle models from this."
+    },
+    {
+      "id": "magnum-370",
+      "status": "skipped_by_user",
+      "values": [
+        "HATSAN"
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://hatsan.com.tr/airgun-accessories/",
+        "https://hatsan.com.tr/wp-content/uploads/2024/05/Hatsan-Target-1.webp",
+        "https://hatsan.com.tr/wp-content/uploads/2024/05/Hatsan-Target-2.webp"
+      ],
+      "localImage": "assets/products/370-atis-kagidi.jpg",
+      "evidence": "Catalog combines the exact official Hatsan Target #1 and #2 artwork, with identical stacked-sheet angles, 5-bull layout and 10 meter (33 feet) Air Rifle Target legend on #1, plus matching numbered concentric #2 artwork. Hatsan explicitly names them Hatsan Targets. Original 50-piece catalog package is preserved; official pack quantities are not copied over.",
+      "reason": "User requested category-only treatment for outdoor items and targets rather than brand enrichment; primary research retained for reference."
+    },
+    {
+      "id": "magnum-371",
+      "status": "skipped_by_user",
+      "values": [
+        "HATSAN"
+      ],
+      "confidence": "high",
+      "sources": [
+        "https://hatsan.com.tr/airgun-accessories/",
+        "https://hatsan.com.tr/wp-content/uploads/2024/05/air_rifle_pellet_catcher.webp"
+      ],
+      "localImage": "assets/products/371-AirRifle-Pellet-Catcher.jpg",
+      "evidence": "Catalog and official Hatsan Air Rifle Pellet Catcher photograph match: same galvanized box perspective, two top mounting holes, 5-bull target arrangement, bottom collection ledge and black slots. Manufacturer page explicitly lists this accessory as Hatsan pellet catcher. Independently inspected both local and downloaded official images.",
+      "reason": "User requested category-only treatment for outdoor items and targets rather than brand enrichment; primary research retained for reference."
+    },
+    {
+      "id": "magnum-374",
+      "status": "unresolved",
+      "sources": [
+        "https://hatsan.com.tr/airgun-accessories/"
+      ],
+      "localImage": "assets/products/374-22_img.jpg",
+      "evidence": "Local image shows five generic steel scope rings of varying heights. No maker mark or model code visible. Reviewed Hatsan official accessory/mount listing; no exact image/model confirmation found. Searches by original filename, Georgian title and steel Weaver ring descriptions did not establish manufacturer.",
+      "reason": "Weaver describes mounting interface here and must not be assumed to be brand. Need brand mark/packaging or exact stock code.",
+      "searchQueries": [
+        "\"scope mounts\" \"22_img.jpg\"",
+        "\"22_img\" \"кронштейн\"",
+        "\"კრონშტეინი ფოლადის ვივერზე 30\"",
+        "\"scope mounts\" \"steel\" \"weaver\" five rings"
+      ]
+    },
+    {
+      "id": "magnum-376",
+      "status": "unresolved",
+      "sources": [],
+      "localImage": "assets/products/376-8789002076b.jpg",
+      "evidence": "Inspected photo shows two generic leather-looking piston/seal components with no branding or dimensions. Searches by exact original image basename and Georgian product title produced no maker/model identification.",
+      "reason": "No unique identifying model or mark. Need physical dimensions, compatible rifle model and supplier/packaging details; compatibility alone is not proof of maker.",
+      "searchQueries": [
+        "\"8789002076b\"",
+        "\"8789002076b\" piston seal",
+        "\"პნევმატიკის დგუში\""
+      ]
+    }
+  ],
+  "skippedByUserCount": 3
+}

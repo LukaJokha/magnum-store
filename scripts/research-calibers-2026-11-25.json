@@ -1,0 +1,224 @@
+{
+  "reviewedAt": "2026-11-25T18:51:13.589Z",
+  "field": "caliberTags",
+  "method": "Internet research; exact primary manufacturer model specifications only. Official catalog PDFs downloaded with browser-like User-Agent and text extracted via PyMuPDF; no catalog or database modifications.",
+  "verified": 6,
+  "unresolved": 12,
+  "reviews": [
+    {
+      "id": "magnum-50",
+      "name": "HUNT GROUP ON, mod. 0N-007, Barrel 61 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-51",
+      "name": "HUNT GROUP ON, mod. 0N-006, Barrel 71 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-52",
+      "name": "HUNT GROUP ON, mod. 0N-005, Barrel 71 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-53",
+      "name": "HUNT GROUP ON, mod. 0N-004, Barrel 71 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-54",
+      "name": "HUNT GROUP ON, mod. 0N-002, Barrel 71 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-55",
+      "name": "HUNT GROUP ON, mod. 0N-001, Barrel 71 cm., 3 Mobile Choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=35",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=28"
+      ],
+      "evidence": "2024 ON page lists12 GA; 2025 ON page lists12 GA,20 GA and .410 for the same ON-001 through ON-007 codes.",
+      "reason": "A model name alone no longer identifies gauge uniquely; the shop listing has no gauge. Older single-gauge catalog is insufficient to prove this stock unit. Verify chamber/barrel marking or supplier invoice."
+    },
+    {
+      "id": "magnum-56",
+      "name": "HUNT GROUP XRP, mod. XRP-006, Barrel 71 cm., 3 Mobile Choke, 7+1",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ],
+      "evidence": "Official 2024 catalog printed p25 lists XRP-006 through XRP-010 with one gauge:12 GA. This covers the exact XRP-006/010 model codes. 2025 XRP-009/010 printed p15 also lists12 GA.",
+      "reason": "Exact model codes are included; no unlisted caliber variant added.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-57",
+      "name": "HUNT GROUP XRP, mod. XRP-010, Barrel 51 cm., 3 Mobile Choke, 7+1",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ],
+      "evidence": "Official 2024 catalog printed p25 lists XRP-006 through XRP-010 with one gauge:12 GA. This covers the exact XRP-006/010 model codes. 2025 XRP-009/010 printed p15 also lists12 GA.",
+      "reason": "Exact model codes are included; no unlisted caliber variant added.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-98",
+      "name": "HUNT GROUP KNT 12, mod. KNT12-002, Barrel 71 cm., 3 Mobile Choke, 4+1",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=30"
+      ],
+      "evidence": "Official 2024 catalog printed p28 explicitly includes KNT12-002 and lists gauge12 GA.",
+      "reason": "Exact model code with unique listed gauge.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-99",
+      "name": "HUNT GROUP XRP, mod. XRP-010, Barrel 33,5 cm., 3 Mobile Choke, 4+1, stock of MH-XB",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=27",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=18"
+      ],
+      "evidence": "Official 2024 catalog printed p25 lists XRP-006 through XRP-010 with one gauge:12 GA. This covers the exact XRP-006/010 model codes. 2025 XRP-009/010 printed p15 also lists12 GA.",
+      "reason": "Exact model codes are included; no unlisted caliber variant added.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-156",
+      "name": "HUNT GROUP XRS, mod. XRS-002, Barrel 47 cm., 3 Mobile Choke, 4+1",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=11",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=15"
+      ],
+      "evidence": "Official 2024 catalog printed p9 explicitly includes XRS-001 and XRS-002 with gauge12 GA; 2025 printed p12 confirms12 GA.",
+      "reason": "Exact model codes with unique gauge in both editions.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-189",
+      "name": "HUNT GROUP SS12-202 SIDE BY SIDE SHOTGUN 71sm, 5 pcs. mobil/choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=31"
+      ],
+      "evidence": "2024 catalog describes SS12-001 and SS12-002 and76mm chamber but omits gauge. Store titles say SS12-201/202 while filenames say001/002.",
+      "reason": "Model-code conflict and missing explicit gauge. A12 prefix or76mm chamber cannot alone establish12 GA."
+    },
+    {
+      "id": "magnum-190",
+      "name": "HUNT GROUP SS12-201 SIDE BY SIDE SHOTGUN 71sm, 5 pcs. mobil/choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=31"
+      ],
+      "evidence": "2024 catalog describes SS12-001 and SS12-002 and76mm chamber but omits gauge. Store titles say SS12-201/202 while filenames say001/002.",
+      "reason": "Model-code conflict and missing explicit gauge. A12 prefix or76mm chamber cannot alone establish12 GA."
+    },
+    {
+      "id": "magnum-193",
+      "name": "HUNT GROUP MH-X-03 PUMP ACTION SHOTGUN 71sm, 4+1, 3 pcs. mobil/choke",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf"
+      ],
+      "evidence": "Current manufacturer catalog has MH-PX/XRP but no exact MH-X-03 mapping found.",
+      "reason": "Exact legacy MH-X-03 technical specification could not be established. Do not substitute a newer pump-action family."
+    },
+    {
+      "id": "magnum-196",
+      "name": "HUNT GROUP XRS, mod. XRS-001, Barrel 47 cm., 3 Mobile Choke, 4+1",
+      "status": "verified",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=11",
+        "https://www.huntgrouparms.com/wp-content/uploads/2025/01/Hunt-Group-Catalouge-.pdf#page=15"
+      ],
+      "evidence": "Official 2024 catalog printed p9 explicitly includes XRS-001 and XRS-002 with gauge12 GA; 2025 printed p12 confirms12 GA.",
+      "reason": "Exact model codes with unique gauge in both editions.",
+      "values": [
+        "12 GA"
+      ]
+    },
+    {
+      "id": "magnum-197",
+      "name": "HUNT GROUP MH-HS12, mod. HS12-001, Barrel 71 cm or 76 cm., 5 Mobile Choke, 4+1",
+      "status": "unresolved",
+      "sources": [
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=23",
+        "https://www.huntgrouparms.com/wp-content/uploads/2024/01/huntgroup2024productcatalog-.pdf#page=24",
+        "https://www.huntgrouparms.com/wp-content/uploads/2023/02/2023HUNTGROUPCATALOG.pdf"
+      ],
+      "evidence": "2024 printed pp21-22 covers HS12-001 onward and lists12 GA and20 GA for MH-HS12 family. 2023 indexed HS12-001 page shows20 GA despite HS12 code.",
+      "reason": "The exact stocked gauge is not identified. Do not assume12 GA from the model prefix or import both family gauges."
+    },
+    {
+      "id": "magnum-203",
+      "name": "Armed SP 20 Black Over & Under Hunting Shotgun, Barrel 71 cm., cal.2",
+      "status": "unresolved",
+      "sources": [
+        "https://www.armedguns.com.tr/",
+        "http://www.magnum.ge/production-ka-all-10"
+      ],
+      "evidence": "Store title says SP20 Black but caliber text is truncated to cal.2. Manufacturer site returned403, original catalog page502. Secondary sources suggest20 GA but primary exact-model confirmation not obtained. Final direct HTTP read of the original exact store listing confirms the same wording: SP 20 Black, Barrel71cm, cal.2.",
+      "reason": "Unresolved primary-source confirmation and truncated source text; do not overwrite based solely on the20 model suffix."
+    },
+    {
+      "id": "magnum-209",
+      "name": "Armed Gladiator W 121 Pump Action Hunting Shotgun, Barrel 50 cm.",
+      "status": "unresolved",
+      "sources": [
+        "https://www.armedguns.com.tr/",
+        "https://www.salw.lv/materials/catalogues/en/5.shotguns-grenade-launchers.pdf",
+        "http://www.magnum.ge/production-ka-all-10"
+      ],
+      "evidence": "Armed manufacturer site returned403. SALW catalog covers Gladiator PAS/PAPG in12/76, but not exact Gladiator W121 code. Final direct HTTP read of the original exact store listing confirms the same wording: Gladiator W121, Barrel50cm, no caliber stated.",
+      "reason": "A different Gladiator variant does not prove W121 caliber. Need exact SKU specification or chamber marking."
+    }
+  ],
+  "finalArmedPassAt": "2026-11-25T18:52:48.208Z"
+}

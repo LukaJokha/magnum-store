@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T17:55:33.140Z",
+  "updatedAt": "2026-11-25T18:54:54.532Z",
   "source": "http://magnum.ge",
   "products": [
     {
@@ -119,7 +119,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
       "caliber": "44 MAG",
-      "barrelLength": "",
+      "barrelLength": "50.8",
       "image": "assets/products/006-R95_direita-20.jpg",
       "brandTags": [
         "ROSSI"
@@ -128,7 +128,9 @@
       "caliberTags": [
         "44 MAG"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "50.8"
+      ],
       "sourcePrice": "3000 ლარი",
       "description": ""
     },
@@ -161,7 +163,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "ROSSI",
       "caliber": "22 LR",
-      "barrelLength": "",
+      "barrelLength": "45.72",
       "image": "assets/products/008-Rio-Bravo-17HMR-Wood.jpg",
       "brandTags": [
         "ROSSI"
@@ -170,7 +172,9 @@
       "caliberTags": [
         "22 LR"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "45.72"
+      ],
       "sourcePrice": "1500 ლარი",
       "description": ""
     },
@@ -266,7 +270,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "11.43",
       "image": "assets/products/013-Taurus-G3-Tactical-Black.jpg",
       "brandTags": [
         "TAURUS"
@@ -275,7 +279,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "11.43"
+      ],
       "sourcePrice": "2630 ლარი",
       "description": ""
     },
@@ -287,7 +293,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "10.2",
       "image": "assets/products/014-TAURUS-MOD-TS-9.jpg",
       "brandTags": [
         "TAURUS"
@@ -296,7 +302,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "10.2"
+      ],
       "sourcePrice": "2260 ლარი",
       "description": ""
     },
@@ -308,7 +316,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "10.85",
       "image": "assets/products/015-TAURUS-MOD-TH-9.jpg",
       "brandTags": [
         "TAURUS"
@@ -317,7 +325,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "10.85"
+      ],
       "sourcePrice": "2030 ლარი",
       "description": ""
     },
@@ -329,7 +339,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "10.16",
       "image": "assets/products/016-TAURUS-MOD-G3.jpg",
       "brandTags": [
         "TAURUS"
@@ -338,7 +348,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "10.16"
+      ],
       "sourcePrice": "1850 ლარი",
       "description": ""
     },
@@ -350,7 +362,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "7.77",
       "image": "assets/products/017-TAURUS-MOD-GX4.jpg",
       "brandTags": [
         "TAURUS"
@@ -359,7 +371,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "7.77"
+      ],
       "sourcePrice": "1770 ლარი",
       "description": ""
     },
@@ -371,7 +385,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "8.13",
       "image": "assets/products/018-TAURUS-MOD-G2S.jpg",
       "brandTags": [
         "TAURUS"
@@ -380,7 +394,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "8.13"
+      ],
       "sourcePrice": "1770 ლარი",
       "description": ""
     },
@@ -392,7 +408,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "8.13",
       "image": "assets/products/019-TAURUS-MOD-G2C.jpg",
       "brandTags": [
         "TAURUS"
@@ -401,7 +417,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "8.13"
+      ],
       "sourcePrice": "1770 ლარი",
       "description": ""
     },
@@ -413,7 +431,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "10.16",
       "image": "assets/products/020-TAURUS-MOD-G3XL.jpg",
       "brandTags": [
         "TAURUS"
@@ -422,7 +440,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "10.16"
+      ],
       "sourcePrice": "1530 ლარი",
       "description": ""
     },
@@ -434,7 +454,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "TAURUS",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "8.13",
       "image": "assets/products/021-TAURUS-MOD-G3X.jpg",
       "brandTags": [
         "TAURUS"
@@ -443,7 +463,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "8.13"
+      ],
       "sourcePrice": "1530 ლარი",
       "description": ""
     },
@@ -724,7 +746,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "RUGER",
       "caliber": "5.56×45 MM",
-      "barrelLength": "",
+      "barrelLength": "40.89",
       "image": "assets/products/035-Ruger-AR-556--8500--Caliber-5.56x45-mm.jpg",
       "brandTags": [
         "RUGER"
@@ -733,7 +755,9 @@
       "caliberTags": [
         "5.56×45 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "40.89"
+      ],
       "sourcePrice": "4200 ლარი",
       "description": ""
     },
@@ -1188,14 +1212,16 @@
       "amount": 700,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/056-xrp-006.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "71"
       ],
@@ -1209,14 +1235,16 @@
       "amount": 650,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "51",
       "image": "assets/products/057-XRP-010.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "51"
       ],
@@ -1248,7 +1276,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MAUSER",
       "caliber": "308 WIN",
-      "barrelLength": "",
+      "barrelLength": "51",
       "image": "assets/products/059-MAUSER-M25-EXTREME.jpg",
       "brandTags": [
         "MAUSER"
@@ -1257,7 +1285,9 @@
       "caliberTags": [
         "308 WIN"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "51"
+      ],
       "sourcePrice": "4700 ლარი",
       "description": ""
     },
@@ -1311,7 +1341,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "DIAMONDBACK FIREARMS",
       "caliber": "5.56×45 MM",
-      "barrelLength": "",
+      "barrelLength": "40.64",
       "image": "assets/products/062-DB171AK192-1.jpg",
       "brandTags": [
         "DIAMONDBACK FIREARMS"
@@ -1320,7 +1350,9 @@
       "caliberTags": [
         "5.56×45 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "40.64"
+      ],
       "sourcePrice": "4250 ლარი",
       "description": ""
     },
@@ -1516,7 +1548,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "SARSILMAZ",
       "caliber": "7.62×39 MM",
-      "barrelLength": "",
+      "barrelLength": "41",
       "image": "assets/products/071-SARSILMAZ-SAR15T----.7.62X39.jpg",
       "brandTags": [
         "SARSILMAZ"
@@ -1525,7 +1557,9 @@
       "caliberTags": [
         "7.62×39 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "41"
+      ],
       "sourcePrice": "3600 ლარი",
       "description": ""
     },
@@ -2068,14 +2102,16 @@
       "amount": 950,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "71",
       "image": "assets/products/098-KNT12-002.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "71"
       ],
@@ -2089,14 +2125,16 @@
       "amount": 650,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "33.5",
       "image": "assets/products/099-7-XRP-010.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "33.5"
       ],
@@ -3074,7 +3112,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "5.56×45 MM",
-      "barrelLength": "",
+      "barrelLength": "40.64",
       "image": "assets/products/147-MKA556-160S.jpg",
       "brandTags": [
         "MKA"
@@ -3083,7 +3121,9 @@
       "caliberTags": [
         "5.56×45 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "40.64"
+      ],
       "sourcePrice": "2900 ლარი",
       "description": ""
     },
@@ -3137,7 +3177,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "5.56×45 MM",
-      "barrelLength": "",
+      "barrelLength": "55.88",
       "image": "assets/products/150-MKA556-220S--Black.jpg",
       "brandTags": [
         "MKA"
@@ -3146,7 +3186,9 @@
       "caliberTags": [
         "5.56×45 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "55.88"
+      ],
       "sourcePrice": "2900 ლარი",
       "description": ""
     },
@@ -3158,7 +3200,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "5.56×45 MM",
-      "barrelLength": "",
+      "barrelLength": "55.88",
       "image": "assets/products/151-MKA556-220S.jpg",
       "brandTags": [
         "MKA"
@@ -3167,7 +3209,9 @@
       "caliberTags": [
         "5.56×45 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "55.88"
+      ],
       "sourcePrice": "2900 ლარი",
       "description": ""
     },
@@ -3179,7 +3223,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "11.3",
       "image": "assets/products/152-4-MKA919-TR2--Green.jpg",
       "brandTags": [
         "MKA"
@@ -3188,7 +3232,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "11.3"
+      ],
       "sourcePrice": "1100 ლარი",
       "description": ""
     },
@@ -3200,7 +3246,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "11.3",
       "image": "assets/products/153-MKA919-TR2--Green.jpg",
       "brandTags": [
         "MKA"
@@ -3209,7 +3255,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "11.3"
+      ],
       "sourcePrice": "1000 ლარი",
       "description": ""
     },
@@ -3221,7 +3269,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "11.3",
       "image": "assets/products/154---MKA919-TR2.jpg",
       "brandTags": [
         "MKA"
@@ -3230,7 +3278,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "11.3"
+      ],
       "sourcePrice": "1100 ლარი",
       "description": ""
     },
@@ -3242,7 +3292,7 @@
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "MKA",
       "caliber": "9×19 MM",
-      "barrelLength": "",
+      "barrelLength": "11.3",
       "image": "assets/products/155-MKA919-TR2.jpg",
       "brandTags": [
         "MKA"
@@ -3251,7 +3301,9 @@
       "caliberTags": [
         "9×19 MM"
       ],
-      "barrelLengthTags": [],
+      "barrelLengthTags": [
+        "11.3"
+      ],
       "sourcePrice": "1000 ლარი",
       "description": ""
     },
@@ -3262,14 +3314,16 @@
       "amount": 1000,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "47",
       "image": "assets/products/156-XRS-002.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "47"
       ],
@@ -4096,14 +4150,16 @@
       "amount": 900,
       "category": "ცეცხლსასროლი იარაღი",
       "brand": "HUNT GROUP",
-      "caliber": "",
+      "caliber": "12 GA",
       "barrelLength": "47",
       "image": "assets/products/196-c-XRS-001.jpg",
       "brandTags": [
         "HUNT GROUP"
       ],
       "brandStatus": "verified",
-      "caliberTags": [],
+      "caliberTags": [
+        "12 GA"
+      ],
       "barrelLengthTags": [
         "47"
       ],
@@ -7583,12 +7639,14 @@
       "price": "20 ლარი",
       "amount": 20,
       "category": "აქსესუარები",
-      "brand": "",
+      "brand": "HATSAN",
       "caliber": "",
       "barrelLength": "",
       "image": "assets/products/369-magazine.jpg",
-      "brandTags": [],
-      "brandStatus": "unverified",
+      "brandTags": [
+        "HATSAN"
+      ],
+      "brandStatus": "verified",
       "caliberTags": [],
       "barrelLengthTags": [],
       "sourcePrice": "20 ლარი",
