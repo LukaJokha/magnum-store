@@ -128,7 +128,7 @@ function showProduct(product) {
 
   const contact = document.createElement('a');
   contact.className = 'contact-btn';
-  contact.href = 'tel:+995322953487';
+  contact.href = 'tel:+995322309369';
   contact.textContent = 'დარეკე კონსულტაციისთვის';
   const source = document.createElement('p');
   source.className = 'source';
