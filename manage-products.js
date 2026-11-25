@@ -1,12 +1,14 @@
 const $ = selector => document.querySelector(selector);
 const catalog = window.MagnumProducts;
-let products = [], db, vocabulary = {}, editing = null, saving = false, dirty = false, previewUrl = '', stagedImage = '', stagedFile = null;
+let products = [], db, vocabulary = {}, editing = null, saving = false, dirty = false, previewUrl = '', stagedImage = '', stagedFile = null, optionWrites = 0;
 const say = (selector, text, success = false) => { const element = $(selector); element.textContent = text; element.className = `form-message ${success ? 'success' : 'error'}`; };
 
 async function loadProducts() {
   const rows = await catalog.readAll(() => db.from('products').select('*'));
   const baseline = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] }).catch(() => ({ products: [] }));
   vocabulary = catalog.choices([...baseline.products, ...rows]);
+  const stored = await window.MagnumOptions.load(db);
+  for (const key of Object.keys(stored)) vocabulary[key] = [...new Set([...vocabulary[key], ...stored[key]])].sort((a,b) => a.localeCompare(b,'en',{numeric:true}));
   products = rows; render();
 }
 
@@ -67,7 +69,7 @@ function openEditor(product) {
   say('#editMessage', ''); $('#editDialog').showModal();
 }
 function closeEditor() {
-  if (saving || dirty && !confirm('შეუნახავი ცვლილებები გაუქმდეს?')) return;
+  if (saving || optionWrites || dirty && !confirm('შეუნახავი ცვლილებები გაუქმდეს?')) return;
   $('#editDialog').close(); editing = null; dirty = false;
   if (previewUrl) { URL.revokeObjectURL(previewUrl); previewUrl = ''; }
 }
@@ -77,6 +79,17 @@ $('#editDialog').addEventListener('cancel', event => { event.preventDefault(); c
 $('#editForm').addEventListener('input', () => { dirty = true; });
 $('#editForm').addEventListener('change', () => { dirty = true; });
 $('#editForm').elements.category.onchange = setSpecVisibility;
+for (const [kind, selector, field] of [['brand','#editBrands','#brandField'],['caliber','#editCalibers','#caliberField'],['barrelLength','#editBarrels','#barrelField']]) {
+  window.MagnumOptions.bind({ container: $(field), kind, database: () => db, values: () => vocabulary[kind],
+    canSave: () => !saving,
+    busy: active => { optionWrites += active ? 1 : -1; $('#saveEdit').disabled = saving || !!optionWrites; },
+    select: value => {
+      const checked = [...$(selector).querySelectorAll('input:checked')].map(input => input.value);
+      vocabulary[kind] = [...new Set([...vocabulary[kind], value])].sort((a,b) => a.localeCompare(b,'en',{numeric:true}));
+      renderSpec(selector, kind, [...new Set([...checked,value])]); dirty = true;
+    }
+  });
+}
 for (const category of catalog.categories) $('#editForm').elements.category.add(new Option(category, category));
 $('#editForm').elements.image.onchange = event => {
   const file = event.target.files[0];
@@ -88,7 +101,7 @@ $('#editForm').elements.image.onchange = event => {
 };
 $('#editForm').onsubmit = async event => {
   event.preventDefault();
-  if (saving || !editing) return;
+  if (saving || optionWrites || !editing) return;
   const form = event.currentTarget, values = new FormData(form);
   const input = Object.fromEntries(['name', 'category', 'amount', 'description'].map(key => [key, values.get(key)]));
   for (const key of ['brand', 'caliber', 'barrelLength']) input[key] = values.getAll(key);

@@ -6,7 +6,7 @@ const IMAGE_TYPES = new Map([
   ['image/webp', 'webp'],
   ['image/gif', 'gif']
 ]);
-let db, pendingCreateId = null, uploadedFile = null, uploadedImage = '';
+let db, pendingCreateId = null, uploadedFile = null, uploadedImage = '', optionWrites = 0, creatingProduct = false;
 
 function populateSelect(name, values, suffix = '') {
   const select = document.querySelector(`[name="${name}"]`);
@@ -20,10 +20,9 @@ function populateSelect(name, values, suffix = '') {
 async function loadStandardProductValues() {
   const data = await window.MagnumProducts.readAll(() => db.from('products').select('*'));
   const catalog = await fetch('data/products.json').then(response => response.ok ? response.json() : { products: [] }).catch(() => ({ products: [] }));
-  const products = [...catalog.products, ...data];
-  populateSelect('brand', products.flatMap(product => Array.isArray(product.brandTags) ? product.brandTags : [product.brand]));
-  populateSelect('caliber', products.flatMap(product => product.caliberTags?.length ? product.caliberTags : [product.caliber]));
-  populateSelect('barrelLength', products.flatMap(product => product.barrelLengthTags?.length ? product.barrelLengthTags : [product.barrelLength]), ' სმ');
+  const options = await window.MagnumOptions.load(db);
+  const choices = window.MagnumProducts.choices([...catalog.products, ...data]);
+  for (const key of ['brand','caliber','barrelLength']) populateSelect(key, [...choices[key], ...options[key]], key === 'barrelLength' ? ' სმ' : '');
 }
 
 async function refreshSession() {
@@ -84,9 +83,10 @@ $('#productForm').onsubmit = async event => {
   event.preventDefault();
   const formElement = event.currentTarget;
   const form = new FormData(formElement), file = form.get('image'), button = $('#saveButton');
-  if (button.disabled) return;
+  if (button.disabled || optionWrites || creatingProduct) return;
   if (!(file instanceof File) || !file.size) return message($('#productMessage'), 'აირჩიეთ პროდუქტის სურათი.');
   button.disabled = true; button.textContent = 'ინახება…';
+  creatingProduct = true;
   try {
     const allowed = Object.fromEntries(['brand', 'caliber', 'barrelLength'].map(key => [key, [...formElement.elements[key].options].map(option => option.value).filter(Boolean)]));
     const input = Object.fromEntries(['name', 'amount', 'category', 'description'].map(key => [key, form.get(key)]));
@@ -105,8 +105,20 @@ $('#productForm').onsubmit = async event => {
     pendingCreateId = null; uploadedFile = null; uploadedImage = '';
     formElement.reset(); $('#preview').hidden = true; message($('#productMessage'), 'პროდუქტი წარმატებით დაემატა კატალოგს.', true);
   } catch (error) { message($('#productMessage'), `შენახვა ვერ მოხერხდა: ${error.message}`); }
-  finally { button.disabled = false; button.textContent = 'პროდუქტის დამატება'; }
+  finally { creatingProduct = false; button.disabled = !!optionWrites; button.textContent = 'პროდუქტის დამატება'; }
 };
 
 $('#logout').onclick = async () => { await db.auth.signOut(); await refreshSession(); };
+for (const kind of ['brand','caliber','barrelLength']) {
+  const select = document.querySelector(`[name="${kind}"]`);
+  window.MagnumOptions.bind({ container: select.parentElement, kind, database: () => db,
+    canSave: () => !creatingProduct,
+    busy: active => { optionWrites += active ? 1 : -1; $('#saveButton').disabled = creatingProduct || !!optionWrites; },
+    values: () => [...select.options].map(option => option.value).filter(Boolean),
+    select: value => {
+      populateSelect(kind, [...select.options].map(option => option.value).filter(Boolean).concat(value), kind === 'barrelLength' ? ' სმ' : '');
+      select.value = value;
+    }
+  });
+}
 init();

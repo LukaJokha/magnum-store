@@ -45,7 +45,7 @@ async function page(options = {}) {
   };
   const context = vm.createContext({
     document: { querySelector: element },
-    window: { magnumDbReady: Promise.resolve(db), location: { reload() { reloads += 1; } } },
+    window: { magnumDbReady: Promise.resolve(db), MagnumOptions: { async load() { return {brand:[],caliber:[],barrelLength:[]}; }, bind() {} }, location: { reload() { reloads += 1; } } },
     FormData: class { constructor(form) { this.fields = { ...form.fields }; } get(name) { return this.fields[name]; } },
     Option: class { constructor(text, value) { this.text = text; this.value = value; } },
     fetch: async url => {

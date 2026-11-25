@@ -58,4 +58,8 @@ Backups and the generated SQL import are written to the sibling desktop folder `
 
 See `OWNER-GUIDE.md` for operation/handover and `RELEASE-TODO.md` for release status. The original catalog's unresolved manufacturer/specification evidence is listed in `data/CATALOG-AUDIT.md`; software checks do not establish current stock, selling prices, or product identity.
 
+## Adding vocabulary values
+
+Existing installations run `supabase-catalog-options.sql` once; new installations include it in `supabase-setup.sql`. The admin-only `catalog_options` registry is seeded from product specifications. Both product forms offer an inline add control. Server and client canonicalize common spellings (case, whitespace, gauge/rimfire notation and centimeter formatting); a database unique constraint handles concurrent duplicate inserts. Only allowlisted administrators can read/insert options. Public facets still derive exclusively from actual products. Creating an option does not publish a product: save the product separately to attach it. Missing registry reads report an error rather than silently accepting unsaved vocabulary. Regression checks: `node scripts/verify-catalog-options.mjs`; rollback-only database access checks: `scripts/verify-catalog-options.sql`.
+
 `sync-products.bat` captures the public source into `data/products-source-review.json` for a new review. It does not overwrite the audited published file. New or changed source items require individual identity review before normalization/publication.
