@@ -2,3 +2,4 @@
  .catalog-error{padding:24px;border:1px solid #cdb98f;background:#fffaf0;line-height:1.7}.catalog-error[hidden]{display:none}.catalog-error button{padding:10px 18px;background:#263c28;color:#fff;border:0;font:inherit;cursor:pointer}
 [hidden]{display:none!important}
 @media(max-width:680px){.masthead{height:auto;min-height:80px;flex-wrap:wrap;gap:12px;padding-top:14px;padding-bottom:14px}.masthead nav{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}.masthead nav a{font-size:12px}.menu-button{display:none}}
+.policy-links{padding-top:20px;font-size:12px;line-height:1.7}.policy-links a{text-decoration:underline;text-underline-offset:4px}.policy-links a:focus-visible{outline:2px solid #e0b757;outline-offset:5px}.policy-footer{padding:0 0 20px}

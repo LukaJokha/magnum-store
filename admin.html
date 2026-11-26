@@ -12,7 +12,7 @@
   <main class="admin-main">
     <section class="admin-card" id="loginPanel">
       <p class="eyebrow">ადმინისტრირება</p><h1>შესვლა</h1><p>შეიყვანეთ Supabase Authentication-ში შექმნილი ადმინისტრატორის ელფოსტა და პაროლი.</p>
-      <form id="loginForm"><label>ელფოსტა<input name="email" type="email" autocomplete="email" required></label><label>პაროლი<input name="password" type="password" autocomplete="current-password" required></label><button class="primary">შესვლა</button><p class="form-message" id="loginMessage"></p></form>
+      <p class="file-note">ავტორიზაციის მონაცემების გამოყენება აღწერილია <a href="privacy.html">კონფიდენციალურობის პოლიტიკაში</a>.</p><form id="loginForm"><label>ელფოსტა<input name="email" type="email" autocomplete="email" required></label><label>პაროლი<input name="password" type="password" autocomplete="current-password" required></label><button class="primary">შესვლა</button><p class="form-message" id="loginMessage"></p></form>
       <details class="security-panel"><summary>დამავიწყდა პაროლი</summary>
         <form id="forgotPasswordForm" class="password-form">
           <label>ადმინისტრატორის ელფოსტა<input name="email" type="email" autocomplete="email" required></label>
@@ -35,4 +35,4 @@
     </section>
   </main>
   <script src="supabase.js"></script><script src="product-data.js"></script><script src="catalog-options.js"></script><script src="admin.js"></script><script src="forgot-password.js"></script>
-</body></html>
+<footer class="policy-footer"><div class="frame policy-links"><a href="privacy.html">კონფიდენციალურობის პოლიტიკა</a></div></footer></body></html>
